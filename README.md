@@ -25,8 +25,8 @@ Content lives here; rules do not. Combat, shops, abilities, levelling, class ski
 the profession/reputation rules are implemented in the engine.
 
 Optional keys the engine understands — `respawn_map`, `default_class`,
-`default_background`, `default_difficulty` in the manifest, `rest` on a map, and `faction`
-on the black market — are documented in the engine README.
+`default_background`, `default_difficulty` in the manifest, `rest` and `road_events` on a
+map, and `faction` on the black market — are documented in the engine README.
 
 ## Changes
 
@@ -49,5 +49,5 @@ on the black market — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.0.1` is the
-Yawning Portal demo 1.0.1.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.0.2` is the
+Yawning Portal demo 1.0.2.
