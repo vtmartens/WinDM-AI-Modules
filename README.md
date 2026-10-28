@@ -6,7 +6,7 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.0.0 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Yawning Portal Demo 1.0.1 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 
 ## Install
 
@@ -28,7 +28,21 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 `default_background`, `default_difficulty` in the manifest, `rest` on a map, and `faction`
 on the black market — are documented in the engine README.
 
+## Changes
+
+### 1.0.1
+
+- Doors connect the Trade Road → Broken Waystation → Underroad → Sealed Sanctum →
+  Runeheart Gate, so the Rune Trials are reachable in-world.
+- Nessa (Underroad) and Mirt's Factor (Market) are placed as smuggler contacts for the
+  black market.
+- Archive entries use forward-slash paths so non-Windows tools can read the zip.
+
+### 1.0.0
+
+- First module: the complete Yawning Portal demo campaign.
+
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.0.0` is the
-Yawning Portal demo 1.0.0.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.0.1` is the
+Yawning Portal demo 1.0.1.
