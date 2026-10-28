@@ -6,7 +6,7 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.0.1 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Yawning Portal Demo 1.0.2 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 
 ## Install
 
@@ -29,6 +29,11 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on the black market — are documented in the engine README.
 
 ## Changes
+
+### 1.0.2
+
+- The Trade Road map is flagged `road_events: true`, so the engine rolls the authored
+  road events when the party travels there.
 
 ### 1.0.1
 
