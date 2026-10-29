@@ -2,7 +2,7 @@
     "format_version":  1,
     "id":  "yawning_portal_demo",
     "name":  "The Yawning Portal Demo",
-    "version":  "1.1.0",
+    "version":  "1.1.1",
     "engine_version":  "1.0.0",
     "start_map":  "tavern",
     "description":  "A complete demo campaign built from the current DM-AI data set.",

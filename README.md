@@ -6,8 +6,8 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.0 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.1 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Yawning Portal Demo 1.1.1 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.2 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
 
 ## Install
 
@@ -49,6 +49,11 @@ README.
 
 ## Changes
 
+### The Sunken Bell 1.0.2
+
+- Authored `data/campaign/chapters.json` so the campaign panel uses the module's own
+  chapter order instead of the engine fallback.
+
 ### The Sunken Bell 1.0.1
 
 - Compatibility metadata for WinDM-AI 1.3.2: module-independent map loading, map-scoped
@@ -63,6 +68,12 @@ README.
 - New monsters, encounters, items and factions. The Bell Warden encounter is gated behind
   Mara's quest, so it cannot be fought before the quest is accepted.
 - Editable source tree and `sunken-bell/build.ps1`.
+
+### The Yawning Portal 1.1.1
+
+- Authored `data/landmarks/landmarks.json`: landmark titles, maps, statuses, details and
+  action availability now come from module data. Bespoke transitions still run through
+  the engine's landmark handlers.
 
 ### The Yawning Portal 1.1.0
 
@@ -99,5 +110,5 @@ README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.0` is the
-Yawning Portal demo 1.1.0, and `sunken-bell-v1.0.1` is The Sunken Bell 1.0.1.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.1` is the
+Yawning Portal demo 1.1.1, and `sunken-bell-v1.0.2` is The Sunken Bell 1.0.2.

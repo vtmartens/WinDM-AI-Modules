@@ -1,0 +1,89 @@
+[
+  {
+    "id": "waystation",
+    "title": "The Broken Waystation",
+    "map": "waystation",
+    "quest": "waystation_trouble",
+    "cleared_area": "waystation",
+    "kind": "area",
+    "status_active": "Occupied",
+    "status_cleared": "Cleared",
+    "detail": "Chapter: {chapter}.",
+    "detail_cleared": "Chapter: {chapter}.",
+    "actions": [
+      {"id": "bandits", "label": "Confront the bandits", "handler": "waystation_bandits", "hide_when_cleared": true},
+      {"id": "strongbox", "label": "Open the strongbox", "handler": "waystation_strongbox", "requires_cleared": true, "hide_when_reward": "waystation_chest"},
+      {"id": "campfire", "label": "Rest at the campfire", "handler": "waystation_campfire", "requires_cleared": true},
+      {"id": "descend", "label": "Descend into the Underroad", "handler": "waystation_descend", "requires_cleared": true},
+      {"id": "road", "label": "Return to the road", "handler": "waystation_road"}
+    ]
+  },
+  {
+    "id": "underroad",
+    "title": "The Underroad",
+    "map": "underroad",
+    "quest": "underroad_chapter",
+    "cleared_area": "underroad",
+    "kind": "area",
+    "status_active": "Smugglers active",
+    "status_cleared": "Cleared",
+    "detail": "Chapter: {chapter}.",
+    "detail_cleared": "Chapter: {chapter}.",
+    "actions": [
+      {"id": "bandits", "label": "Confront the smugglers", "handler": "underroad_bandits", "hide_when_cleared": true},
+      {"id": "cache", "label": "Open the smugglers' cache", "handler": "underroad_cache", "requires_cleared": true, "hide_when_reward": "underroad_cache"},
+      {"id": "sanctum", "label": "Enter the Sealed Sanctum", "handler": "underroad_sanctum", "requires_cleared": true, "requires_reward": "underroad_cache"},
+      {"id": "waystation", "label": "Return to the Waystation", "handler": "underroad_waystation"}
+    ]
+  },
+  {
+    "id": "sanctum",
+    "title": "The Sealed Sanctum",
+    "map": "sanctum",
+    "quest": "sanctum_chapter",
+    "cleared_area": "sanctum",
+    "kind": "area",
+    "status_active": "Warded",
+    "status_cleared": "Cleared",
+    "detail": "Rune Warden standing. Chapter: {chapter}.",
+    "detail_cleared": "Runeheart: {runeheart}. Chapter: {chapter}.",
+    "actions": [
+      {"id": "ward_amulet", "label": "Raise the Rune-Ward Amulet", "handler": "sanctum_ward_amulet", "requires_item": "Rune-Ward Amulet", "hide_when_ward": true},
+      {"id": "ward_force", "label": "Force through the ward (CON save 14)", "handler": "sanctum_ward_force", "hide_when_ward": true},
+      {"id": "warden", "label": "Confront the Rune Warden", "handler": "sanctum_warden", "requires_ward": true, "hide_when_cleared": true},
+      {"id": "vault_kept", "label": "Keep the Runeheart Amulet (+120 gold)", "handler": "vault_kept", "requires_cleared": true, "requires_ward": true, "requires_runeheart_vault": true},
+      {"id": "vault_mirt", "label": "Give it to Mirt (+12 Mirt's Network, +320 gold)", "handler": "vault_mirt", "requires_cleared": true, "requires_ward": true, "requires_runeheart_vault": true},
+      {"id": "vault_violet", "label": "Give it to Violet (+12 Violet's Watch, +220 gold)", "handler": "vault_violet", "requires_cleared": true, "requires_ward": true, "requires_runeheart_vault": true},
+      {"id": "gate", "label": "Enter the Runeheart Gate", "handler": "sanctum_gate", "requires_ward": true, "requires_vault": true},
+      {"id": "underroad", "label": "Return to the Underroad", "handler": "sanctum_underroad"}
+    ]
+  },
+  {
+    "id": "runeheart_gate",
+    "title": "The Runeheart Gate",
+    "map": "runeheart_gate",
+    "quest": "runeheart_gate",
+    "cleared_area": "runeheart_gate",
+    "kind": "area",
+    "status_active": "Sovereign waiting",
+    "status_cleared": "Sovereign defeated",
+    "detail": "Runeheart: {runeheart}.",
+    "detail_cleared": "Runeheart: {runeheart}."
+  },
+  {
+    "id": "rune_trials",
+    "title": "The Rune Trials",
+    "kind": "trials",
+    "status_active": "Best wave {trial_best}/{trial_waves}",
+    "status_cleared": "Best wave {trial_best}/{trial_waves}",
+    "detail": "{trial_runs} completed runs · {shards} shards."
+  },
+  {
+    "id": "forge",
+    "title": "The Rune Forge",
+    "kind": "forge",
+    "status_active": "{shards} shards · {gold} gold",
+    "status_cleared": "{shards} shards · {gold} gold",
+    "detail": "{recipes} recipes available · visit the market."
+  }
+]
