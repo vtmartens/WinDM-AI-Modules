@@ -11,12 +11,12 @@ format it loads.
 
 ## Install
 
-For The Yawning Portal, copy the archive to `%LOCALAPPDATA%\WinDM-AI\Modules\demo.zip`,
-then start WinDM-AI and choose **Load Demo Module**. Alternatively use **Open Module…** and
-pick the zip from anywhere.
+Use **Modules** in WinDM-AI to pick an installed or bundled archive. For The Yawning
+Portal, copy `yawning-portal/demo.zip` to `%LOCALAPPDATA%\WinDM-AI\Modules\demo.zip` if it
+is not already bundled; **Load Demo Module** remains available as a shortcut.
 
-The Sunken Bell is a separate module. Use **Open Module…** and select
-`sunken-bell/demo.zip` without replacing the demo module.
+The Sunken Bell is a separate module. Select `sunken-bell/demo.zip` from the module
+library, or copy it into the module folder and refresh the library.
 
 ## Building a module
 
