@@ -1,0 +1,65 @@
+{
+    "reef_scavengers":  {
+                            "title":  "Reef Scavengers",
+                            "description":  "Two scavengers straighten from the rocks, coral spears already levelled.",
+                            "difficulty":  "easy",
+                            "reward":  {
+                                           "gold":  20,
+                                           "experience":  60
+                                       },
+                            "enemies":  [
+                                            {
+                                                "monster_type":  "reef_scavenger",
+                                                "name":  "Reef Scavenger A"
+                                            },
+                                            {
+                                                "monster_type":  "reef_scavenger",
+                                                "name":  "Reef Scavenger B"
+                                            }
+                                        ]
+                        },
+    "drowned_sailors":  {
+                            "title":  "The Drowned Crew",
+                            "description":  "Two sailors in ruined oilskins turn from the black water, still trying to work a rope that is not there.",
+                            "difficulty":  "medium",
+                            "reward":  {
+                                           "gold":  25,
+                                           "experience":  80
+                                       },
+                            "enemies":  [
+                                            {
+                                                "monster_type":  "drowned_sailor",
+                                                "name":  "Drowned Sailor A"
+                                            },
+                                            {
+                                                "monster_type":  "drowned_sailor",
+                                                "name":  "Drowned Sailor B"
+                                            }
+                                        ]
+                        },
+    "bell_warden":  {
+                        "title":  "The Bell Warden",
+                        "description":  "The Bell Warden rises from the bell platform, its hammer ringing softly against the bronze. Two wights lift their own hammers in answer.",
+                        "difficulty":  "hard",
+                        "elite":  true,
+                        "requires_quest":  "silence_the_bell",
+                        "reward":  {
+                                       "gold":  120,
+                                       "experience":  450
+                                   },
+                        "enemies":  [
+                                        {
+                                            "monster_type":  "bell_warden",
+                                            "name":  "Bell Warden"
+                                        },
+                                        {
+                                            "monster_type":  "bell_wight",
+                                            "name":  "Bell Wight A"
+                                        },
+                                        {
+                                            "monster_type":  "bell_wight",
+                                            "name":  "Bell Wight B"
+                                        }
+                                    ]
+                    }
+}

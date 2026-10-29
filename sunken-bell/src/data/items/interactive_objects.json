@@ -1,0 +1,189 @@
+[
+    {
+        "name":  "hearth",
+        "type":  "interactive_object",
+        "description":  "A broad stone hearth, banked low against the sea wind.",
+        "state":  "lit",
+        "token":  "H",
+        "provides_cover":  true,
+        "state_descriptions":  {
+                                   "lit":  "A broad stone hearth, banked low against the sea wind.",
+                                   "doused":  "The hearth is cold and grey, its last coals long dead."
+                               },
+        "possible_states":  {
+                                "lit":  [
+                                            "doused"
+                                        ],
+                                "doused":  [
+                                               "lit"
+                                           ]
+                            }
+    },
+    {
+        "name":  "bar",
+        "type":  "interactive_object",
+        "description":  "A long counter of salt-bleached oak, scarred by generations of mugs.",
+        "state":  "open",
+        "token":  "B",
+        "provides_cover":  true
+    },
+    {
+        "name":  "notice board",
+        "type":  "interactive_object",
+        "description":  "A cork board crowded with tide tables, reward notices and names of the missing.",
+        "state":  "posted",
+        "token":  "N"
+    },
+    {
+        "name":  "wreck marker",
+        "type":  "interactive_object",
+        "description":  "A leaning post driven into the reef path, its painted warning faded by salt.",
+        "state":  "standing",
+        "token":  "W"
+    },
+    {
+        "name":  "salt shrine",
+        "type":  "interactive_object",
+        "description":  "A small shrine of stacked stones and dry seaweed, tended by someone who still believes.",
+        "state":  "quiet",
+        "token":  "S",
+        "magical":  true
+    },
+    {
+        "name":  "Waterlogged Chest",
+        "type":  "chest",
+        "description":  "A ship\u0027s chest half-buried in wet sand, its lid swollen shut.",
+        "state":  "closed",
+        "requires_key":  false,
+        "provides_cover":  true,
+        "token":  "C",
+        "content":  [
+                        {
+                            "name":  "Drowned Man\u0027s Log",
+                            "type":  "document",
+                            "value":  40,
+                            "description":  "A water-swollen ship log listing the crews lost when the bell first rang"
+                        },
+                        {
+                            "name":  "Light Healing Potion",
+                            "type":  "light_heal",
+                            "effect":  {
+                                           "light_heal":  5
+                                       },
+                            "value":  10,
+                            "description":  "A small healing potion"
+                        },
+                        {
+                            "name":  "Tide Key",
+                            "type":  "key",
+                            "effect":  {
+                                           "opens":  [
+                                                         "Barnacle Chest"
+                                                     ]
+                                       },
+                            "value":  1,
+                            "description":  "A coral-crusted key found in a drowned sailor\u0027s chest"
+                        }
+                    ]
+    },
+    {
+        "name":  "Barnacle Chest",
+        "type":  "chest",
+        "description":  "A squat chest crusted with barnacles, its lock green with corrosion.",
+        "state":  "closed",
+        "requires_key":  true,
+        "provides_cover":  true,
+        "token":  "C",
+        "content":  [
+                        {
+                            "name":  "Tide Charm",
+                            "type":  "accessory",
+                            "effect":  {
+                                           "defense":  1,
+                                           "wisdom":  1
+                                       },
+                            "value":  120,
+                            "rarity":  "rare",
+                            "description":  "A smooth green stone that stays cool even in the hottest room"
+                        },
+                        {
+                            "name":  "Greater Healing Potion",
+                            "type":  "grave_heal",
+                            "effect":  {
+                                           "grave_heal":  15
+                                       },
+                            "value":  40,
+                            "description":  "A potent potion that restores 15 hit points"
+                        }
+                    ]
+    },
+    {
+        "name":  "Drowned Idol",
+        "type":  "interactive_object",
+        "description":  "A squat idol of black coral, its face worn featureless by the tide.",
+        "state":  "dormant",
+        "token":  "I",
+        "magical":  true,
+        "provides_cover":  true
+    },
+    {
+        "name":  "Tide Trap",
+        "type":  "trap",
+        "description":  "A pressure plate hidden beneath a skin of wet sand.",
+        "state":  "active",
+        "damage":  6,
+        "saving_throw_difficulty":  12,
+        "saving_throw_ability":  "dexterity",
+        "hidden":  true,
+        "detection_dc":  13,
+        "disarm_dc":  13,
+        "disarm_skill":  "investigation",
+        "trigger_on_failure":  true,
+        "magical":  false,
+        "token":  "T"
+    },
+    {
+        "name":  "Bell Clapper Chest",
+        "type":  "chest",
+        "description":  "A bronze-bound chest on the bell platform, its lid worked with drowned faces.",
+        "state":  "closed",
+        "requires_key":  false,
+        "provides_cover":  true,
+        "token":  "C",
+        "content":  [
+                        {
+                            "name":  "Bell Clapper",
+                            "type":  "common",
+                            "value":  50,
+                            "description":  "The bronze clapper of the Sunken Bell, green with age and still humming faintly"
+                        },
+                        {
+                            "name":  "Greater Healing Potion",
+                            "type":  "grave_heal",
+                            "effect":  {
+                                           "grave_heal":  15
+                                       },
+                            "value":  40,
+                            "description":  "A potent potion that restores 15 hit points"
+                        }
+                    ]
+    },
+    {
+        "name":  "Sunken Bell",
+        "type":  "interactive_object",
+        "description":  "A massive bronze bell half-sunk into the chamber floor, its mouth full of black water.",
+        "state":  "silent",
+        "token":  "B",
+        "magical":  true,
+        "provides_cover":  true
+    },
+    {
+        "name":  "Coral Altar",
+        "type":  "interactive_object",
+        "description":  "An altar of white coral veined with something darker, worn smooth by kneeling hands.",
+        "state":  "cold",
+        "token":  "A",
+        "magical":  true,
+        "provides_cover":  true
+    }
+]

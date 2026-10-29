@@ -1,0 +1,715 @@
+{
+    "goblin":  {
+                   "name":  "goblin",
+                   "description":  "A small green humanoid with pointed ears and sharp teeth",
+                   "stats":  {
+                                 "hp":  10,
+                                 "strength":  8,
+                                 "dexterity":  14,
+                                 "attack_stat":  "dexterity",
+                                 "damage_bonus":  1,
+                                 "ac":  13,
+                                 "constitution":  10,
+                                 "intelligence":  6,
+                                 "wisdom":  8,
+                                 "charisma":  6
+                             },
+                   "weapons":  [
+                                   "Short Sword",
+                                   "Short Bow"
+                               ],
+                   "armor":  "Leather Armor",
+                   "gold":  15,
+                   "experience":  50,
+                   "token":  "G",
+                   "difficulty":  "easy",
+                   "abilities":  [
+                                     "poison_arrow"
+                                 ]
+               },
+    "goblin_hexer":  {
+                         "name":  "Goblin Hexer",
+                         "description":  "A goblin draped in bone charms, its eyes black with borrowed magic.",
+                         "stats":  {
+                                       "hp":  16,
+                                       "strength":  8,
+                                       "dexterity":  14,
+                                       "attack_stat":  "dexterity",
+                                       "damage_bonus":  1,
+                                       "ac":  13,
+                                       "constitution":  10,
+                                       "intelligence":  12,
+                                       "wisdom":  12,
+                                       "charisma":  12
+                                   },
+                         "weapons":  [
+                                         "Hexed Dagger"
+                                     ],
+                         "armor":  "Bone Charms",
+                         "gold":  25,
+                         "experience":  90,
+                         "token":  "h",
+                         "difficulty":  "medium",
+                         "elite":  true,
+                         "abilities":  [
+                                           "hex_bolt"
+                                       ]
+                     },
+    "orc":  {
+                "name":  "orc",
+                "description":  "A large brutish humanoid with protruding tusks and grayish-green skin",
+                "stats":  {
+                              "hp":  25,
+                              "strength":  16,
+                              "dexterity":  10,
+                              "damage_bonus":  1,
+                              "ac":  14,
+                              "constitution":  14,
+                              "intelligence":  7,
+                              "wisdom":  10,
+                              "charisma":  8
+                          },
+                "weapons":  [
+                                "Battle Axe",
+                                "Javelin"
+                            ],
+                "armor":  "Scale Armor",
+                "gold":  30,
+                "experience":  100,
+                "token":  "or",
+                "difficulty":  "medium",
+                "abilities":  [
+                                  "shield_bash"
+                              ]
+            },
+    "orc_berserker":  {
+                          "name":  "Orc Berserker",
+                          "description":  "A scarred orc carrying two axes and no visible intention of stopping.",
+                          "stats":  {
+                                        "hp":  32,
+                                        "strength":  17,
+                                        "dexterity":  12,
+                                        "damage_bonus":  3,
+                                        "ac":  14,
+                                        "constitution":  14,
+                                        "intelligence":  7,
+                                        "wisdom":  8,
+                                        "charisma":  8
+                                    },
+                          "weapons":  [
+                                          "Twin Axes",
+                                          "Javelin"
+                                      ],
+                          "armor":  "Scarred Hide",
+                          "gold":  40,
+                          "experience":  160,
+                          "token":  "B",
+                          "difficulty":  "hard",
+                          "elite":  true,
+                          "abilities":  [
+                                            "reckless_cleave"
+                                        ],
+                          "maneuvers":  [
+                                            "shove"
+                                        ],
+                          "maneuver_chance":  40
+                      },
+    "wolf":  {
+                 "name":  "Fierce Wolf",
+                 "description":  "A large wild wolf with yellow eyes and dark fur",
+                 "stats":  {
+                               "hp":  15,
+                               "strength":  12,
+                               "dexterity":  15,
+                               "attack_stat":  "dexterity",
+                               "damage_bonus":  1,
+                               "ac":  13,
+                               "constitution":  12,
+                               "intelligence":  3,
+                               "wisdom":  12,
+                               "charisma":  6
+                           },
+                 "weapons":  [
+                                 "Bite",
+                                 "Claws"
+                             ],
+                 "armor":  "Thick Fur",
+                 "gold":  5,
+                 "experience":  75,
+                 "token":  "L",
+                 "difficulty":  "easy",
+                 "abilities":  [
+                                   "savage_bite"
+                               ],
+                 "maneuvers":  [
+                                   "trip"
+                               ],
+                 "maneuver_chance":  45
+             },
+    "skeleton":  {
+                     "name":  "skeleton",
+                     "description":  "An undead warrior made of bones animated by dark magic",
+                     "stats":  {
+                                   "hp":  18,
+                                   "strength":  10,
+                                   "dexterity":  14,
+                                   "attack_stat":  "dexterity",
+                                   "damage_bonus":  1,
+                                   "ac":  13,
+                                   "constitution":  12,
+                                   "intelligence":  6,
+                                   "wisdom":  8,
+                                   "charisma":  5
+                               },
+                     "weapons":  [
+                                     "Long Sword",
+                                     "Long Bow"
+                                 ],
+                     "armor":  "Armor Remnants",
+                     "gold":  20,
+                     "experience":  90,
+                     "token":  "S",
+                     "difficulty":  "medium",
+                     "abilities":  [
+                                       "bone_volley"
+                                   ]
+                 },
+    "risen_champion":  {
+                           "name":  "Risen Champion",
+                           "description":  "A tall skeleton in rusted plate, its empty helm crowned with a broken sigil.",
+                           "stats":  {
+                                         "hp":  34,
+                                         "strength":  15,
+                                         "dexterity":  10,
+                                         "attack_stat":  "strength",
+                                         "damage_bonus":  2,
+                                         "ac":  15,
+                                         "constitution":  16,
+                                         "intelligence":  6,
+                                         "wisdom":  10,
+                                         "charisma":  12
+                                     },
+                           "weapons":  [
+                                           "Grave Blade",
+                                           "Shield"
+                                       ],
+                           "armor":  "Rusted Plate",
+                           "gold":  35,
+                           "experience":  150,
+                           "token":  "R",
+                           "difficulty":  "hard",
+                           "elite":  true,
+                           "abilities":  [
+                                             "grave_guard",
+                                             "bone_volley"
+                                         ],
+                           "maneuvers":  [
+                                             "shove"
+                                         ],
+                           "maneuver_chance":  35
+                       },
+    "troll":  {
+                  "name":  "troll",
+                  "description":  "A gigantic humanoid with wrinkled green skin and regenerative abilities",
+                  "stats":  {
+                                "hp":  40,
+                                "strength":  18,
+                                "dexterity":  12,
+                                "damage_bonus":  2,
+                                "ac":  14,
+                                "constitution":  20,
+                                "intelligence":  7,
+                                "wisdom":  8,
+                                "charisma":  7
+                            },
+                  "weapons":  [
+                                  "Claws",
+                                  "Bite"
+                              ],
+                  "armor":  "Tough Hide",
+                  "gold":  50,
+                  "experience":  200,
+                  "token":  "T",
+                  "difficulty":  "hard",
+                  "abilities":  [
+                                    "savage_bite"
+                                ]
+              },
+    "young_dragon":  {
+                         "name":  "Young Dragon",
+                         "description":  "A medium-sized dragon with gleaming red scales and menacing eyes",
+                         "stats":  {
+                                       "hp":  75,
+                                       "strength":  19,
+                                       "dexterity":  14,
+                                       "damage_bonus":  2,
+                                       "ac":  17,
+                                       "constitution":  17,
+                                       "intelligence":  14,
+                                       "wisdom":  12,
+                                       "charisma":  16
+                                   },
+                         "weapons":  [
+                                         "Fire Breath",
+                                         "Claws",
+                                         "Bite"
+                                     ],
+                         "armor":  "Thick Scales",
+                         "gold":  200,
+                         "experience":  500,
+                         "token":  "D",
+                         "difficulty":  "hard",
+                         "abilities":  [
+                                           "flame_breath"
+                                       ]
+                     },
+    "giant_spider":  {
+                         "name":  "Giant Spider",
+                         "description":  "A huge arachnid with hairy legs and venomous fangs",
+                         "stats":  {
+                                       "hp":  22,
+                                       "strength":  14,
+                                       "dexterity":  16,
+                                       "attack_stat":  "dexterity",
+                                       "damage_bonus":  1,
+                                       "ac":  14,
+                                       "constitution":  12,
+                                       "intelligence":  2,
+                                       "wisdom":  10,
+                                       "charisma":  4
+                                   },
+                         "weapons":  [
+                                         "Venomous Bite",
+                                         "Sticky Web"
+                                     ],
+                         "attack_effect":  {
+                                               "type":  "poison",
+                                               "damage":  2,
+                                               "turns":  3
+                                           },
+                         "armor":  "Exoskeleton",
+                         "gold":  25,
+                         "experience":  120,
+                         "token":  "R",
+                         "difficulty":  "medium",
+                         "abilities":  [
+                                           "web_shot"
+                                       ]
+                     },
+    "zombie":  {
+                   "name":  "zombie",
+                   "description":  "A reanimated corpse that advances slowly with a vacant stare",
+                   "stats":  {
+                                 "hp":  30,
+                                 "strength":  13,
+                                 "dexterity":  6,
+                                 "ac":  9,
+                                 "constitution":  16,
+                                 "intelligence":  3,
+                                 "wisdom":  6,
+                                 "charisma":  5
+                             },
+                   "weapons":  [
+                                   "Punch",
+                                   "Infected Bite"
+                               ],
+                   "armor":  "Tattered Clothes",
+                   "gold":  10,
+                   "experience":  80,
+                   "token":  "Z",
+                   "difficulty":  "medium"
+               },
+    "bandit":  {
+                   "name":  "Waystation Bandit",
+                   "description":  "A road bandit in a patched cloak, blade bared.",
+                   "stats":  {
+                                 "hp":  14,
+                                 "strength":  12,
+                                 "dexterity":  14,
+                                 "attack_stat":  "dexterity",
+                                 "damage_bonus":  1,
+                                 "ac":  13,
+                                 "constitution":  12,
+                                 "intelligence":  8,
+                                 "wisdom":  8,
+                                 "charisma":  8
+                             },
+                   "weapons":  [
+                                   "Short Sword"
+                               ],
+                   "armor":  "Leather Armor",
+                   "gold":  10,
+                   "experience":  60,
+                   "token":  "b",
+                   "difficulty":  "easy",
+                   "abilities":  [
+                                     "cheap_shot",
+                                     "blinding_powder"
+                                 ],
+                   "maneuvers":  [
+                                     "shove"
+                                 ],
+                   "maneuver_chance":  35
+               },
+    "bandit_chief":  {
+                         "name":  "Waystation Chief",
+                         "description":  "A scarred bandit leader holding the old waystation with an iron grip.",
+                         "stats":  {
+                                       "hp":  45,
+                                       "strength":  16,
+                                       "dexterity":  12,
+                                       "damage_bonus":  2,
+                                       "ac":  15,
+                                       "constitution":  14,
+                                       "intelligence":  10,
+                                       "wisdom":  10,
+                                       "charisma":  12
+                                   },
+                         "weapons":  [
+                                         "Long Sword"
+                                     ],
+                         "armor":  "Chainmail",
+                         "gold":  40,
+                         "experience":  250,
+                         "token":  "C",
+                         "difficulty":  "hard",
+                         "abilities":  [
+                                           "shield_bash"
+                                       ],
+                         "maneuvers":  [
+                                           "shove"
+                                       ],
+                         "maneuver_chance":  40
+                     },
+    "smuggler":  {
+                     "name":  "Underroad Smuggler",
+                     "description":  "A tunnel runner in a dark hood, knife in hand.",
+                     "stats":  {
+                                   "hp":  18,
+                                   "strength":  12,
+                                   "dexterity":  14,
+                                   "attack_stat":  "dexterity",
+                                   "damage_bonus":  1,
+                                   "ac":  14,
+                                   "constitution":  12,
+                                   "intelligence":  10,
+                                   "wisdom":  8,
+                                   "charisma":  8
+                               },
+                     "weapons":  [
+                                     "Short Sword"
+                                 ],
+                     "armor":  "Leather Armor",
+                     "gold":  15,
+                     "experience":  80,
+                     "token":  "s",
+                     "difficulty":  "medium",
+                     "abilities":  [
+                                       "cheap_shot"
+                                   ],
+                     "maneuvers":  [
+                                       "shove"
+                                   ],
+                     "maneuver_chance":  30
+                 },
+    "smuggler_enforcer":  {
+                              "name":  "Smuggler Enforcer",
+                              "description":  "A broad-shouldered tunnel bruiser in studded leather, cudgel in one hand and a knife in the other.",
+                              "stats":  {
+                                            "hp":  30,
+                                            "strength":  15,
+                                            "dexterity":  14,
+                                            "attack_stat":  "dexterity",
+                                            "damage_bonus":  2,
+                                            "ac":  15,
+                                            "constitution":  14,
+                                            "intelligence":  10,
+                                            "wisdom":  10,
+                                            "charisma":  10
+                                        },
+                              "weapons":  [
+                                              "Heavy Cudgel",
+                                              "Knife"
+                                          ],
+                              "armor":  "Studded Leather",
+                              "gold":  35,
+                              "experience":  130,
+                              "token":  "E",
+                              "difficulty":  "medium",
+                              "elite":  true,
+                              "abilities":  [
+                                                "dirty_trick",
+                                                "shield_bash"
+                                            ],
+                              "maneuvers":  [
+                                                "shove"
+                                            ],
+                              "maneuver_chance":  40
+                          },
+    "smuggler_lord":  {
+                          "name":  "Smuggler Lord",
+                          "description":  "A velvet-voiced crime lord who runs the Underroad from the shadows.",
+                          "stats":  {
+                                        "hp":  55,
+                                        "strength":  16,
+                                        "dexterity":  14,
+                                        "attack_stat":  "dexterity",
+                                        "damage_bonus":  2,
+                                        "ac":  16,
+                                        "constitution":  14,
+                                        "intelligence":  12,
+                                        "wisdom":  10,
+                                        "charisma":  14
+                                    },
+                          "weapons":  [
+                                          "Long Sword"
+                                      ],
+                          "armor":  "Shadow Cloak",
+                          "gold":  60,
+                          "experience":  300,
+                          "token":  "L",
+                          "difficulty":  "hard",
+                          "abilities":  [
+                                            "silver_tongue",
+                                            "dirty_trick"
+                                        ],
+                          "maneuvers":  [
+                                            "shove"
+                                        ],
+                          "maneuver_chance":  35
+                      },
+    "rune_sentinel":  {
+                          "name":  "Rune Sentinel",
+                          "description":  "A faceless stone guardian animated by a burning rune core.",
+                          "stats":  {
+                                        "hp":  26,
+                                        "strength":  14,
+                                        "dexterity":  10,
+                                        "attack_stat":  "strength",
+                                        "damage_bonus":  1,
+                                        "ac":  15,
+                                        "constitution":  14,
+                                        "intelligence":  8,
+                                        "wisdom":  10,
+                                        "charisma":  6
+                                    },
+                          "weapons":  [
+                                          "Rune Spear"
+                                      ],
+                          "armor":  "Runic Shell",
+                          "gold":  20,
+                          "experience":  90,
+                          "token":  "r",
+                          "difficulty":  "medium",
+                          "abilities":  [
+                                            "rune_lash"
+                                        ],
+                          "maneuvers":  [
+                                            "shove"
+                                        ],
+                          "maneuver_chance":  30
+                      },
+    "rune_warden":  {
+                        "name":  "Rune Warden",
+                        "description":  "A towering construct of black stone and burning runes, the heart of the sealed sanctum.",
+                        "stats":  {
+                                      "hp":  85,
+                                      "strength":  16,
+                                      "dexterity":  12,
+                                      "attack_stat":  "intelligence",
+                                      "damage_bonus":  3,
+                                      "ac":  18,
+                                      "constitution":  18,
+                                      "intelligence":  18,
+                                      "wisdom":  16,
+                                      "charisma":  12
+                                  },
+                        "weapons":  [
+                                        "Rune Blade",
+                                        "Force Pulse"
+                                    ],
+                        "armor":  "Runic Plate",
+                        "gold":  100,
+                        "experience":  500,
+                        "token":  "W",
+                        "difficulty":  "hard",
+                        "abilities":  [
+                                          "rune_pulse",
+                                          "warding_light",
+                                          "gravity_well"
+                                      ],
+                        "maneuvers":  [
+                                          "trip",
+                                          "shove"
+                                      ],
+                        "maneuver_chance":  55
+                    },
+    "runeheart_echo":  {
+                           "name":  "Runeheart Echo",
+                           "description":  "A flickering afterimage of the Rune Warden, its rune core cracked and burning white.",
+                           "stats":  {
+                                         "hp":  15,
+                                         "strength":  12,
+                                         "dexterity":  14,
+                                         "attack_stat":  "intelligence",
+                                         "damage_bonus":  1,
+                                         "ac":  14,
+                                         "constitution":  10,
+                                         "intelligence":  14,
+                                         "wisdom":  12,
+                                         "charisma":  8
+                                     },
+                           "weapons":  [
+                                           "Echo Blade"
+                                       ],
+                           "armor":  "Rune Afterimage",
+                           "gold":  15,
+                           "experience":  60,
+                           "token":  "e",
+                           "difficulty":  "medium",
+                           "elite":  true,
+                           "abilities":  [
+                                             "rune_lash"
+                                         ]
+                       },
+    "runeheart_sovereign":  {
+                                "name":  "Runeheart Sovereign",
+                                "description":  "A towering figure of white-hot rune-stone, its heart-shaped core bound in black chains.",
+                                "stats":  {
+                                              "hp":  70,
+                                              "strength":  16,
+                                              "dexterity":  12,
+                                              "attack_stat":  "intelligence",
+                                              "damage_bonus":  3,
+                                              "ac":  17,
+                                              "constitution":  16,
+                                              "intelligence":  18,
+                                              "wisdom":  16,
+                                              "charisma":  14
+                                          },
+                                "weapons":  [
+                                                "Heartblade",
+                                                "Force Pulse"
+                                            ],
+                                "armor":  "Runic Crown",
+                                "gold":  250,
+                                "experience":  700,
+                                "token":  "H",
+                                "difficulty":  "hard",
+                                "elite":  true,
+                                "abilities":  [
+                                                  "rune_pulse",
+                                                  "warding_light",
+                                                  "gravity_well",
+                                                  "heart_seal"
+                                              ],
+                                "maneuvers":  [
+                                                  "trip",
+                                                  "shove"
+                                              ],
+                                "maneuver_chance":  45
+                            },
+    "drowned_sailor":  {
+                           "name":  "Drowned Sailor",
+                           "description":  "A bloated figure in a ruined oilskin, still trying to work a rope that is no longer there.",
+                           "stats":  {
+                                         "hp":  14,
+                                         "strength":  12,
+                                         "dexterity":  12,
+                                         "constitution":  12,
+                                         "intelligence":  6,
+                                         "wisdom":  8,
+                                         "charisma":  6,
+                                         "ac":  12,
+                                         "attack_stat":  "strength",
+                                         "damage_bonus":  1
+                                     },
+                           "weapons":  [
+                                           "Sailor\u0027s Cutlass"
+                                       ],
+                           "armor":  "",
+                           "gold":  8,
+                           "experience":  30,
+                           "token":  "d",
+                           "abilities":  [
+                                             "drowning_grasp"
+                                         ]
+                       },
+    "reef_scavenger":  {
+                           "name":  "Reef Scavenger",
+                           "description":  "A hunched figure in a patchwork coat, prying at the rocks with a coral-tipped spear.",
+                           "stats":  {
+                                         "hp":  12,
+                                         "strength":  11,
+                                         "dexterity":  14,
+                                         "constitution":  11,
+                                         "intelligence":  8,
+                                         "wisdom":  9,
+                                         "charisma":  7,
+                                         "ac":  12,
+                                         "attack_stat":  "dexterity",
+                                         "damage_bonus":  1
+                                     },
+                           "weapons":  [
+                                           "Coral Spear"
+                                       ],
+                           "armor":  "Waxed Coat",
+                           "gold":  10,
+                           "experience":  35,
+                           "token":  "s"
+                       },
+    "bell_wight":  {
+                       "name":  "Bell Wight",
+                       "description":  "A grey shape in a drowned chapel robe, its hands wrapped around a cracked bell hammer.",
+                       "stats":  {
+                                     "hp":  18,
+                                     "strength":  12,
+                                     "dexterity":  13,
+                                     "constitution":  12,
+                                     "intelligence":  8,
+                                     "wisdom":  10,
+                                     "charisma":  6,
+                                     "ac":  13,
+                                     "attack_stat":  "strength",
+                                     "damage_bonus":  2
+                                 },
+                       "weapons":  [
+                                       "Bell Hammer"
+                                   ],
+                       "armor":  "",
+                       "gold":  16,
+                       "experience":  70,
+                       "token":  "w",
+                       "abilities":  [
+                                         "bell_toll"
+                                     ]
+                   },
+    "bell_warden":  {
+                        "name":  "Bell Warden",
+                        "description":  "A towering figure in green-bronze plate, its helm shaped like the mouth of a bell. Every step it takes rings softly.",
+                        "stats":  {
+                                      "hp":  62,
+                                      "strength":  18,
+                                      "dexterity":  10,
+                                      "constitution":  16,
+                                      "intelligence":  10,
+                                      "wisdom":  12,
+                                      "charisma":  8,
+                                      "ac":  15,
+                                      "attack_stat":  "strength",
+                                      "damage_bonus":  3
+                                  },
+                        "weapons":  [
+                                        "Tideforged Maul"
+                                    ],
+                        "armor":  "Scale Armor",
+                        "gold":  160,
+                        "experience":  500,
+                        "token":  "B",
+                        "elite":  true,
+                        "abilities":  [
+                                          "bell_toll",
+                                          "drowning_grasp"
+                                      ]
+                    }
+}

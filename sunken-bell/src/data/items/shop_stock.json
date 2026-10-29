@@ -1,0 +1,24 @@
+{
+    "Weapons":  [
+                    "Sailor\u0027s Cutlass",
+                    "Bell Iron Sword",
+                    "Short Sword",
+                    "Long Sword"
+                ],
+    "Armor":  [
+                  "Waxed Coat",
+                  "Leather Armor",
+                  "Reef Leathers"
+              ],
+    "Accessories":  [
+                        "Tide Charm",
+                        "Tidebound Ring",
+                        "Wooden Shield"
+                    ],
+    "Potions":  [
+                    "Light Healing Potion",
+                    "Healing Potion",
+                    "Salt Poultice",
+                    "Antidote"
+                ]
+}

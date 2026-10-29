@@ -1,0 +1,30 @@
+{
+    "lantern_watch":  {
+                          "name":  "The Lantern Watch",
+                          "description":  "The village watch and the families who keep the reef lights burning.",
+                          "shop_discount":  {
+                                                "friendly":  5,
+                                                "trusted":  10,
+                                                "allied":  15
+                                            },
+                          "quest_bonus":  {
+                                              "friendly":  5,
+                                              "trusted":  10,
+                                              "allied":  15
+                                          }
+                      },
+    "reef_salvagers":  {
+                           "name":  "Reef Salvagers",
+                           "description":  "The divers, smiths and wreckers who make their living from what the sea gives back.",
+                           "shop_discount":  {
+                                                 "friendly":  5,
+                                                 "trusted":  10,
+                                                 "allied":  15
+                                             },
+                           "quest_bonus":  {
+                                               "friendly":  5,
+                                               "trusted":  10,
+                                               "allied":  15
+                                           }
+                       }
+}

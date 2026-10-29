@@ -1,0 +1,41 @@
+{
+    "lantern_inn":  [
+                        {
+                            "name":  "Keeper Mara",
+                            "position":  [
+                                             6,
+                                             5
+                                         ]
+                        },
+                        {
+                            "name":  "Smith Halla",
+                            "position":  [
+                                             12,
+                                             7
+                                         ]
+                        },
+                        {
+                            "name":  "Archivist Orin",
+                            "position":  [
+                                             14,
+                                             5
+                                         ]
+                        },
+                        {
+                            "name":  "Old Renn",
+                            "position":  [
+                                             9,
+                                             9
+                                         ]
+                        }
+                    ],
+    "reef_path":  [
+
+                  ],
+    "tide_cave":  [
+
+                  ],
+    "bell_chamber":  [
+
+                     ]
+}

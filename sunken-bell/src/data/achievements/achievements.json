@@ -1,0 +1,74 @@
+[
+    {
+        "id":  "first_step",
+        "name":  "First Step",
+        "description":  "Move for the first time",
+        "icon":  "achievement_movement.png",
+        "difficulty":  "easy",
+        "score":  5,
+        "condition":  {
+                          "type":  "movement",
+                          "value":  1
+                      }
+    },
+    {
+        "id":  "first_blood",
+        "name":  "First Blood",
+        "description":  "Win your first fight",
+        "icon":  "achievement_combat.png",
+        "difficulty":  "easy",
+        "score":  10,
+        "condition":  {
+                          "type":  "combat_victory",
+                          "value":  1
+                      }
+    },
+    {
+        "id":  "bell_silenced",
+        "name":  "Bell Silenced",
+        "description":  "End the Bell Warden",
+        "icon":  "achievement_quest.png",
+        "difficulty":  "hard",
+        "score":  25,
+        "condition":  {
+                          "type":  "quest_completed",
+                          "value":  "silence_the_bell"
+                      }
+    },
+    {
+        "id":  "drowned_names",
+        "name":  "Drowned Names",
+        "description":  "Return the last ship\u0027s log to Orin",
+        "icon":  "achievement_quest.png",
+        "difficulty":  "medium",
+        "score":  15,
+        "condition":  {
+                          "type":  "quest_completed",
+                          "value":  "drowned_names"
+                      }
+    },
+    {
+        "id":  "salt_and_iron",
+        "name":  "Salt and Iron",
+        "description":  "Bring Halla the bell clapper",
+        "icon":  "achievement_quest.png",
+        "difficulty":  "medium",
+        "score":  15,
+        "condition":  {
+                          "type":  "quest_completed",
+                          "value":  "salt_and_iron"
+                      }
+    },
+    {
+        "id":  "reef_explorer",
+        "name":  "Reef Explorer",
+        "description":  "Visit every part of the Lantern Reef",
+        "icon":  "achievement_map.png",
+        "difficulty":  "hard",
+        "score":  30,
+        "condition":  {
+                          "type":  "areas_visited",
+                          "value":  "all"
+                      }
+    }
+]

@@ -1,0 +1,112 @@
+{
+    "Keeper Mara":  {
+                        "name":  "Keeper Mara",
+                        "description":  "A broad-shouldered innkeeper with storm-grey hair and a lantern tattoo on one wrist.",
+                        "profession":  "Innkeeper",
+                        "level":  5,
+                        "hp":  30,
+                        "hp_max":  30,
+                        "strength_base":  14,
+                        "dexterity_base":  12,
+                        "constitution_base":  15,
+                        "intelligence_base":  13,
+                        "wisdom_base":  14,
+                        "charisma_base":  15,
+                        "token":  "M",
+                        "gold":  120,
+                        "friendly":  true,
+                        "inventory":  [
+                                          {
+                                              "name":  "dagger",
+                                              "type":  "weapon",
+                                              "effect":  {
+                                                             "strength":  2
+                                                         },
+                                              "value":  10,
+                                              "description":  "A small dagger for personal defense"
+                                          },
+                                          {
+                                              "name":  "Healing Potion",
+                                              "type":  "heal",
+                                              "effect":  {
+                                                             "heal":  10
+                                                         },
+                                              "value":  25,
+                                              "description":  "A potion that restores 10 hit points"
+                                          }
+                                      ]
+                    },
+    "Smith Halla":  {
+                        "name":  "Smith Halla",
+                        "description":  "A compact smith with burn-scarred arms and a hammer never far from her hand.",
+                        "profession":  "Blacksmith",
+                        "level":  4,
+                        "hp":  28,
+                        "hp_max":  28,
+                        "strength_base":  17,
+                        "dexterity_base":  11,
+                        "constitution_base":  15,
+                        "intelligence_base":  11,
+                        "wisdom_base":  12,
+                        "charisma_base":  12,
+                        "token":  "H",
+                        "gold":  260,
+                        "friendly":  true,
+                        "inventory":  [
+                                          {
+                                              "name":  "Blacksmith\u0027s Hammer",
+                                              "type":  "weapon",
+                                              "effect":  {
+                                                             "strength":  4
+                                                         },
+                                              "value":  20,
+                                              "description":  "A heavy work hammer that can also be used as a weapon"
+                                          }
+                                      ]
+                    },
+    "Archivist Orin":  {
+                           "name":  "Archivist Orin",
+                           "description":  "A narrow, ink-stained scholar who keeps the village records in a chest by the fire.",
+                           "profession":  "Sage",
+                           "level":  4,
+                           "hp":  22,
+                           "hp_max":  22,
+                           "strength_base":  9,
+                           "dexterity_base":  12,
+                           "constitution_base":  11,
+                           "intelligence_base":  17,
+                           "wisdom_base":  15,
+                           "charisma_base":  12,
+                           "token":  "O",
+                           "gold":  90,
+                           "friendly":  true,
+                           "inventory":  [
+                                             {
+                                                 "name":  "Sage\u0027s Notebook",
+                                                 "type":  "document",
+                                                 "value":  25,
+                                                 "description":  "A narrow notebook of rune sketches, old family names and half-finished theories"
+                                             }
+                                         ]
+                       },
+    "Old Renn":  {
+                     "name":  "Old Renn",
+                     "description":  "A weathered fisherman with a missing finger and a talent for being exactly where the tide leaves him.",
+                     "profession":  "Fisherman",
+                     "level":  3,
+                     "hp":  18,
+                     "hp_max":  18,
+                     "strength_base":  12,
+                     "dexterity_base":  13,
+                     "constitution_base":  12,
+                     "intelligence_base":  11,
+                     "wisdom_base":  14,
+                     "charisma_base":  11,
+                     "token":  "R",
+                     "gold":  20,
+                     "friendly":  true,
+                     "inventory":  [
+
+                                   ]
+                 }
+}

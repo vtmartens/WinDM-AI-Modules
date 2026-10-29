@@ -1,0 +1,94 @@
+{
+    "lantern_inn":  [
+                        {
+                            "name":  "hearth",
+                            "position":  [
+                                             4,
+                                             3
+                                         ]
+                        },
+                        {
+                            "name":  "bar",
+                            "position":  [
+                                             8,
+                                             3
+                                         ]
+                        },
+                        {
+                            "name":  "notice board",
+                            "position":  [
+                                             15,
+                                             3
+                                         ]
+                        }
+                    ],
+    "reef_path":  [
+                      {
+                          "name":  "wreck marker",
+                          "position":  [
+                                           12,
+                                           6
+                                       ]
+                      },
+                      {
+                          "name":  "salt shrine",
+                          "position":  [
+                                           18,
+                                           4
+                                       ]
+                      }
+                  ],
+    "tide_cave":  [
+                      {
+                          "name":  "Waterlogged Chest",
+                          "position":  [
+                                           6,
+                                           9
+                                       ]
+                      },
+                      {
+                          "name":  "Barnacle Chest",
+                          "position":  [
+                                           16,
+                                           10
+                                       ]
+                      },
+                      {
+                          "name":  "Drowned Idol",
+                          "position":  [
+                                           11,
+                                           4
+                                       ]
+                      },
+                      {
+                          "name":  "Tide Trap",
+                          "position":  [
+                                           9,
+                                           6
+                                       ]
+                      }
+                  ],
+    "bell_chamber":  [
+                         {
+                             "name":  "Bell Clapper Chest",
+                             "position":  [
+                                              12,
+                                              9
+                                          ]
+                         },
+                         {
+                             "name":  "Sunken Bell",
+                             "position":  [
+                                              8,
+                                              3
+                                          ]
+                         },
+                         {
+                             "name":  "Coral Altar",
+                             "position":  [
+                                              12,
+                                              4
+                                          ]
+                         }
+                     ]
+}

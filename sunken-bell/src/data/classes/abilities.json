@@ -1,0 +1,330 @@
+{
+  "Powerful Blow": {
+    "id": "powerful_blow",
+    "class": "fighter",
+    "description": "A committed strike that adds 5 damage to your attack.",
+    "mana_cost": 0,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "bonus": 5
+    }
+  },
+  "Parry": {
+    "id": "parry",
+    "class": "fighter",
+    "description": "Brace behind your weapon and reduce the next incoming attack by 5.",
+    "mana_cost": 0,
+    "combat_only": true,
+    "effect": {
+      "type": "guard",
+      "amount": 5
+    }
+  },
+  "Magic Missile": {
+    "id": "magic_missile",
+    "class": "wizard",
+    "description": "Unerring arcane force deals 8 damage to your opponent, ignoring armor.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "ignore_defense": true,
+    "effect": {
+      "type": "damage",
+      "flat": 8
+    }
+  },
+  "Mage Shield": {
+    "id": "mage_shield",
+    "class": "wizard",
+    "description": "A shimmering ward absorbs up to 6 damage.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "shield",
+      "amount": 6
+    }
+  },
+  "Sneak Attack": {
+    "id": "sneak_attack",
+    "class": "rogue",
+    "description": "Strike a weak point for double your normal damage.",
+    "mana_cost": 2,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "multiplier": 2
+    }
+  },
+  "Evade": {
+    "id": "evade",
+    "class": "rogue",
+    "description": "Slip aside and avoid the next enemy attack entirely.",
+    "mana_cost": 2,
+    "combat_only": true,
+    "effect": {
+      "type": "evade"
+    }
+  },
+  "Cure Wounds": {
+    "id": "cure_wounds",
+    "class": "cleric",
+    "description": "Channel divine power to recover 8 hit points.",
+    "mana_cost": 4,
+    "combat_only": false,
+    "effect": {
+      "type": "heal",
+      "amount": 8
+    }
+  },
+  "Blessing": {
+    "id": "blessing",
+    "class": "cleric",
+    "description": "A brief blessing adds 2 to your next damage and wards off 2 damage from the next attack.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 2,
+      "defense": 2
+    }
+  },
+  "Fierce Attack": {
+    "id": "fierce_attack",
+    "class": "fighter",
+    "description": "A powerful level-3 strike that adds 8 damage.",
+    "mana_cost": 0,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "bonus": 8
+    }
+  },
+  "Multiattack": {
+    "id": "multiattack",
+    "class": "fighter",
+    "description": "A level-5 flurry that deals double your normal damage.",
+    "mana_cost": 0,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "multiplier": 2
+    }
+  },
+  "Weapon Mastery": {
+    "id": "weapon_mastery",
+    "class": "fighter",
+    "description": "Level-7 mastery adds 3 damage and wards off 3 damage on the next exchange.",
+    "mana_cost": 0,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 3,
+      "defense": 3
+    }
+  },
+  "Fireball": {
+    "id": "fireball",
+    "class": "wizard",
+    "description": "A level-3 burst of flame deals 12 damage.",
+    "mana_cost": 8,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 12
+    }
+  },
+  "Lightning Bolt": {
+    "id": "lightning_bolt",
+    "class": "wizard",
+    "description": "A level-5 bolt deals 15 damage.",
+    "mana_cost": 10,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 15
+    }
+  },
+  "Teleport": {
+    "id": "teleport",
+    "class": "wizard",
+    "description": "A level-7 blink avoids the next enemy attack.",
+    "mana_cost": 8,
+    "combat_only": true,
+    "effect": {
+      "type": "evade"
+    }
+  },
+  "Backstab": {
+    "id": "backstab",
+    "class": "rogue",
+    "description": "A level-3 strike for triple your normal damage.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "multiplier": 3
+    }
+  },
+  "Evasion": {
+    "id": "evasion",
+    "class": "rogue",
+    "description": "Level-5 footwork reduces the next incoming attack by 8.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "guard",
+      "amount": 8
+    }
+  },
+  "Poison Mastery": {
+    "id": "poison_mastery",
+    "class": "rogue",
+    "description": "A level-7 venomous strike deals 9 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 9
+    }
+  },
+  "Remove Curse": {
+    "id": "remove_curse",
+    "class": "cleric",
+    "description": "Level-3 divine light restores 5 hit points.",
+    "mana_cost": 4,
+    "combat_only": false,
+    "effect": {
+      "type": "heal",
+      "amount": 5
+    }
+  },
+  "Restoration": {
+    "id": "restoration",
+    "class": "cleric",
+    "description": "Level-5 restoration recovers 20 hit points.",
+    "mana_cost": 6,
+    "combat_only": false,
+    "effect": {
+      "type": "heal",
+      "amount": 20
+    }
+  },
+  "Divine Armor": {
+    "id": "divine_armor",
+    "class": "cleric",
+    "description": "Level-7 holy armor absorbs up to 10 damage.",
+    "mana_cost": 7,
+    "combat_only": true,
+    "effect": {
+      "type": "shield",
+      "amount": 10
+    }
+  },
+  "Knock": {
+    "id": "knock",
+    "class": "wizard",
+    "description": "Open a locked door or chest within two steps without needing its key.",
+    "mana_cost": 5,
+    "combat_only": false,
+    "effect": {
+      "type": "knock"
+    }
+  },
+  "Mage Hand": {
+    "id": "mage_hand",
+    "class": "rogue",
+    "description": "A spectral hand operates a door, chest or lever within two steps.",
+    "mana_cost": 2,
+    "combat_only": false,
+    "effect": {
+      "type": "mage_hand"
+    }
+  },
+  "Guidance": {
+    "id": "guidance",
+    "class": "cleric",
+    "description": "Divine insight adds 2 to your next ability check.",
+    "mana_cost": 2,
+    "combat_only": false,
+    "effect": {
+      "type": "guidance",
+      "bonus": 2
+    }
+  },
+  "Last Stand": {
+    "id": "last_stand",
+    "class": "fighter",
+    "description": "A level-10 capstone: plant your feet and turn the next exchange in your favor. Adds 5 damage and prevents 5 damage.",
+    "mana_cost": 0,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 5,
+      "defense": 5
+    }
+  },
+  "Meteor Swarm": {
+    "id": "meteor_swarm",
+    "class": "wizard",
+    "description": "A level-10 capstone: call down a storm of falling stars for 30 damage that ignores armor.",
+    "mana_cost": 18,
+    "combat_only": true,
+    "ignore_defense": true,
+    "effect": {
+      "type": "damage",
+      "flat": 30
+    }
+  },
+  "Assassinate": {
+    "id": "assassinate",
+    "class": "rogue",
+    "description": "A level-10 capstone: strike a lethal opening for four times your normal damage.",
+    "mana_cost": 8,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "multiplier": 4
+    }
+  },
+  "Divine Intervention": {
+    "id": "divine_intervention",
+    "class": "cleric",
+    "description": "A level-10 capstone: a miracle of light restores 40 hit points.",
+    "mana_cost": 12,
+    "combat_only": false,
+    "effect": {
+      "type": "heal",
+      "amount": 40
+    }
+  },
+  "Detect Magic": {
+    "id": "detect_magic",
+    "class": "wizard",
+    "description": "Sense magical auras nearby, revealing hidden magical traps and objects.",
+    "mana_cost": 3,
+    "combat_only": false,
+    "effect": {
+      "type": "detect_magic"
+    }
+  },
+  "Disguise Self": {
+    "id": "disguise_self",
+    "class": "rogue",
+    "description": "Wear an illusory face and manner. Gain advantage on Stealth until you rest, and a one-use bluff in conversation.",
+    "mana_cost": 4,
+    "combat_only": false,
+    "effect": {
+      "type": "disguise_self"
+    }
+  },
+  "Comprehend Languages": {
+    "id": "comprehend_languages",
+    "class": "cleric",
+    "description": "Read ancient script and inscriptions without a check.",
+    "mana_cost": 3,
+    "combat_only": false,
+    "effect": {
+      "type": "comprehend_languages"
+    }
+  }
+}

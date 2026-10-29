@@ -1,0 +1,18 @@
+{
+    "lantern_inn":  {
+                        "title":  "The Lantern and Anchor",
+                        "description":  "Rain hammers the windows of the Lantern and Anchor. A low fire fights the sea damp, and the smell of chowder and wet wool fills the room."
+                    },
+    "reef_path":  {
+                      "title":  "The Lantern Reef",
+                      "description":  "The reef path runs east between black rocks and grey water. A leaning warning post points toward the tide caves, and the sea never quite stops moving."
+                  },
+    "tide_cave":  {
+                      "title":  "The Tide Caves",
+                      "description":  "Cold water laps at the cave floor. Old ropes and broken crates mark the high-tide line, and something pale moves just beyond the lantern light."
+                  },
+    "bell_chamber":  {
+                         "title":  "The Sunken Bell",
+                         "description":  "A drowned chapel opens around a massive bronze bell. The air tastes of salt and old iron, and the bell is humming even though it has not been struck."
+                     }
+}

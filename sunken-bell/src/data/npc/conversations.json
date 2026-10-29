@@ -1,0 +1,415 @@
+{
+    "Keeper Mara":  {
+                        "start":  {
+                                      "text":  "Mara looks up from a pot of chowder. \u0027You came in with the storm. Good. The bell under the reef has been ringing all night, and the drowned are walking the tide caves. I need someone with a blade and a reason.\u0027",
+                                      "options":  [
+                                                      [
+                                                          "Tell me about the bell.",
+                                                          "bell_offer",
+                                                          {
+                                                              "quest":  "silence_the_bell",
+                                                              "status":  "not_started"
+                                                          }
+                                                      ],
+                                                      [
+                                                          "About the bell beneath the reef...",
+                                                          "bell_reminder",
+                                                          {
+                                                              "quest":  "silence_the_bell",
+                                                              "status":  "active"
+                                                          }
+                                                      ],
+                                                      [
+                                                          "The Bell Warden is dead.",
+                                                          "bell_turn_in",
+                                                          {
+                                                              "quest":  "silence_the_bell",
+                                                              "status":  "ready"
+                                                          }
+                                                      ],
+                                                      [
+                                                          "What happens now?",
+                                                          "bell_done",
+                                                          {
+                                                              "quest":  "silence_the_bell",
+                                                              "status":  "completed"
+                                                          }
+                                                      ],
+                                                      [
+                                                          "Who are you?",
+                                                          "mara_info"
+                                                      ],
+                                                      [
+                                                          "I will take a room.",
+                                                          "mara_room"
+                                                      ],
+                                                      [
+                                                          "Farewell.",
+                                                          null
+                                                      ]
+                                                  ]
+                                  },
+                        "mara_info":  {
+                                          "text":  "I keep the Lantern and Anchor. My family has kept it since the first bell was hung. The village pays me in fish and gossip; the Watch pays me in nothing at all. The bell has rung three nights running, and every night the tide leaves something new on the reef.",
+                                          "options":  [
+                                                          [
+                                                              "Tell me about the bell.",
+                                                              "bell_offer",
+                                                              {
+                                                                  "quest":  "silence_the_bell",
+                                                                  "status":  "not_started"
+                                                              }
+                                                          ],
+                                                          [
+                                                              "Farewell.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                        "mara_room":  {
+                                          "text":  "Mara slides a key across the bar. \u0027The room is yours. Rest while the tide is out; the cave is a different place when it comes back in.\u0027",
+                                          "options":  [
+                                                          [
+                                                              "Thank you.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                        "bell_offer":  {
+                                           "text":  "The bell rings from the drowned chapel under the reef. The Bell Warden went down with it and never came up. Break the Warden and the bell will go quiet. The tide caves are east along the reef path; the bell chamber is beyond them.",
+                                           "options":  [
+                                                           [
+                                                               "I will silence the bell.",
+                                                               "bell_accept"
+                                                           ],
+                                                           [
+                                                               "Not now.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                        "bell_accept":  {
+                                            "text":  "Take the reef path east. The tide caves are wet and full of the drowned; the bell chamber is past them. The Watch will pay, and so will I.",
+                                            "effect":  {
+                                                           "type":  "start_quest",
+                                                           "quest":  "silence_the_bell"
+                                                       },
+                                            "options":  [
+                                                            [
+                                                                "I will return when it is done.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                        "bell_reminder":  {
+                                              "text":  "East along the reef path, through the tide caves, then down into the bell chamber. The Warden is the thing that keeps the bell ringing. End it.",
+                                              "options":  [
+                                                              [
+                                                                  "I am on my way.",
+                                                                  null
+                                                              ]
+                                                          ]
+                                          },
+                        "bell_turn_in":  {
+                                             "text":  "Mara listens without interrupting, then sets down her ladle. \u0027The bell is quiet. The village will sleep tonight.\u0027 She presses a heavy iron seal into your hand.",
+                                             "effect":  {
+                                                            "type":  "complete_quest",
+                                                            "quest":  "silence_the_bell"
+                                                        },
+                                             "options":  [
+                                                             [
+                                                                 "See that they sleep.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                        "bell_done":  {
+                                          "text":  "The Lantern and Anchor is louder than it has been in weeks. Mara pours you a cup without being asked. \u0027The reef is still dangerous,\u0027 she says, \u0027but it is ours again.\u0027",
+                                          "options":  [
+                                                          [
+                                                              "Good.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      }
+                    },
+    "Smith Halla":  {
+                        "start":  {
+                                      "text":  "Halla turns a length of green-bronze in the firelight. \u0027You are the one going down to the bell. Good. I can arm you, and I have a use for you if you are willing.\u0027",
+                                      "options":  [
+                                                      [
+                                                          "What do you sell?",
+                                                          "halla_shop"
+                                                      ],
+                                                      [
+                                                          "What do you need?",
+                                                          "clapper_offer",
+                                                          {
+                                                              "quest":  "salt_and_iron",
+                                                              "status":  "not_started"
+                                                          }
+                                                      ],
+                                                      [
+                                                          "About the bell clapper...",
+                                                          "clapper_reminder",
+                                                          {
+                                                              "quest":  "salt_and_iron",
+                                                              "status":  "active"
+                                                          }
+                                                      ],
+                                                      [
+                                                          "I found the clapper.",
+                                                          "clapper_turn_in",
+                                                          {
+                                                              "quest":  "salt_and_iron",
+                                                              "status":  "ready"
+                                                          }
+                                                      ],
+                                                      [
+                                                          "What will you make with it?",
+                                                          "clapper_done",
+                                                          {
+                                                              "quest":  "salt_and_iron",
+                                                              "status":  "completed"
+                                                          }
+                                                      ],
+                                                      [
+                                                          "Farewell.",
+                                                          null
+                                                      ]
+                                                  ]
+                                  },
+                        "halla_shop":  {
+                                           "text":  "Steel, oilskin and a few pieces that came up from the reef. Nothing pretty, but it will keep the salt out and the blood in.",
+                                           "options":  [
+                                                           [
+                                                               "I will look at your stock.",
+                                                               null
+                                                           ],
+                                                           [
+                                                               "Farewell.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                        "clapper_offer":  {
+                                              "text":  "The bell\u0027s clapper is bronze, old bronze, and it is still down there in the bell chamber. Bring it to me and I can forge a blade that will not break on the Warden\u0027s hide. There is a chest on the bell platform.",
+                                              "options":  [
+                                                              [
+                                                                  "I will bring you the clapper.",
+                                                                  "clapper_accept"
+                                                              ],
+                                                              [
+                                                                  "Not now.",
+                                                                  null
+                                                              ]
+                                                          ]
+                                          },
+                        "clapper_accept":  {
+                                               "text":  "Mind the Warden. If the bell rings while you are in the chamber, do not stand still.",
+                                               "effect":  {
+                                                              "type":  "start_quest",
+                                                              "quest":  "salt_and_iron"
+                                                          },
+                                               "options":  [
+                                                               [
+                                                                   "I will return with it.",
+                                                                   null
+                                                               ]
+                                                           ]
+                                           },
+                        "clapper_reminder":  {
+                                                 "text":  "The clapper is in the bronze-bound chest on the bell platform. The Warden will not give it up quietly.",
+                                                 "options":  [
+                                                                 [
+                                                                     "I am on my way.",
+                                                                     null
+                                                                 ]
+                                                             ]
+                                             },
+                        "clapper_turn_in":  {
+                                                "text":  "Halla weighs the clapper in one hand, then nods. \u0027Good bronze. Better than the story made it.\u0027 She sets a dark iron blade on the counter. \u0027This will hold.\u0027",
+                                                "effect":  {
+                                                               "type":  "complete_quest",
+                                                               "quest":  "salt_and_iron"
+                                                           },
+                                                "options":  [
+                                                                [
+                                                                    "A fair trade.",
+                                                                    null
+                                                                ]
+                                                            ]
+                                            },
+                        "clapper_done":  {
+                                             "text":  "Halla is already shaping the bronze. \u0027The blade will be ready for the next fool who goes below. Try not to be that fool twice.\u0027",
+                                             "options":  [
+                                                             [
+                                                                 "Until then.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         }
+                    },
+    "Archivist Orin":  {
+                           "start":  {
+                                         "text":  "Orin looks up from a ledger with a sigh. \u0027Another one going down to the bell. If you find a ship\u0027s log in the tide caves, bring it to me. The drowned deserve their names written down.\u0027",
+                                         "options":  [
+                                                         [
+                                                             "Tell me about the drowned.",
+                                                             "orin_info"
+                                                         ],
+                                                         [
+                                                             "About the ship\u0027s log...",
+                                                             "log_offer",
+                                                             {
+                                                                 "quest":  "drowned_names",
+                                                                 "status":  "not_started"
+                                                             }
+                                                         ],
+                                                         [
+                                                             "About the drowned names...",
+                                                             "log_reminder",
+                                                             {
+                                                                 "quest":  "drowned_names",
+                                                                 "status":  "active"
+                                                             }
+                                                         ],
+                                                         [
+                                                             "I found the drowned man\u0027s log.",
+                                                             "log_turn_in",
+                                                             {
+                                                                 "quest":  "drowned_names",
+                                                                 "status":  "ready"
+                                                             }
+                                                         ],
+                                                         [
+                                                             "What did the log say?",
+                                                             "log_done",
+                                                             {
+                                                                 "quest":  "drowned_names",
+                                                                 "status":  "completed"
+                                                             }
+                                                         ],
+                                                         [
+                                                             "Farewell.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                           "orin_info":  {
+                                             "text":  "The bell took three crews the first winter. The village stopped writing their names because the bell kept calling them back. I write them anyway. A name is not a door; it does not open just because someone knocks.",
+                                             "options":  [
+                                                             [
+                                                                 "About the ship\u0027s log...",
+                                                                 "log_offer",
+                                                                 {
+                                                                     "quest":  "drowned_names",
+                                                                     "status":  "not_started"
+                                                                 }
+                                                             ],
+                                                             [
+                                                                 "Farewell.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                           "log_offer":  {
+                                             "text":  "A ship\u0027s log went down with the last crew. It should be in a chest in the tide caves, near the drowned idol. Bring it back and I will make sure the names are entered.",
+                                             "options":  [
+                                                             [
+                                                                 "I will find the log.",
+                                                                 "log_accept"
+                                                             ],
+                                                             [
+                                                                 "Not now.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                           "log_accept":  {
+                                              "text":  "The tide caves are east. The chest is half-buried near the idol. Mind the water; it comes back faster than it looks.",
+                                              "effect":  {
+                                                             "type":  "start_quest",
+                                                             "quest":  "drowned_names"
+                                                         },
+                                              "options":  [
+                                                              [
+                                                                  "I will return with it.",
+                                                                  null
+                                                              ]
+                                                          ]
+                                          },
+                           "log_reminder":  {
+                                                "text":  "The log is in a waterlogged chest in the tide caves, near the drowned idol. Bring it to me and the names will be entered.",
+                                                "options":  [
+                                                                [
+                                                                    "I am on my way.",
+                                                                    null
+                                                                ]
+                                                            ]
+                                            },
+                           "log_turn_in":  {
+                                               "text":  "Orin reads the log slowly, mouthing the names. \u0027Three crews. Twenty-two names. The Watch will say they were lost, but they were kept.\u0027 He hands you a green-glass lens.",
+                                               "effect":  {
+                                                              "type":  "complete_quest",
+                                                              "quest":  "drowned_names"
+                                                          },
+                                               "options":  [
+                                                               [
+                                                                   "Write them down.",
+                                                                   null
+                                                               ]
+                                                           ]
+                                           },
+                           "log_done":  {
+                                            "text":  "The names are entered in Orin\u0027s ledger in careful black ink. \u0027The bell is quiet,\u0027 he says. \u0027The names are not. That is the difference.\u0027",
+                                            "options":  [
+                                                            [
+                                                                "Good.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        }
+                       },
+    "Old Renn":  {
+                     "start":  {
+                                   "text":  "Renn does not look up from the net in his lap. \u0027You are going to the bell. Everyone goes to the bell. Some come back.\u0027",
+                                   "options":  [
+                                                   [
+                                                       "What is the Sunken Bell?",
+                                                       "renn_bell"
+                                                   ],
+                                                   [
+                                                       "What lives in the tide caves?",
+                                                       "renn_cave"
+                                                   ],
+                                                   [
+                                                       "Farewell.",
+                                                       null
+                                                   ]
+                                               ]
+                               },
+                     "renn_bell":  {
+                                       "text":  "A bell that was hung to warn ships off the reef. Then the chapel sank, and the bell kept ringing. The Warden was the one who stayed to keep it quiet. Now it is the one keeping it loud.",
+                                       "options":  [
+                                                       [
+                                                           "What lives in the tide caves?",
+                                                           "renn_cave"
+                                                       ],
+                                                       [
+                                                           "Farewell.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   },
+                     "renn_cave":  {
+                                       "text":  "Drowned sailors, mostly. They do not hate you. They just do not know they are dead. The Warden knows. That is worse.",
+                                       "options":  [
+                                                       [
+                                                           "I will be careful.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   }
+                 }
+}

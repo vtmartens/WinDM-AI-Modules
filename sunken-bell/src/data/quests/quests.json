@@ -1,0 +1,50 @@
+{
+    "silence_the_bell":  {
+                             "title":  "The Bell Below",
+                             "description":  "A drowned bell has rung for three nights beneath the Lantern Reef, and the dead are walking the tide caves. Keeper Mara wants the Bell Warden ended before the village loses the reef.",
+                             "objective":  "Defeat the Bell Warden in the bell chamber beneath the tide caves.",
+                             "target":  "Bell Warden",
+                             "turn_in":  "Keeper Mara",
+                             "faction":  "lantern_watch",
+                             "reputation":  6,
+                             "reward":  {
+                                            "gold":  150,
+                                            "experience":  400,
+                                            "items":  [
+                                                          "Bell Warden\u0027s Seal"
+                                                      ]
+                                        }
+                         },
+    "drowned_names":  {
+                          "title":  "The Drowned Names",
+                          "description":  "Archivist Orin is still entering the names of the crews lost when the bell first rang. The last ship\u0027s log is somewhere in the tide caves.",
+                          "objective":  "Recover the Drowned Man\u0027s Log from the tide caves and return it to Orin.",
+                          "target_item":  "Drowned Man\u0027s Log",
+                          "turn_in":  "Archivist Orin",
+                          "faction":  "lantern_watch",
+                          "reputation":  3,
+                          "reward":  {
+                                         "gold":  80,
+                                         "experience":  150,
+                                         "items":  [
+                                                       "Tideglass Lens"
+                                                   ]
+                                     }
+                      },
+    "salt_and_iron":  {
+                          "title":  "Salt and Iron",
+                          "description":  "Smith Halla wants the bronze clapper from the Sunken Bell, enough old metal to forge a blade that will hold against the Warden.",
+                          "objective":  "Recover the Bell Clapper from the bell chamber and return it to Halla.",
+                          "target_item":  "Bell Clapper",
+                          "turn_in":  "Smith Halla",
+                          "faction":  "reef_salvagers",
+                          "reputation":  3,
+                          "reward":  {
+                                         "gold":  100,
+                                         "experience":  200,
+                                         "items":  [
+                                                       "Bell Iron Sword"
+                                                   ]
+                                     }
+                      }
+}

@@ -7,25 +7,30 @@ format it loads.
 | Module | Id | Engine | File |
 |---|---|---|---|
 | The Yawning Portal Demo 1.1.0 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.0 | `sunken_bell_demo` | 1.3.1 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
 
 ## Install
 
-Copy the archive to `%LOCALAPPDATA%\WinDM-AI\Modules\demo.zip`, then start WinDM-AI and
-choose **Load Demo Module**. Alternatively use **Open Module…** and pick the zip from
-anywhere.
+For The Yawning Portal, copy the archive to `%LOCALAPPDATA%\WinDM-AI\Modules\demo.zip`,
+then start WinDM-AI and choose **Load Demo Module**. Alternatively use **Open Module…** and
+pick the zip from anywhere.
+
+The Sunken Bell is a separate module. Use **Open Module…** and select
+`sunken-bell/demo.zip` without replacing the demo module.
 
 ## Building a module
 
-The Yawning Portal source lives in `yawning-portal/src/` (manifest plus the `data/`
-tree). Rebuild the archive with:
+Each module's source lives in its `src/` directory (manifest plus the `data/` tree).
+Rebuild an archive with its build script:
 
 ```powershell
 .\yawning-portal\build.ps1
+.\sunken-bell\build.ps1
 ```
 
-The script writes `yawning-portal/demo.zip` with forward-slash archive paths, so the
-module is readable by non-Windows tools. It requires Windows PowerShell 5.1 or later and
-does not need the engine repository.
+The scripts write `demo.zip` beside each source tree with forward-slash archive paths, so
+the modules are readable by non-Windows tools. They require Windows PowerShell 5.1 or later
+and do not need the engine repository.
 
 ## Module format
 
@@ -44,7 +49,17 @@ README.
 
 ## Changes
 
-### 1.1.0
+### The Sunken Bell 1.0.0
+
+- New four-map module: the Lantern and Anchor inn, the reef path, the tide caves and the
+  drowned bell chamber.
+- Three quests: Mara's **The Bell Below**, Orin's **The Drowned Names** and Halla's
+  **Salt and Iron**.
+- New monsters, encounters, items and factions. The Bell Warden encounter is gated behind
+  Mara's quest, so it cannot be fought before the quest is accepted.
+- Editable source tree and `sunken-bell/build.ps1`.
+
+### The Yawning Portal 1.1.0
 
 - The Broken Waystation now has a survivor, Tamsin, and a burnt caravan wagon. Her
   **Caravan Waybill** quest sends you into the wagon with a key she provides.
@@ -73,11 +88,11 @@ README.
   black market.
 - Archive entries use forward-slash paths so non-Windows tools can read the zip.
 
-### 1.0.0
+### Yawning Portal 1.0.0
 
 - First module: the complete Yawning Portal demo campaign.
 
 ## Versioning
 
 Module versions follow `manifest.json`. Tags in this repository match: `v1.1.0` is the
-Yawning Portal demo 1.1.0.
+Yawning Portal demo 1.1.0, and `sunken-bell-v1.0.0` is The Sunken Bell 1.0.0.
