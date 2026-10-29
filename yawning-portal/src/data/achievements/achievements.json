@@ -1,0 +1,291 @@
+[
+  {
+    "id": "first_step",
+    "name": "First Step",
+    "description": "Move for the first time",
+    "icon": "achievement_movement.png",
+    "difficulty": "easy",
+    "score": 5,
+    "condition": {
+      "type": "movement",
+      "value": 1
+    }
+  },
+  {
+    "id": "first_blood",
+    "name": "First Blood",
+    "description": "Win your first fight",
+    "icon": "achievement_combat.png",
+    "difficulty": "easy",
+    "score": 10,
+    "condition": {
+      "type": "combat_victory",
+      "value": 1
+    }
+  },
+  {
+    "id": "collector",
+    "name": "Collector",
+    "description": "Collect 20 different items",
+    "icon": "achievement_items.png",
+    "difficulty": "medium",
+    "score": 20,
+    "condition": {
+      "type": "unique_items_collected",
+      "value": 20
+    }
+  },
+  {
+    "id": "explorer",
+    "name": "Explorer",
+    "description": "Visit every area of the map",
+    "icon": "achievement_map.png",
+    "difficulty": "hard",
+    "score": 50,
+    "condition": {
+      "type": "areas_visited",
+      "value": "all"
+    }
+  },
+  {
+    "id": "weapon_master",
+    "name": "Weapon Master",
+    "description": "Equip a legendary weapon",
+    "icon": "achievement_equipment.png",
+    "difficulty": "hard",
+    "score": 30,
+    "condition": {
+      "type": "equip_item",
+      "rarity": "legendary",
+      "category": "weapon"
+    }
+  },
+  {
+    "id": "filthy_rich",
+    "name": "Filthy Rich",
+    "description": "Accumulate 1000 gold coins",
+    "icon": "achievement_gold.png",
+    "difficulty": "medium",
+    "score": 25,
+    "condition": {
+      "type": "coins",
+      "value": 1000
+    }
+  },
+  {
+    "id": "invincible",
+    "name": "Invincible",
+    "description": "Win 10 fights without taking damage",
+    "icon": "achievement_defense.png",
+    "difficulty": "hard",
+    "score": 40,
+    "condition": {
+      "type": "combat_without_damage",
+      "value": 10
+    }
+  },
+  {
+    "id": "diplomacy",
+    "name": "Diplomat",
+    "description": "Complete a quest without fighting",
+    "icon": "achievement_dialogue.png",
+    "difficulty": "medium",
+    "score": 20,
+    "condition": {
+      "type": "quest_without_combat",
+      "value": 1
+    }
+  },
+  {
+    "id": "contractor",
+    "name": "Contractor",
+    "description": "Claim 3 bounty contracts at the tavern board",
+    "icon": "achievement_gold.png",
+    "difficulty": "medium",
+    "score": 20,
+    "condition": {
+      "type": "bounty_claimed",
+      "value": 3
+    }
+  },
+  {
+    "id": "roadwarden",
+    "name": "Roadwarden",
+    "description": "Win 5 encounters along the Trade Road",
+    "icon": "achievement_map.png",
+    "difficulty": "medium",
+    "score": 25,
+    "condition": {
+      "type": "road_victory",
+      "value": 5
+    }
+  },
+  {
+    "id": "waystation_liberator",
+    "name": "Waystation Liberator",
+    "description": "Clear the Broken Waystation",
+    "icon": "achievement_combat.png",
+    "difficulty": "medium",
+    "score": 20,
+    "condition": {
+      "type": "area_cleared",
+      "value": "waystation"
+    }
+  },
+  {
+    "id": "well_equipped",
+    "name": "Well Equipped",
+    "description": "Buy 3 pieces of equipment from the market",
+    "icon": "achievement_equipment.png",
+    "difficulty": "easy",
+    "score": 10,
+    "condition": {
+      "type": "equipment_bought",
+      "value": 3
+    }
+  },
+  {
+    "id": "back_on_your_feet",
+    "name": "Back on Your Feet",
+    "description": "Recover from a defeat and return to the tavern",
+    "icon": "achievement_defense.png",
+    "difficulty": "easy",
+    "score": 10,
+    "condition": {
+      "type": "defeats",
+      "value": 1
+    }
+  },
+  {
+    "id": "vaultbreaker",
+    "name": "Vaultbreaker",
+    "description": "Defeat the Iron Sentinel in the Sealed Vault",
+    "icon": "achievement_combat.png",
+    "difficulty": "hard",
+    "score": 30,
+    "condition": {
+      "type": "defeat_enemy",
+      "value": "Iron Sentinel"
+    }
+  },
+  {
+    "id": "underroad_delver",
+    "name": "Underroad Delver",
+    "description": "Clear the Underroad beneath the Broken Waystation",
+    "icon": "achievement_map.png",
+    "difficulty": "hard",
+    "score": 30,
+    "condition": {
+      "type": "area_cleared",
+      "value": "underroad"
+    }
+  },
+  {
+    "id": "sanctum_breaker",
+    "name": "Sanctum Breaker",
+    "description": "Defeat the Rune Warden and clear the Sealed Sanctum",
+    "icon": "achievement_combat.png",
+    "difficulty": "hard",
+    "score": 50,
+    "condition": {
+      "type": "area_cleared",
+      "value": "sanctum"
+    }
+  },
+  {
+    "id": "rune_trials_adept",
+    "name": "Rune Trials Adept",
+    "description": "Reach the third wave of the Rune Trials",
+    "icon": "achievement_combat.png",
+    "difficulty": "hard",
+    "score": 30,
+    "condition": {
+      "type": "rune_trials_best",
+      "value": 3
+    }
+  },
+  {
+    "id": "rune_trials_champion",
+    "name": "Rune Trials Champion",
+    "description": "Complete all five waves of the Rune Trials",
+    "icon": "achievement_combat.png",
+    "difficulty": "hard",
+    "score": 50,
+    "condition": {
+      "type": "rune_trials_runs",
+      "value": 1
+    }
+  },
+  {
+    "id": "legend",
+    "name": "Legend",
+    "description": "Reach level 10 and unlock your class capstone",
+    "icon": "achievement_combat.png",
+    "difficulty": "hard",
+    "score": 75,
+    "condition": {
+      "type": "level",
+      "value": 10
+    }
+  },
+  {
+    "id": "cyclebreaker",
+    "name": "Cyclebreaker",
+    "description": "Begin a second cycle with your achievements and standing intact",
+    "icon": "achievement_map.png",
+    "difficulty": "hard",
+    "score": 50,
+    "condition": {
+      "type": "cycle",
+      "value": 2
+    }
+  },
+  {
+    "id": "watch_whistleblower",
+    "name": "Watch Whistleblower",
+    "description": "Expose Watch Sergeant Vell's corruption",
+    "icon": "achievement_dialogue.png",
+    "difficulty": "medium",
+    "score": 30,
+    "condition": {
+      "type": "quest_completed",
+      "value": "watchman_ledger"
+    }
+  },
+  {
+    "id": "silent_partner",
+    "name": "The Silent Partner",
+    "description": "Resolve Mirt's investigation into Gundren's cursed relics",
+    "icon": "achievement_gold.png",
+    "difficulty": "medium",
+    "score": 30,
+    "condition": {
+      "type": "quest_completed",
+      "value": "silent_partner"
+    }
+  },
+  {
+    "id": "quiet_cargo",
+    "name": "The Quiet Cargo",
+    "description": "Recover the Underroad's impounded medicine wagon manifest",
+    "icon": "achievement_map.png",
+    "difficulty": "medium",
+    "score": 30,
+    "condition": {
+      "type": "quest_completed",
+      "value": "quiet_cargo"
+    }
+  },
+  {
+    "id": "heart_of_the_gate",
+    "name": "Heart of the Gate",
+    "description": "Descend through the Runeheart Gate and defeat the Runeheart Sovereign",
+    "icon": "achievement_combat.png",
+    "difficulty": "hard",
+    "score": 75,
+    "condition": {
+      "type": "area_cleared",
+      "value": "runeheart_gate"
+    }
+  }
+] 

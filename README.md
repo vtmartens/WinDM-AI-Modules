@@ -6,13 +6,26 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.0.3 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Yawning Portal Demo 1.1.0 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 
 ## Install
 
 Copy the archive to `%LOCALAPPDATA%\WinDM-AI\Modules\demo.zip`, then start WinDM-AI and
 choose **Load Demo Module**. Alternatively use **Open Module…** and pick the zip from
 anywhere.
+
+## Building a module
+
+The Yawning Portal source lives in `yawning-portal/src/` (manifest plus the `data/`
+tree). Rebuild the archive with:
+
+```powershell
+.\yawning-portal\build.ps1
+```
+
+The script writes `yawning-portal/demo.zip` with forward-slash archive paths, so the
+module is readable by non-Windows tools. It requires Windows PowerShell 5.1 or later and
+does not need the engine repository.
 
 ## Module format
 
@@ -30,6 +43,17 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 README.
 
 ## Changes
+
+### 1.1.0
+
+- The Broken Waystation now has a survivor, Tamsin, and a burnt caravan wagon. Her
+  **Caravan Waybill** quest sends you into the wagon with a key she provides.
+- The Underroad has a hidden runner's stash and smuggler route marks to search out.
+- The Sealed Sanctum has a Rune Archive, a broken ward stone and the Warden's Reliquary.
+- Elminster offers **The Warden's Chronicle** after the sanctum chapter, opening the
+  reliquary with his seal and paying out a sage's reward.
+- The source tree and `yawning-portal/build.ps1` are now included, so content changes are
+  reviewable and the archive can be rebuilt reproducibly.
 
 ### 1.0.3
 
@@ -55,5 +79,5 @@ README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.0.3` is the
-Yawning Portal demo 1.0.3.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.0` is the
+Yawning Portal demo 1.1.0.

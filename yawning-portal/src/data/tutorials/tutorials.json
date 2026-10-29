@@ -1,0 +1,40 @@
+{
+  "general": {
+    "title": "Game Guide",
+    "steps": [
+      {"id": 1, "title": "movement", "content": "Use the north, south, east, west commands to move around"},
+      {"id": 2, "title": "combat", "content": "During a fight you can attack, defend, or use items"},
+      {"id": 3, "title": "Interacting", "content": "Use 'examine', 'talk', 'pick_up' to interact with the environment"},
+      {"id": 4, "title": "inventory", "content": "Check your inventory to manage items and equipment"}
+    ]
+  },
+  "combat": {
+    "title": "Combat Guide",
+    "steps": [
+      {"id": 1, "title": "Starting a Fight", "content": "Fights begin when you encounter an enemy or attack someone"},
+      {"id": 2, "title": "Turns", "content": "Combat unfolds in turns, in which you choose an action"},
+      {"id": 3, "title": "attack", "content": "A basic attack uses your equipped weapon against an enemy"},
+      {"id": 4, "title": "defense", "content": "Defending reduces the damage you take on the next turn"},
+      {"id": 5, "title": "items", "content": "You can use potions or other items during combat"},
+      {"id": 6, "title": "Abilities", "content": "Special abilities depend on your class and consume mana"}
+    ]
+  },
+  "inventory": {
+    "title": "Inventory Guide",
+    "steps": [
+      {"id": 1, "title": "Picking Up Items", "content": "Use 'pick_up [item]' to add an item to your inventory"},
+      {"id": 2, "title": "Equipping", "content": "Use 'equip [item]' to wear or wield an item"},
+      {"id": 3, "title": "Using Items", "content": "Use 'use [item]' to consume or activate an item"},
+      {"id": 4, "title": "Examining", "content": "Use 'examine [item]' to get details about an item"}
+    ]
+  },
+  "dialogue": {
+    "title": "Dialogue Guide",
+    "steps": [
+      {"id": 1, "title": "Talking to NPCs", "content": "Use 'talk [NPC name]' to start a conversation"},
+      {"id": 2, "title": "Dialogue Options", "content": "Select the numbered options to reply during conversations"},
+      {"id": 3, "title": "Trade", "content": "Some NPCs offer options to buy or sell items"},
+      {"id": 4, "title": "quests", "content": "By talking to NPCs you can receive quests to complete"}
+    ]
+  }
+} 

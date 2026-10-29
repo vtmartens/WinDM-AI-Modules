@@ -1,0 +1,930 @@
+[
+    {
+        "name":  "Treasure Chest",
+        "type":  "chest",
+        "description":  "A large wooden chest with metal reinforcements",
+        "state":  "closed",
+        "requires_key":  true,
+        "token":  "C",
+        "provides_cover":  true,
+        "content":  [
+                        {
+                            "name":  "Golden Ring",
+                            "type":  "accessory",
+                            "effect":  {
+                                           "charisma":  1
+                                       },
+                            "value":  30,
+                            "description":  "A precious gold ring"
+                        },
+                        {
+                            "name":  "Healing Potion",
+                            "type":  "heal",
+                            "effect":  {
+                                           "heal":  10
+                                       },
+                            "value":  25,
+                            "description":  "A potion that restores 10 hit points"
+                        }
+                    ]
+    },
+    {
+        "name":  "Hidden Chest",
+        "type":  "chest",
+        "description":  "A small chest hidden under some wooden planks",
+        "state":  "closed",
+        "requires_key":  false,
+        "token":  "C",
+        "provides_cover":  true,
+        "content":  [
+                        {
+                            "name":  "Cellar Key",
+                            "type":  "key",
+                            "effect":  {
+                                           "opens":  [
+                                                         "Cellar Door",
+                                                         "Secret Door"
+                                                     ]
+                                       },
+                            "value":  10,
+                            "description":  "An old key that opens the cellar door"
+                        }
+                    ]
+    },
+    {
+        "name":  "Secret Door",
+        "type":  "door",
+        "description":  "A hidden door behind a shelf",
+        "state":  "closed",
+        "requires_key":  true,
+        "position":  "tavern",
+        "destination_position":  "cellar",
+        "token":  "X"
+    },
+    {
+        "name":  "Market Door",
+        "type":  "door",
+        "description":  "A solid wooden door that leads to the market",
+        "state":  "closed",
+        "requires_key":  false,
+        "position":  "tavern",
+        "destination_position":  "market",
+        "token":  "X"
+    },
+    {
+        "name":  "Wall Lever",
+        "type":  "lever",
+        "description":  "A metal lever set into the wall",
+        "state":  "deactivated",
+        "token":  "L"
+    },
+    {
+        "name":  "Spike Trap",
+        "type":  "trap",
+        "description":  "Spikes hidden in the floor",
+        "state":  "active",
+        "damage":  8,
+        "saving_throw_difficulty":  12,
+        "saving_throw_ability":  "dexterity",
+        "hidden":  true,
+        "detection_dc":  13,
+        "disarm_dc":  13,
+        "disarm_skill":  "investigation",
+        "trigger_on_failure":  true,
+        "magical":  true,
+        "token":  "T"
+    },
+    {
+        "name":  "Pit Trap",
+        "type":  "trap",
+        "description":  "A hidden pit that opens beneath your feet",
+        "state":  "active",
+        "damage":  5,
+        "saving_throw_difficulty":  10,
+        "saving_throw_ability":  "dexterity",
+        "hidden":  true,
+        "detection_dc":  12,
+        "disarm_dc":  12,
+        "disarm_skill":  "investigation",
+        "trigger_on_failure":  false,
+        "magical":  true,
+        "token":  "T"
+    },
+    {
+        "name":  "Magic Altar",
+        "type":  "interactive_object",
+        "description":  "An ancient altar with mysterious symbols",
+        "state":  "inactive",
+        "token":  "A",
+        "provides_cover":  true,
+        "magical":  true,
+        "state_descriptions":  {
+                                   "inactive":  "An ancient altar with mysterious symbols that seem dormant",
+                                   "active":  "The altar emits an intense blue light and the symbols glow",
+                                   "examined":  "You notice that the altar bears runes forming an ancient spell"
+                               },
+        "possible_states":  {
+                                "inactive":  [
+                                                 "examined",
+                                                 "active"
+                                             ],
+                                "examined":  [
+                                                 "active"
+                                             ],
+                                "active":  [
+                                               "inactive"
+                                           ]
+                            },
+        "required_abilities":  {
+                                   "perception":  "examined",
+                                   "arcana":  "active"
+                               },
+        "ability_difficulty":  {
+                                   "perception":  12,
+                                   "arcana":  15
+                               },
+        "interaction_messages":  {
+                                     "perception":  "Studying the altar closely, you notice hidden carvings",
+                                     "arcana":  "Using your arcane knowledge, you activate the altar\u0027s ancient power"
+                                 }
+    },
+    {
+        "name":  "Ancient Vase",
+        "type":  "breakable_object",
+        "description":  "A vase decorated with ancient ceramic",
+        "state":  "intact",
+        "required_strength":  5,
+        "provides_cover":  true,
+        "token":  "Z",
+        "materials":  [
+                          {
+                              "name":  "Gold Coin",
+                              "type":  "common",
+                              "value":  1,
+                              "description":  "A shiny gold coin"
+                          }
+                      ]
+    },
+    {
+        "name":  "counter",
+        "type":  "interactive_object",
+        "description":  "A long wooden counter where Durnan serves drinks",
+        "state":  "normal",
+        "token":  "B",
+        "provides_cover":  true
+    },
+    {
+        "name":  "fireplace",
+        "type":  "interactive_object",
+        "description":  "A large stone fireplace that warms the tavern",
+        "state":  "on",
+        "token":  "F",
+        "provides_cover":  true,
+        "state_descriptions":  {
+                                   "on":  "The flames dance merrily in the fireplace, warming the room",
+                                   "off":  "The fireplace is cold and the ashes are gray"
+                               },
+        "possible_states":  {
+                                "on":  [
+                                           "off"
+                                       ],
+                                "off":  [
+                                            "on"
+                                        ]
+                            }
+    },
+    {
+        "name":  "Fruit Stall",
+        "type":  "interactive_object",
+        "description":  "A colorful stall full of fresh fruit",
+        "state":  "normal",
+        "token":  "U",
+        "provides_cover":  true,
+        "content":  [
+                        {
+                            "name":  "Apple",
+                            "type":  "food",
+                            "effect":  {
+                                           "heal":  2
+                                       },
+                            "value":  1,
+                            "description":  "A red, juicy apple"
+                        }
+                    ]
+    },
+    {
+        "name":  "fountain",
+        "type":  "interactive_object",
+        "description":  "A decorative fountain in the center of the square",
+        "state":  "active",
+        "token":  "W",
+        "provides_cover":  true,
+        "state_descriptions":  {
+                                   "active":  "Water gushes lively from the fountain",
+                                   "inactive":  "The fountain is still and the water unmoving"
+                               },
+        "possible_states":  {
+                                "active":  [
+                                               "inactive"
+                                           ],
+                                "inactive":  [
+                                                 "active"
+                                             ]
+                            }
+    },
+    {
+        "name":  "statue",
+        "type":  "interactive_object",
+        "description":  "A statue of an ancient hero of the city",
+        "state":  "normal",
+        "token":  "S",
+        "provides_cover":  true
+    },
+    {
+        "name":  "counter",
+        "type":  "interactive_object",
+        "description":  "A solid wood counter where drinks are served.",
+        "state":  "closed",
+        "token":  "B",
+        "state_descriptions":  {
+                                   "closed":  "A solid wood counter where drinks are served.",
+                                   "open":  "The counter is open; you can see some bottles inside."
+                               },
+        "possible_states":  {
+                                "closed":  [
+                                               "open"
+                                           ],
+                                "open":  [
+                                             "closed"
+                                         ]
+                            }
+    },
+    {
+        "name":  "fireplace",
+        "type":  "interactive_object",
+        "description":  "A stone fireplace with a crackling fire.",
+        "state":  "on",
+        "token":  "F",
+        "state_descriptions":  {
+                                   "on":  "A stone fireplace with a crackling fire that warms the room.",
+                                   "off":  "A stone fireplace with cold ashes."
+                               },
+        "possible_states":  {
+                                "on":  [
+                                           "off"
+                                       ],
+                                "off":  [
+                                            "on"
+                                        ]
+                            }
+    },
+    {
+        "name":  "table",
+        "type":  "interactive_object",
+        "description":  "A sturdy wooden table.",
+        "state":  "clean",
+        "token":  "T",
+        "provides_cover":  true,
+        "state_descriptions":  {
+                                   "clean":  "A sturdy, well-kept wooden table.",
+                                   "dirty":  "A wooden table with some stains of drink and food."
+                               },
+        "possible_states":  {
+                                "clean":  [
+                                              "dirty"
+                                          ],
+                                "dirty":  [
+                                              "clean"
+                                          ]
+                            }
+    },
+    {
+        "name":  "chair",
+        "type":  "interactive_object",
+        "description":  "A wooden chair.",
+        "state":  "intact",
+        "token":  "S",
+        "state_descriptions":  {
+                                   "intact":  "A solid, well-built wooden chair.",
+                                   "broken":  "A broken chair with a damaged leg."
+                               },
+        "possible_states":  {
+                                "intact":  [
+                                               "broken"
+                                           ],
+                                "broken":  [
+
+                                           ]
+                            }
+    },
+    {
+        "name":  "barrel",
+        "type":  "interactive_object",
+        "description":  "A wooden barrel full of drinks.",
+        "state":  "closed",
+        "token":  "R",
+        "provides_cover":  true,
+        "state_descriptions":  {
+                                   "closed":  "A wooden barrel full of drinks, sealed airtight.",
+                                   "open":  "An open wooden barrel containing an amber liquid."
+                               },
+        "possible_states":  {
+                                "closed":  [
+                                               "open"
+                                           ],
+                                "open":  [
+                                             "closed"
+                                         ]
+                            }
+    },
+    {
+        "name":  "stairs",
+        "type":  "interactive_object",
+        "description":  "A wooden staircase leading to the upper floor.",
+        "state":  "usable",
+        "token":  "H",
+        "state_descriptions":  {
+                                   "usable":  "A wooden staircase leading to the upper floor.",
+                                   "blocked":  "A wooden staircase, but someone seems to have blocked access."
+                               },
+        "possible_states":  {
+                                "usable":  [
+                                               "blocked"
+                                           ],
+                                "blocked":  [
+                                                "usable"
+                                            ]
+                            }
+    },
+    {
+        "name":  "hidden_chest",
+        "type":  "chest",
+        "description":  "A richly decorated wooden chest hidden under a floorboard.",
+        "state":  "closed",
+        "token":  "C",
+        "requires_key":  false,
+        "hidden":  true,
+        "detection_dc":  10,
+        "provides_cover":  true,
+        "content":  [
+                        {
+                            "name":  "Cellar Key",
+                            "type":  "key",
+                            "effect":  {
+                                           "opens":  [
+                                                         "Cellar Door",
+                                                         "Secret Door"
+                                                     ]
+                                       },
+                            "value":  10,
+                            "description":  "An old key that opens the cellar door"
+                        },
+                        {
+                            "name":  "Spider Poison",
+                            "type":  "poison",
+                            "effect":  {
+                                           "damage":  5,
+                                           "duration":  3
+                                       },
+                            "value":  20,
+                            "description":  "A vial of spider venom for a weapon"
+                        },
+                        {
+                            "name":  "Antidote",
+                            "type":  "heal",
+                            "effect":  {
+                                           "heal":  5,
+                                           "remove_poison":  true
+                                       },
+                            "value":  20,
+                            "description":  "A vial that neutralizes poison and restores 5 hit points"
+                        }
+                    ],
+        "state_descriptions":  {
+                                   "closed":  "A richly decorated wooden chest hidden under a floorboard.",
+                                   "open":  "A richly decorated wooden chest; it is open and shows its contents."
+                               },
+        "possible_states":  {
+                                "closed":  [
+                                               "open"
+                                           ],
+                                "open":  [
+                                             "closed"
+                                         ]
+                            }
+    },
+    {
+        "name":  "stall",
+        "type":  "interactive_object",
+        "description":  "A stall of a local merchant.",
+        "state":  "open",
+        "token":  "V",
+        "provides_cover":  true,
+        "state_descriptions":  {
+                                   "open":  "A stall full of colorful and interesting goods.",
+                                   "closed":  "A closed stall with its curtains drawn."
+                               },
+        "possible_states":  {
+                                "open":  [
+                                             "closed"
+                                         ],
+                                "closed":  [
+                                               "open"
+                                           ]
+                            }
+    },
+    {
+        "name":  "fountain",
+        "type":  "interactive_object",
+        "description":  "A stone fountain with fresh water.",
+        "state":  "active",
+        "token":  "W",
+        "state_descriptions":  {
+                                   "active":  "A stone fountain from which fresh, crystal-clear water flows.",
+                                   "inactive":  "A dry stone fountain; it doesn\u0027t seem to work."
+                               },
+        "possible_states":  {
+                                "active":  [
+                                               "inactive"
+                                           ],
+                                "inactive":  [
+                                                 "active"
+                                             ]
+                            }
+    },
+    {
+        "name":  "statue",
+        "type":  "interactive_object",
+        "description":  "A stone statue depicting a forgotten hero.",
+        "state":  "intact",
+        "token":  "S",
+        "state_descriptions":  {
+                                   "intact":  "A stone statue depicting a forgotten hero.",
+                                   "damaged":  "A stone statue, partially damaged."
+                               },
+        "possible_states":  {
+                                "intact":  [
+                                               "damaged"
+                                           ],
+                                "damaged":  [
+                                                "intact"
+                                            ]
+                            }
+    },
+    {
+        "name":  "tavern_door",
+        "type":  "door",
+        "description":  "A sturdy door that leads to the tavern.",
+        "state":  "closed",
+        "token":  "X",
+        "requires_key":  false,
+        "destination_position":  "tavern",
+        "state_descriptions":  {
+                                   "closed":  "A sturdy door that leads to the tavern.",
+                                   "open":  "A sturdy door open toward the tavern."
+                               },
+        "possible_states":  {
+                                "closed":  [
+                                               "open"
+                                           ],
+                                "open":  [
+                                             "closed"
+                                         ]
+                            }
+    },
+    {
+        "name":  "cellar_door",
+        "type":  "door",
+        "description":  "A wooden door leading to the cellar, secured by a padlock.",
+        "state":  "closed",
+        "token":  "X",
+        "requires_key":  true,
+        "destination_position":  "cellar",
+        "state_descriptions":  {
+                                   "closed":  "A wooden door leading to the cellar, secured by a padlock.",
+                                   "open":  "An open wooden door that leads into the dark cellar."
+                               },
+        "possible_states":  {
+                                "closed":  [
+                                               "open"
+                                           ],
+                                "open":  [
+                                             "closed"
+                                         ]
+                            }
+    },
+    {
+        "name":  "floor_trap",
+        "type":  "trap",
+        "description":  "A section of the floor that looks suspicious.",
+        "state":  "active",
+        "token":  "T",
+        "damage":  8,
+        "saving_throw_difficulty":  12,
+        "saving_throw_ability":  "dexterity",
+        "hidden":  true,
+        "detection_dc":  12,
+        "disarm_dc":  12,
+        "disarm_skill":  "investigation",
+        "trigger_on_failure":  true,
+        "magical":  true,
+        "state_descriptions":  {
+                                   "active":  "A section of the floor with a pressure plate.",
+                                   "deactivated":  "A section of the floor with a deactivated spike trap.",
+                                   "triggered":  "A spent spike trap juts from the floor."
+                               },
+        "possible_states":  {
+                                "active":  [
+                                               "deactivated"
+                                           ],
+                                "deactivated":  [
+                                                    "active"
+                                                ]
+                            }
+    },
+    {
+        "name":  "magic_altar",
+        "type":  "interactive_object",
+        "description":  "A stone altar with strange arcane inscriptions.",
+        "state":  "inactive",
+        "token":  "M",
+        "state_descriptions":  {
+                                   "inactive":  "A stone altar with strange arcane inscriptions.",
+                                   "active":  "A stone altar with arcane inscriptions emitting a blue glow."
+                               },
+        "possible_states":  {
+                                "inactive":  [
+                                                 "active"
+                                             ],
+                                "active":  [
+                                               "inactive"
+                                           ]
+                            }
+    },
+    {
+        "name":  "exit_door",
+        "type":  "door",
+        "description":  "A massive door that leads up to the tavern.",
+        "state":  "closed",
+        "token":  "X",
+        "requires_key":  false,
+        "destination_position":  "tavern",
+        "state_descriptions":  {
+                                   "closed":  "A massive door that leads up to the tavern.",
+                                   "open":  "A massive door open toward the tavern stairs."
+                               },
+        "possible_states":  {
+                                "closed":  [
+                                               "open"
+                                           ],
+                                "open":  [
+                                             "closed"
+                                         ]
+                            }
+    },
+    {
+        "name":  "Warehouse Door",
+        "type":  "door",
+        "description":  "A reinforced door with a heavy iron lock.",
+        "state":  "closed",
+        "requires_key":  true,
+        "position":  "market",
+        "destination_position":  "warehouse",
+        "token":  "D"
+    },
+    {
+        "name":  "Vault Door",
+        "type":  "door",
+        "description":  "A heavy iron door sealed with a warding rune.",
+        "state":  "closed",
+        "requires_key":  true,
+        "position":  "warehouse",
+        "destination_position":  "vault",
+        "token":  "D"
+    },
+    {
+        "name":  "Sealed Strongbox",
+        "type":  "chest",
+        "description":  "A banded strongbox with a fresh warehouse seal.",
+        "state":  "closed",
+        "requires_key":  true,
+        "provides_cover":  true,
+        "token":  "C",
+        "content":  [
+                        {
+                            "name":  "Vault Key",
+                            "type":  "key",
+                            "effect":  {
+                                           "opens":  [
+                                                         "Vault Door"
+                                                     ]
+                                       },
+                            "value":  40,
+                            "description":  "A cold iron key stamped with a vault sigil"
+                        }
+                    ]
+    },
+    {
+        "name":  "Vault Exit",
+        "type":  "door",
+        "description":  "The heavy door back to the warehouse.",
+        "state":  "closed",
+        "requires_key":  false,
+        "position":  "vault",
+        "destination_position":  "warehouse",
+        "token":  "X"
+    },
+    {
+        "name":  "Relic Chest",
+        "type":  "chest",
+        "description":  "A stone chest bound in iron, its lock shaped like a sentinel\u0027s sigil.",
+        "state":  "closed",
+        "requires_key":  true,
+        "provides_cover":  true,
+        "token":  "C",
+        "content":  [
+                        {
+                            "name":  "Sentinel\u0027s Edge",
+                            "type":  "weapon",
+                            "effect":  {
+                                           "strength":  6
+                                       },
+                            "value":  300,
+                            "rarity":  "rare",
+                            "description":  "A rune-etched blade that hums when the vault is disturbed"
+                        },
+                        {
+                            "name":  "Greater Healing Potion",
+                            "type":  "grave_heal",
+                            "effect":  {
+                                           "grave_heal":  15
+                                       },
+                            "value":  40,
+                            "description":  "A potent potion that restores 15 hit points"
+                        }
+                    ]
+    },
+    {
+        "name":  "Rune Pillar",
+        "type":  "rune_pillar",
+        "description":  "A pillar of black stone covered in warding runes. One line reads: \u0027Only the sentinel\u0027s sigil opens the reliquary.\u0027",
+        "state":  "inactive",
+        "token":  "R",
+        "provides_cover":  true,
+        "magical":  true
+    },
+    {
+        "name":  "Watch Cache",
+        "type":  "chest",
+        "description":  "A watch-issue strongbox tucked behind a stack of old crates.",
+        "state":  "closed",
+        "requires_key":  false,
+        "token":  "W",
+        "provides_cover":  true,
+        "content":  [
+                        {
+                            "name":  "Watch Ledger",
+                            "type":  "document",
+                            "value":  50,
+                            "description":  "A watch ledger recording confiscated goods that never reached the evidence room"
+                        }
+                    ]
+    },
+    {
+        "name":  "Merchant\u0027s Lockbox",
+        "type":  "chest",
+        "description":  "A discreet lockbox hidden beneath Gundren\u0027s stall.",
+        "state":  "closed",
+        "requires_key":  false,
+        "token":  "M",
+        "provides_cover":  true,
+        "content":  [
+                        {
+                            "name":  "Merchant Ledger",
+                            "type":  "document",
+                            "value":  60,
+                            "description":  "A merchant\u0027s private ledger listing cursed relics sold under the table"
+                        }
+                    ]
+    },
+    {
+        "name":  "Blinding Dust Trap",
+        "type":  "trap",
+        "description":  "A pressure plate rigged to burst a cloud of caustic dust.",
+        "state":  "active",
+        "damage":  3,
+        "saving_throw_difficulty":  12,
+        "saving_throw_ability":  "constitution",
+        "hidden":  true,
+        "detection_dc":  13,
+        "disarm_dc":  13,
+        "disarm_skill":  "investigation",
+        "trigger_on_failure":  true,
+        "magical":  false,
+        "condition":  {
+                          "id":  "blinded",
+                          "turns":  2
+                      },
+        "token":  "T"
+    },
+    {
+        "name":  "Watch Impound Wagon",
+        "type":  "chest",
+        "description":  "A canvas-covered Watch wagon with a false bottom beneath the driver\u0027s bench.",
+        "state":  "closed",
+        "requires_key":  false,
+        "hidden":  true,
+        "detection_dc":  13,
+        "provides_cover":  true,
+        "token":  "Q",
+        "content":  [
+                        {
+                            "name":  "Cargo Manifest",
+                            "type":  "document",
+                            "effect":  {
+
+                                       },
+                            "value":  55,
+                            "description":  "A Watch impound manifest listing medicine, lamp oil and blankets bound for the Underroad"
+                        }
+                    ]
+    },
+    {
+        "name":  "Burnt Wagon",
+        "type":  "chest",
+        "description":  "A blackened caravan wagon, its canvas burned away and its driver box split open.",
+        "state":  "closed",
+        "requires_key":  true,
+        "provides_cover":  true,
+        "token":  "W",
+        "content":  [
+                        {
+                            "name":  "Caravan Waybill",
+                            "type":  "document",
+                            "value":  30,
+                            "description":  "A water-stained waybill naming the wagons, cargo and drivers of Tamsin\u0027s caravan"
+                        },
+                        {
+                            "name":  "Light Healing Potion",
+                            "type":  "light_heal",
+                            "effect":  {
+                                           "light_heal":  5
+                                       },
+                            "value":  10,
+                            "description":  "A small healing potion"
+                        }
+                    ]
+    },
+    {
+        "name":  "Bandit Totem",
+        "type":  "interactive_object",
+        "description":  "A pole hung with rusted blades and a scrap of red cloth.",
+        "state":  "standing",
+        "token":  "K",
+        "provides_cover":  true,
+        "state_descriptions":  {
+                                   "standing":  "A pole hung with rusted blades and a scrap of red cloth. The bandits marked their claim here.",
+                                   "toppled":  "The bandit totem lies in the dust, its blades dull and its cloth trampled."
+                               },
+        "possible_states":  {
+                                "standing":  [
+                                                 "toppled"
+                                             ],
+                                "toppled":  [
+                                                "standing"
+                                            ]
+                            }
+    },
+    {
+        "name":  "Runner\u0027s Stash",
+        "type":  "chest",
+        "description":  "A waterproof satchel tucked behind a loose brick in the tunnel wall.",
+        "state":  "closed",
+        "requires_key":  false,
+        "hidden":  true,
+        "detection_dc":  13,
+        "provides_cover":  true,
+        "token":  "S",
+        "content":  [
+                        {
+                            "name":  "Healing Potion",
+                            "type":  "heal",
+                            "effect":  {
+                                           "heal":  10
+                                       },
+                            "value":  25,
+                            "description":  "A potion that restores 10 hit points"
+                        },
+                        {
+                            "name":  "Antidote",
+                            "type":  "heal",
+                            "effect":  {
+                                           "heal":  5,
+                                           "remove_poison":  true
+                                       },
+                            "value":  20,
+                            "description":  "A vial that neutralizes poison and restores 5 hit points"
+                        },
+                        {
+                            "name":  "Spider Poison",
+                            "type":  "poison",
+                            "effect":  {
+                                           "damage":  5,
+                                           "duration":  3
+                                       },
+                            "value":  20,
+                            "description":  "A vial of spider venom for a weapon"
+                        }
+                    ]
+    },
+    {
+        "name":  "Smugglers\u0027 Mark",
+        "type":  "interactive_object",
+        "description":  "A chalk mark scored into the tunnel wall: a circle, a slash, and a number.",
+        "state":  "fresh",
+        "token":  "M",
+        "state_descriptions":  {
+                                   "fresh":  "A chalk mark scored into the tunnel wall: a circle, a slash, and a number. The smugglers\u0027 route is still being counted.",
+                                   "smudged":  "The chalk mark has been smeared into a grey streak. Whoever made it did not want it read."
+                               },
+        "possible_states":  {
+                                "fresh":  [
+                                              "smudged"
+                                          ],
+                                "smudged":  [
+                                                "fresh"
+                                            ]
+                            }
+    },
+    {
+        "name":  "Rune Archive",
+        "type":  "interactive_object",
+        "description":  "A slab of black stone covered in tightly packed rune-script.",
+        "state":  "dormant",
+        "token":  "A",
+        "provides_cover":  true,
+        "magical":  true,
+        "state_descriptions":  {
+                                   "dormant":  "A slab of black stone covered in tightly packed rune-script. Some lines are still warm to the touch.",
+                                   "read":  "The rune-script resolves into a ledger of names, each one a warden who stood in this hall before you."
+                               },
+        "possible_states":  {
+                                "dormant":  [
+                                                "read"
+                                            ],
+                                "read":  [
+                                             "dormant"
+                                         ]
+                            }
+    },
+    {
+        "name":  "Warden\u0027s Reliquary",
+        "type":  "chest",
+        "description":  "A stone reliquary shaped like a sealed heart, its lid bound with black iron.",
+        "state":  "closed",
+        "requires_key":  true,
+        "provides_cover":  true,
+        "token":  "R",
+        "content":  [
+                        {
+                            "name":  "Warden\u0027s Chronicle",
+                            "type":  "document",
+                            "value":  80,
+                            "description":  "A cracked stone tablet recording the Rune Warden\u0027s vigil and the first sealing of the Runeheart"
+                        },
+                        {
+                            "name":  "Warden\u0027s Sigil",
+                            "type":  "accessory",
+                            "effect":  {
+                                           "defense":  2,
+                                           "wisdom":  1
+                                       },
+                            "value":  220,
+                            "rarity":  "rare",
+                            "description":  "A black-iron sigil cut with the Rune Warden\u0027s watchful eye"
+                        },
+                        {
+                            "name":  "Greater Healing Potion",
+                            "type":  "grave_heal",
+                            "effect":  {
+                                           "grave_heal":  15
+                                       },
+                            "value":  40,
+                            "description":  "A potent potion that restores 15 hit points"
+                        }
+                    ]
+    },
+    {
+        "name":  "Broken Ward Stone",
+        "type":  "interactive_object",
+        "description":  "A cracked ward stone, its runes split down the middle.",
+        "state":  "cracked",
+        "token":  "W",
+        "magical":  true,
+        "provides_cover":  true,
+        "state_descriptions":  {
+                                   "cracked":  "A cracked ward stone, its runes split down the middle. The air around it tastes of cold iron.",
+                                   "cold":  "The ward stone is cold and silent. Whatever held the threshold here has already spent itself."
+                               }
+    }
+]

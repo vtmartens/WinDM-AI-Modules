@@ -1,0 +1,225 @@
+{
+    "shadows_of_the_market":  {
+                                  "title":  "Shadows in the Market",
+                                  "description":  "Hooded figures have been seen around the old warehouse at the edge of the market. Violet believes they are cultists - and that someone is supplying them from inside the city.",
+                                  "objective":  "Defeat Vargas and break up the cult cell in the old warehouse.",
+                                  "target":  "Vargas",
+                                  "turn_in":  "Violet",
+                                  "faction":  "violet_watch",
+                                  "reputation":  8,
+                                  "reward":  {
+                                                 "gold":  60,
+                                                 "experience":  150
+                                             }
+                              },
+    "vargas_debt":  {
+                        "title":  "A Debt to Collect",
+                        "description":  "Mirt says Vargas has stopped paying an important debt and now hides in the old warehouse. Mirt wants him reminded of his moral responsibility.",
+                        "objective":  "Find Vargas in the old warehouse and collect Mirt\u0027s debt.",
+                        "target":  "Vargas",
+                        "turn_in":  "Mirt",
+                        "faction":  "mirt_network",
+                        "reputation":  5,
+                        "reward":  {
+                                       "gold":  50,
+                                       "experience":  75
+                                   }
+                    },
+    "violet_warning":  {
+                           "title":  "A Word of Warning",
+                           "description":  "Violet wants Mirt warned about the hooded figures before he does business with the wrong people.",
+                           "objective":  "Carry Violet\u0027s warning to Mirt in the tavern.",
+                           "completion":  "dialogue",
+                           "turn_in":  "Mirt",
+                           "faction":  "violet_watch",
+                           "reputation":  3,
+                           "reward":  {
+                                          "gold":  15,
+                                          "experience":  25
+                                      }
+                       },
+    "sentinel_sigil":  {
+                           "title":  "The Sentinel\u0027s Sigil",
+                           "description":  "Mirt has heard of a sealed vault beneath the old warehouse, guarded by an iron sentinel. He wants the relic inside brought back to him.",
+                           "objective":  "Recover Sentinel\u0027s Edge from the Sealed Vault beneath the warehouse.",
+                           "target_item":  "Sentinel\u0027s Edge",
+                           "turn_in":  "Mirt",
+                           "faction":  "mirt_network",
+                           "reputation":  5,
+                           "reward":  {
+                                          "gold":  100,
+                                          "experience":  200,
+                                          "items":  [
+                                                        "Vault Warden\u0027s Signet"
+                                                    ]
+                                      }
+                       },
+    "waystation_trouble":  {
+                               "title":  "Trouble on the Trade Road",
+                               "description":  "Mirt\u0027s caravans have stopped using the eastern trade road. A bandit chief has taken the Broken Waystation and is taxing anyone who survives the journey.",
+                               "objective":  "Clear the Broken Waystation at the end of the Trade Road.",
+                               "target":  "Waystation Chief",
+                               "target_item":  "Wayfarer\u0027s Cloak",
+                               "turn_in":  "Mirt",
+                               "faction":  "mirt_network",
+                               "reputation":  6,
+                               "reward":  {
+                                              "gold":  75,
+                                              "experience":  150
+                                          }
+                           },
+    "bounty_goblin_road":  {
+                               "title":  "Goblin Toll",
+                               "description":  "Goblin scouts have been shaking down travellers on the trade road.",
+                               "objective":  "Defeat 2 goblins.",
+                               "bounty":  true,
+                               "repeatable":  true,
+                               "target":  "Goblin Scout",
+                               "target_type":  "goblin",
+                               "target_count":  2,
+                               "turn_in":  "Bounty Board",
+                               "faction":  "mirt_network",
+                               "reputation":  1,
+                               "reward":  {
+                                              "gold":  40,
+                                              "experience":  50
+                                          }
+                           },
+    "bounty_wolf_cull":  {
+                             "title":  "Wolf Cull",
+                             "description":  "A pair of wolves has been stalking the road and the market outskirts.",
+                             "objective":  "Defeat 2 wolves.",
+                             "bounty":  true,
+                             "repeatable":  true,
+                             "target":  "Wolf",
+                             "target_type":  "wolf",
+                             "target_count":  2,
+                             "turn_in":  "Bounty Board",
+                             "faction":  "mirt_network",
+                             "reputation":  1,
+                             "reward":  {
+                                            "gold":  35,
+                                            "experience":  45
+                                        }
+                         },
+    "bounty_waystation_chief":  {
+                                    "title":  "The Waystation Contract",
+                                    "description":  "The bounty board will pay well for the bandit chief holding the Broken Waystation.",
+                                    "objective":  "Defeat the Waystation Chief.",
+                                    "bounty":  true,
+                                    "repeatable":  true,
+                                    "target":  "Waystation Chief",
+                                    "target_type":  "bandit_chief",
+                                    "target_count":  1,
+                                    "turn_in":  "Bounty Board",
+                                    "faction":  "mirt_network",
+                                    "reputation":  2,
+                                    "reward":  {
+                                                   "gold":  60,
+                                                   "experience":  80
+                                               }
+                                },
+    "underroad_chapter":  {
+                              "title":  "The Underroad",
+                              "description":  "The bandit chief\u0027s ledger points to a hidden route beneath the Broken Waystation, where a Smuggler Lord is moving goods and paying for silence.",
+                              "objective":  "Descend into the Underroad and defeat the Smuggler Lord.",
+                              "target":  "Smuggler Lord",
+                              "turn_in":  "Mirt",
+                              "faction":  "mirt_network",
+                              "reputation":  8,
+                              "reward":  {
+                                             "gold":  100,
+                                             "experience":  200
+                                         }
+                          },
+    "sanctum_chapter":  {
+                            "title":  "The Sealed Sanctum",
+                            "description":  "The Underroad\u0027s signet opens a sealed sanctum older than the smugglers. Something called the Rune Warden guards its heart.",
+                            "objective":  "Enter the Sealed Sanctum beneath the Underroad and defeat the Rune Warden.",
+                            "target":  "Rune Warden",
+                            "turn_in":  "Mirt",
+                            "faction":  "mirt_network",
+                            "reputation":  10,
+                            "reward":  {
+                                           "gold":  250,
+                                           "experience":  600
+                                       }
+                        },
+    "watchman_ledger":  {
+                            "title":  "The Watchman\u0027s Cut",
+                            "description":  "Violet has traced a corrupt Watch sergeant, Vell, skimming confiscated goods. The proof is hidden in an old warehouse cache.",
+                            "objective":  "Search the old warehouse for Watch Sergeant Vell\u0027s ledger.",
+                            "target_item":  "Watch Ledger",
+                            "turn_in":  "Violet",
+                            "reward":  {
+                                           "gold":  100,
+                                           "experience":  200
+                                       }
+                        },
+    "silent_partner":  {
+                           "title":  "The Silent Partner",
+                           "description":  "Mirt suspects Gundren has been selling cursed relics under the table. The jeweller keeps a private ledger beneath his stall.",
+                           "objective":  "Recover Gundren\u0027s merchant ledger from the market lockbox.",
+                           "target_item":  "Merchant Ledger",
+                           "turn_in":  "Mirt",
+                           "reward":  {
+                                          "gold":  120,
+                                          "experience":  220
+                                      }
+                       },
+    "runeheart_gate":  {
+                           "title":  "The Runeheart Gate",
+                           "description":  "The Runeheart has opened a gate beneath the Sealed Sanctum. Something bound below it is still beating, and the gate will not close while it lives.",
+                           "objective":  "Descend through the Runeheart Gate and defeat the Runeheart Sovereign.",
+                           "target":  "Runeheart Sovereign",
+                           "completion":  "auto",
+                           "reward":  {
+                                          "gold":  300,
+                                          "experience":  800,
+                                          "items":  [
+                                                        "Heartseal"
+                                                    ]
+                                      }
+                       },
+    "quiet_cargo":  {
+                        "title":  "The Quiet Cargo",
+                        "description":  "The Watch impounded a wagon of medicine meant for the families who live along the Underroad. Nessa, one of the surviving runners, wants the manifest back before the evidence room swallows it.",
+                        "objective":  "Search the Watch impound wagon parked beside the old warehouse in the market.",
+                        "target_item":  "Cargo Manifest",
+                        "turn_in":  "Nessa",
+                        "reward":  {
+                                       "gold":  120,
+                                       "experience":  220
+                                   }
+                    },
+    "waystation_waybill":  {
+                               "title":  "The Caravan Waybill",
+                               "description":  "Tamsin\u0027s caravan was burned by the bandits holding the Broken Waystation. The waybill in the burnt wagon is the only proof of what the caravan carried and who it belonged to.",
+                               "objective":  "Recover the Caravan Waybill from the burnt wagon at the Broken Waystation.",
+                               "target_item":  "Caravan Waybill",
+                               "turn_in":  "Tamsin",
+                               "faction":  "mirt_network",
+                               "reputation":  4,
+                               "reward":  {
+                                              "gold":  70,
+                                              "experience":  120,
+                                              "items":  [
+                                                            "Traveller\u0027s Charm"
+                                                        ]
+                                          }
+                           },
+    "sanctum_chronicle":  {
+                              "title":  "The Warden\u0027s Chronicle",
+                              "description":  "Elminster believes the Rune Warden\u0027s chronicle can explain what the Runeheart truly is. The tablet is sealed in the Warden\u0027s reliquary inside the sanctum.",
+                              "objective":  "Recover the Warden\u0027s Chronicle from the reliquary in the Sealed Sanctum.",
+                              "target_item":  "Warden\u0027s Chronicle",
+                              "turn_in":  "Elminster",
+                              "reward":  {
+                                             "gold":  180,
+                                             "experience":  300,
+                                             "items":  [
+                                                           "Sage\u0027s Notebook"
+                                                       ]
+                                         }
+                          }
+}

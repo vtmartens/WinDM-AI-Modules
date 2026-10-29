@@ -1,0 +1,157 @@
+{
+  "goblin_scouts": {
+    "title": "Goblin Scouts",
+    "description": "Two goblin scouts block the road, bows already drawn.",
+    "difficulty": "easy",
+    "reward": {"gold": 10, "experience": 20},
+    "enemies": [
+      {"monster_type": "goblin", "name": "Goblin Scout A"},
+      {"monster_type": "goblin", "name": "Goblin Scout B"}
+    ]
+  },
+  "orc_patrol": {
+    "title": "Orc Patrol",
+    "description": "An orc brute leads a goblin archer through the market edge.",
+    "difficulty": "medium",
+    "reward": {"gold": 25, "experience": 50},
+    "enemies": [
+      {"monster_type": "orc", "name": "Orc Brute"},
+      {"monster_type": "goblin", "name": "Goblin Archer"}
+    ]
+  },
+  "bone_pack": {
+    "title": "Bone Pack",
+    "description": "Two skeletons rise from the cellar dust, bones clicking.",
+    "difficulty": "medium",
+    "reward": {"gold": 20, "experience": 40},
+    "enemies": [
+      {"monster_type": "skeleton", "name": "Skeleton A"},
+      {"monster_type": "skeleton", "name": "Skeleton B"}
+    ]
+  },
+  "wolf_pack": {
+    "title": "Wolf Pack",
+    "description": "A pair of lean wolves circle, looking for an opening.",
+    "difficulty": "medium",
+    "reward": {"gold": 15, "experience": 45},
+    "enemies": [
+      {"monster_type": "wolf", "name": "Wolf A"},
+      {"monster_type": "wolf", "name": "Wolf B"}
+    ]
+  },
+  "waystation_chief": {
+    "title": "The Broken Waystation",
+    "description": "A bandit chief and two cutthroats have turned the ruined waystation into a fortified camp.",
+    "difficulty": "hard",
+    "location": "waystation",
+    "clears_area": "waystation",
+    "reward": {"gold": 50, "experience": 150},
+    "enemies": [
+      {"monster_type": "bandit_chief", "name": "Waystation Chief"},
+      {"monster_type": "bandit", "name": "Bandit A"},
+      {"monster_type": "bandit", "name": "Bandit B"}
+    ]
+  },
+  "underroad_boss": {
+    "title": "The Underroad",
+    "description": "The Smuggler Lord and two tunnel runners guard the hidden cache beneath the waystation.",
+    "difficulty": "hard",
+    "location": "underroad",
+    "clears_area": "underroad",
+    "reward": {"gold": 80, "experience": 250},
+    "enemies": [
+      {"monster_type": "smuggler_lord", "name": "Smuggler Lord"},
+      {"monster_type": "smuggler", "name": "Underroad Runner A"},
+      {"monster_type": "smuggler", "name": "Underroad Runner B"}
+    ]
+  },
+  "sanctum_boss": {
+    "title": "The Sealed Sanctum",
+    "description": "The Rune Warden rises from its throne while two rune sentinels level their spears.",
+    "difficulty": "hard",
+    "location": "sanctum",
+    "clears_area": "sanctum",
+    "reward": {"gold": 150, "experience": 600},
+    "enemies": [
+      {"monster_type": "rune_warden", "name": "Rune Warden"},
+      {"monster_type": "rune_sentinel", "name": "Rune Sentinel A"},
+      {"monster_type": "rune_sentinel", "name": "Rune Sentinel B"}
+    ]
+  },
+  "goblin_warband": {
+    "title": "Goblin Warband",
+    "description": "A bone-charmed goblin hexer drives two scouts forward, cursing the air ahead of them.",
+    "difficulty": "hard",
+    "elite": true,
+    "reward": {"gold": 30, "experience": 80},
+    "enemies": [
+      {"monster_type": "goblin_hexer", "name": "Goblin Hexer"},
+      {"monster_type": "goblin", "name": "Goblin Scout A"},
+      {"monster_type": "goblin", "name": "Goblin Scout B"}
+    ]
+  },
+  "orc_raiders": {
+    "title": "Orc Raiders",
+    "description": "An orc berserker leads a raiding party down the road, axes already bloodied.",
+    "difficulty": "hard",
+    "elite": true,
+    "reward": {"gold": 60, "experience": 180},
+    "enemies": [
+      {"monster_type": "orc_berserker", "name": "Orc Berserker"},
+      {"monster_type": "orc", "name": "Orc Raider"},
+      {"monster_type": "goblin", "name": "Goblin Archer"}
+    ]
+  },
+  "restless_dead": {
+    "title": "The Restless Dead",
+    "description": "A risen champion in broken plate holds the cellar dark, two skeletons at its back.",
+    "difficulty": "hard",
+    "elite": true,
+    "reward": {"gold": 45, "experience": 160},
+    "enemies": [
+      {"monster_type": "risen_champion", "name": "Risen Champion"},
+      {"monster_type": "skeleton", "name": "Skeleton A"},
+      {"monster_type": "skeleton", "name": "Skeleton B"}
+    ]
+  },
+  "underroad_enforcers": {
+    "title": "Smugglers' Enforcers",
+    "description": "A tunnel enforcer and two runners bar the way, cudgels and knives drawn.",
+    "difficulty": "medium",
+    "elite": true,
+    "reward": {"gold": 55, "experience": 170},
+    "enemies": [
+      {"monster_type": "smuggler_enforcer", "name": "Smuggler Enforcer"},
+      {"monster_type": "smuggler", "name": "Underroad Runner A"},
+      {"monster_type": "smuggler", "name": "Underroad Runner B"}
+    ]
+  },
+  "runeheart_wardens": {
+    "title": "The Gate Wardens",
+    "description": "Two rune sentinels and a flickering echo of the Rune Warden guard the descent into the Runeheart Gate.",
+    "difficulty": "hard",
+    "location": "runeheart_gate",
+    "elite": true,
+    "grants_flag": "runeheart_gate_wardens",
+    "reward": {"gold": 80, "experience": 200},
+    "enemies": [
+      {"monster_type": "rune_sentinel", "name": "Gate Sentinel A"},
+      {"monster_type": "rune_sentinel", "name": "Gate Sentinel B"},
+      {"monster_type": "runeheart_echo", "name": "Runeheart Echo"}
+    ]
+  },
+  "runeheart_sovereign": {
+    "title": "The Runeheart Sovereign",
+    "description": "The heart of the gate unbinds itself: a white-hot sovereign of rune-stone with two echoes at its back.",
+    "difficulty": "hard",
+    "location": "runeheart_gate",
+    "clears_area": "runeheart_gate",
+    "elite": true,
+    "reward": {"gold": 200, "experience": 500},
+    "enemies": [
+      {"monster_type": "runeheart_sovereign", "name": "Runeheart Sovereign"},
+      {"monster_type": "runeheart_echo", "name": "Runeheart Echo A"},
+      {"monster_type": "runeheart_echo", "name": "Runeheart Echo B"}
+    ]
+  }
+}

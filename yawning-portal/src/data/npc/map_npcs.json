@@ -1,0 +1,136 @@
+{
+    "tavern":  [
+                   {
+                       "name":  "Durnan",
+                       "position":  [
+                                        6,
+                                        6
+                                    ]
+                   },
+                   {
+                       "name":  "Elminster",
+                       "position":  [
+                                        12,
+                                        12
+                                    ]
+                   },
+                   {
+                       "name":  "Mirt",
+                       "position":  [
+                                        7,
+                                        7
+                                    ]
+                   }
+               ],
+    "market":  [
+                   {
+                       "name":  "Herald",
+                       "position":  [
+                                        2,
+                                        3
+                                    ]
+                   },
+                   {
+                       "name":  "Violet",
+                       "position":  [
+                                        12,
+                                        3
+                                    ]
+                   },
+                   {
+                       "name":  "Gundren",
+                       "position":  [
+                                        5,
+                                        8
+                                    ]
+                   },
+                   {
+                       "name":  "Mirt\u0027s Factor",
+                       "position":  [
+                                        17,
+                                        4
+                                    ]
+                   }
+               ],
+    "cellar":  [
+                   {
+                       "name":  "Specter",
+                       "position":  [
+                                        5,
+                                        5
+                                    ]
+                   },
+                   {
+                       "name":  "Cultist",
+                       "position":  [
+                                        12,
+                                        8
+                                    ]
+                   }
+               ],
+    "road":  [
+
+             ],
+    "waystation":  [
+                       {
+                           "name":  "Tamsin",
+                           "position":  [
+                                            5,
+                                            8
+                                        ]
+                       }
+                   ],
+    "underroad":  [
+                      {
+                          "name":  "Nessa",
+                          "position":  [
+                                           4,
+                                           8
+                                       ]
+                      }
+                  ],
+    "warehouse":  [
+                      {
+                          "name":  "Vargas",
+                          "position":  [
+                                           16,
+                                           5
+                                       ],
+                          "group":  "warehouse_cult"
+                      },
+                      {
+                          "name":  "Hooded Cultist A",
+                          "position":  [
+                                           12,
+                                           3
+                                       ],
+                          "group":  "warehouse_cult"
+                      },
+                      {
+                          "name":  "Hooded Cultist B",
+                          "position":  [
+                                           14,
+                                           7
+                                       ],
+                          "group":  "warehouse_cult"
+                      }
+                  ],
+    "vault":  [
+                  {
+                      "name":  "Iron Sentinel",
+                      "position":  [
+                                       13,
+                                       5
+                                   ]
+                  }
+              ],
+    "sanctum":  [
+                    {
+                        "name":  "Sanctum Echo",
+                        "position":  [
+                                         16,
+                                         4
+                                     ]
+                    }
+                ]
+}

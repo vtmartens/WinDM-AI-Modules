@@ -1,0 +1,668 @@
+{
+    "Durnan":  {
+                   "name":  "Durnan",
+                   "description":  "A sturdy man with a long beard. He is the owner of the Yawning Portal tavern.",
+                   "profession":  "Innkeeper",
+                   "level":  5,
+                   "hp":  30,
+                   "hp_max":  30,
+                   "strength":  14,
+                   "dexterity":  12,
+                   "constitution":  16,
+                   "intelligence":  13,
+                   "wisdom":  14,
+                   "charisma":  16,
+                   "token":  "D",
+                   "inventory":  [
+                                     {
+                                         "name":  "dagger",
+                                         "type":  "weapon",
+                                         "effect":  {
+                                                        "strength":  2
+                                                    },
+                                         "value":  10,
+                                         "description":  "A simple sharp dagger"
+                                     },
+                                     {
+                                         "name":  "Healing Potion",
+                                         "type":  "heal",
+                                         "effect":  {
+                                                        "heal":  10
+                                                    },
+                                         "value":  25,
+                                         "description":  "A healing potion of moderate power"
+                                     }
+                                 ],
+                   "gold":  500,
+                   "friendly":  true
+               },
+    "Elminster":  {
+                      "name":  "Elminster",
+                      "description":  "An elderly wizard with a long white beard and eyes that gleam with supernatural intelligence.",
+                      "profession":  "wizard",
+                      "level":  20,
+                      "hp":  70,
+                      "hp_max":  70,
+                      "strength":  10,
+                      "dexterity":  14,
+                      "constitution":  16,
+                      "intelligence":  20,
+                      "wisdom":  18,
+                      "charisma":  18,
+                      "token":  "E",
+                      "inventory":  [
+                                        {
+                                            "name":  "Staff of Power",
+                                            "type":  "weapon",
+                                            "effect":  {
+                                                           "strength":  2,
+                                                           "intelligence":  4
+                                                       },
+                                            "value":  500,
+                                            "description":  "A staff adorned with mysterious runes"
+                                        },
+                                        {
+                                            "name":  "Amulet of Protection",
+                                            "type":  "accessory",
+                                            "effect":  {
+                                                           "defense":  3
+                                                       },
+                                            "value":  300,
+                                            "description":  "An amulet that provides magical protection"
+                                        },
+                                        {
+                                            "name":  "Basic Arcane Manual",
+                                            "type":  "common",
+                                            "value":  50,
+                                            "description":  "A book of basic spells for apprentice wizards"
+                                        }
+                                    ],
+                      "gold":  1000,
+                      "friendly":  true
+                  },
+    "Mirt":  {
+                 "name":  "Mirt",
+                 "description":  "A portly man in expensive clothes with a cunning expression on his face.",
+                 "profession":  "merchant",
+                 "level":  8,
+                 "hp":  45,
+                 "hp_max":  45,
+                 "strength":  14,
+                 "dexterity":  14,
+                 "constitution":  16,
+                 "intelligence":  16,
+                 "wisdom":  14,
+                 "charisma":  18,
+                 "token":  "M",
+                 "inventory":  [
+                                   {
+                                       "name":  "Short Sword",
+                                       "type":  "weapon",
+                                       "effect":  {
+                                                      "strength":  3
+                                                  },
+                                       "value":  25,
+                                       "description":  "A small, well-made sword"
+                                   },
+                                   {
+                                       "name":  "Healing Potion",
+                                       "type":  "heal",
+                                       "effect":  {
+                                                      "heal":  10
+                                                  },
+                                       "value":  25,
+                                       "description":  "A healing potion of moderate power"
+                                   },
+                                   {
+                                       "name":  "Amulet of Protection",
+                                       "type":  "accessory",
+                                       "effect":  {
+                                                      "defense":  2
+                                                  },
+                                       "value":  60,
+                                       "description":  "A magic amulet that protects its wearer"
+                                   },
+                                   {
+                                       "name":  "Map of Undermountain",
+                                       "type":  "common",
+                                       "value":  100,
+                                       "description":  "A detailed map of the first three levels of Undermountain"
+                                   }
+                               ],
+                 "gold":  2000,
+                 "friendly":  true
+             },
+    "Violet":  {
+                   "name":  "Violet",
+                   "description":  "A woman with long black hair and a stall of rare spices and herbs.",
+                   "profession":  "Herbalist",
+                   "level":  4,
+                   "hp":  25,
+                   "hp_max":  25,
+                   "strength":  10,
+                   "dexterity":  14,
+                   "constitution":  12,
+                   "intelligence":  16,
+                   "wisdom":  18,
+                   "charisma":  14,
+                   "token":  "I",
+                   "inventory":  [
+                                     {
+                                         "name":  "dagger",
+                                         "type":  "weapon",
+                                         "effect":  {
+                                                        "strength":  2
+                                                    },
+                                         "value":  10,
+                                         "description":  "A small dagger for personal defense"
+                                     },
+                                     {
+                                         "name":  "Light Healing Potion",
+                                         "type":  "light_heal",
+                                         "effect":  {
+                                                        "light_heal":  5
+                                                    },
+                                         "value":  10,
+                                         "description":  "A small healing potion"
+                                     },
+                                     {
+                                         "name":  "Healing Potion",
+                                         "type":  "heal",
+                                         "effect":  {
+                                                        "heal":  10
+                                                    },
+                                         "value":  25,
+                                         "description":  "A healing potion of moderate power"
+                                     },
+                                     {
+                                         "name":  "Antidote",
+                                         "type":  "heal",
+                                         "effect":  {
+                                                        "heal":  5,
+                                                        "remove_poison":  true
+                                                    },
+                                         "value":  20,
+                                         "description":  "An antidote that neutralizes poisons"
+                                     },
+                                     {
+                                         "name":  "Warehouse Key",
+                                         "type":  "key",
+                                         "effect":  {
+                                                        "opens":  [
+                                                                      "Warehouse Door",
+                                                                      "Sealed Strongbox"
+                                                                  ]
+                                                    },
+                                         "value":  25,
+                                         "description":  "An iron key taken from one of the hooded figures"
+                                     }
+                                 ],
+                   "gold":  300,
+                   "friendly":  true,
+                   "ally_abilities":  [
+                                          "field_dressing",
+                                          "antidote",
+                                          "calming_word"
+                                      ]
+               },
+    "Herald":  {
+                   "name":  "Herald",
+                   "description":  "A muscular man who runs a weapon stall in the market.",
+                   "profession":  "Blacksmith",
+                   "level":  6,
+                   "hp":  40,
+                   "hp_max":  40,
+                   "strength":  18,
+                   "dexterity":  12,
+                   "constitution":  16,
+                   "intelligence":  12,
+                   "wisdom":  12,
+                   "charisma":  14,
+                   "token":  "H",
+                   "inventory":  [
+                                     {
+                                         "name":  "Blacksmith\u0027s Hammer",
+                                         "type":  "weapon",
+                                         "effect":  {
+                                                        "strength":  4
+                                                    },
+                                         "value":  20,
+                                         "description":  "A heavy work hammer that can also be used as a weapon"
+                                     },
+                                     {
+                                         "name":  "Short Sword",
+                                         "type":  "weapon",
+                                         "effect":  {
+                                                        "strength":  3
+                                                    },
+                                         "value":  25,
+                                         "description":  "A small, well-made sword"
+                                     },
+                                     {
+                                         "name":  "Long Sword",
+                                         "type":  "weapon",
+                                         "effect":  {
+                                                        "strength":  5
+                                                    },
+                                         "value":  50,
+                                         "description":  "A one-handed sword with a sharp blade"
+                                     },
+                                     {
+                                         "name":  "Leather Armor",
+                                         "type":  "armor",
+                                         "effect":  {
+                                                        "defense":  2
+                                                    },
+                                         "value":  20,
+                                         "description":  "A light leather armor that offers basic protection"
+                                     }
+                                 ],
+                   "gold":  400,
+                   "friendly":  true
+               },
+    "Gundren":  {
+                    "name":  "Gundren",
+                    "description":  "A dwarf with a thick red beard who sells precious goods.",
+                    "profession":  "Jeweler",
+                    "level":  5,
+                    "hp":  35,
+                    "hp_max":  35,
+                    "strength":  15,
+                    "dexterity":  12,
+                    "constitution":  16,
+                    "intelligence":  14,
+                    "wisdom":  14,
+                    "charisma":  12,
+                    "token":  "G",
+                    "inventory":  [
+                                      {
+                                          "name":  "Battle Axe",
+                                          "type":  "weapon",
+                                          "effect":  {
+                                                         "strength":  4
+                                                     },
+                                          "value":  40,
+                                          "description":  "A well-made dwarven axe"
+                                      },
+                                      {
+                                          "name":  "Ruby Gem",
+                                          "type":  "common",
+                                          "value":  100,
+                                          "description":  "A ruby of good quality"
+                                      },
+                                      {
+                                          "name":  "Golden Ring",
+                                          "type":  "accessory",
+                                          "effect":  {
+                                                         "charisma":  1
+                                                     },
+                                          "value":  30,
+                                          "description":  "A simple gold ring"
+                                      }
+                                  ],
+                    "gold":  800,
+                    "friendly":  true
+                },
+    "Nessa":  {
+                  "name":  "Nessa",
+                  "description":  "A wiry tunnel runner with a Watch brand on her wrist and a knife never far from reach.",
+                  "profession":  "Smuggler",
+                  "level":  4,
+                  "hp":  24,
+                  "hp_max":  24,
+                  "strength_base":  12,
+                  "dexterity_base":  16,
+                  "constitution_base":  12,
+                  "intelligence_base":  13,
+                  "wisdom_base":  12,
+                  "charisma_base":  14,
+                  "token":  "N",
+                  "inventory":  [
+                                    {
+                                        "name":  "Runner\u0027s Satchel",
+                                        "type":  "accessory",
+                                        "effect":  {
+                                                       "defense":  1,
+                                                       "dexterity":  1
+                                                   },
+                                        "value":  160,
+                                        "rarity":  "rare",
+                                        "description":  "A flat courier\u0027s satchel with hidden pockets and a reinforced strap"
+                                    },
+                                    {
+                                        "name":  "Healing Potion",
+                                        "type":  "heal",
+                                        "effect":  {
+                                                       "heal":  10
+                                                   },
+                                        "value":  25,
+                                        "description":  "A potion that restores 10 hit points"
+                                    }
+                                ],
+                  "gold":  40,
+                  "friendly":  true
+              },
+    "Mirt\u0027s Factor":  {
+                               "name":  "Mirt\u0027s Factor",
+                               "description":  "A sharp-eyed fixer in a good coat, carrying Mirt\u0027s authority and a very practical knife.",
+                               "profession":  "Fixer",
+                               "level":  6,
+                               "hp":  30,
+                               "hp_max":  30,
+                               "strength_base":  14,
+                               "dexterity_base":  14,
+                               "constitution_base":  12,
+                               "intelligence_base":  14,
+                               "wisdom_base":  12,
+                               "charisma_base":  14,
+                               "token":  "F",
+                               "inventory":  [
+                                                 {
+                                                     "name":  "dagger",
+                                                     "type":  "weapon",
+                                                     "effect":  {
+                                                                    "strength":  2,
+                                                                    "dexterity":  2
+                                                                },
+                                                     "value":  15,
+                                                     "description":  "A small, well-kept knife"
+                                                 }
+                                             ],
+                               "gold":  80,
+                               "friendly":  true
+                           },
+    "Watch Medic":  {
+                        "name":  "Watch Medic",
+                        "description":  "A watch healer in a grey coat, satchel full of bandages and bitter-smelling vials.",
+                        "profession":  "Healer",
+                        "level":  4,
+                        "hp":  22,
+                        "hp_max":  22,
+                        "strength_base":  10,
+                        "dexterity_base":  12,
+                        "constitution_base":  12,
+                        "intelligence_base":  13,
+                        "wisdom_base":  16,
+                        "charisma_base":  12,
+                        "token":  "W",
+                        "inventory":  [
+                                          {
+                                              "name":  "Healing Potion",
+                                              "type":  "heal",
+                                              "effect":  {
+                                                             "heal":  10
+                                                         },
+                                              "value":  25,
+                                              "description":  "A potion that restores 10 hit points"
+                                          }
+                                      ],
+                        "gold":  20,
+                        "friendly":  true,
+                        "ally_abilities":  [
+                                               "field_dressing",
+                                               "antidote"
+                                           ]
+                    },
+    "Vargas":  {
+                   "name":  "Vargas",
+                   "description":  "A sharp-faced man in a dark coat, with the hungry look of someone who has sold too many promises.",
+                   "profession":  "Smuggler",
+                   "level":  5,
+                   "hp":  30,
+                   "hp_max":  30,
+                   "strength_base":  16,
+                   "dexterity_base":  14,
+                   "constitution_base":  14,
+                   "intelligence_base":  12,
+                   "wisdom_base":  10,
+                   "charisma_base":  14,
+                   "token":  "V",
+                   "inventory":  [
+                                     {
+                                         "name":  "Dragonbane",
+                                         "type":  "weapon",
+                                         "effect":  {
+                                                        "strength":  8,
+                                                        "charisma":  1
+                                                    },
+                                         "value":  400,
+                                         "rarity":  "legendary",
+                                         "description":  "A blackened longsword whose edge hums with old draconic spite"
+                                     },
+                                     {
+                                         "name":  "Long Sword",
+                                         "type":  "weapon",
+                                         "effect":  {
+                                                        "strength":  5
+                                                    },
+                                         "value":  50,
+                                         "description":  "A one-handed sword with a sharp blade"
+                                     },
+                                     {
+                                         "name":  "Healing Potion",
+                                         "type":  "heal",
+                                         "effect":  {
+                                                        "heal":  10
+                                                    },
+                                         "value":  25,
+                                         "description":  "A potion that restores 10 hit points"
+                                     }
+                                 ],
+                   "gold":  120,
+                   "friendly":  false,
+                   "abilities":  [
+                                     "dirty_trick"
+                                 ]
+               },
+    "Hooded Cultist A":  {
+                             "name":  "Hooded Cultist A",
+                             "description":  "A hooded figure with a curved knife and a muttered prayer.",
+                             "profession":  "Cultist",
+                             "level":  2,
+                             "hp":  12,
+                             "hp_max":  12,
+                             "strength_base":  12,
+                             "dexterity_base":  10,
+                             "constitution_base":  10,
+                             "intelligence_base":  8,
+                             "wisdom_base":  8,
+                             "charisma_base":  8,
+                             "token":  "c",
+                             "inventory":  [
+                                               {
+                                                   "name":  "dagger",
+                                                   "type":  "weapon",
+                                                   "effect":  {
+                                                                  "strength":  2,
+                                                                  "dexterity":  2
+                                                              },
+                                                   "value":  10,
+                                                   "description":  "A small dagger for personal defense"
+                                               }
+                                           ],
+                             "gold":  10,
+                             "friendly":  false,
+                             "abilities":  [
+                                               "dark_bolt"
+                                           ]
+                         },
+    "Hooded Cultist B":  {
+                             "name":  "Hooded Cultist B",
+                             "description":  "A hooded figure with a curved knife and a muttered prayer.",
+                             "profession":  "Cultist",
+                             "level":  2,
+                             "hp":  12,
+                             "hp_max":  12,
+                             "strength_base":  12,
+                             "dexterity_base":  10,
+                             "constitution_base":  10,
+                             "intelligence_base":  8,
+                             "wisdom_base":  8,
+                             "charisma_base":  8,
+                             "token":  "d",
+                             "inventory":  [
+                                               {
+                                                   "name":  "dagger",
+                                                   "type":  "weapon",
+                                                   "effect":  {
+                                                                  "strength":  2,
+                                                                  "dexterity":  2
+                                                              },
+                                                   "value":  10,
+                                                   "description":  "A small dagger for personal defense"
+                                               }
+                                           ],
+                             "gold":  10,
+                             "friendly":  false,
+                             "abilities":  [
+                                               "dark_bolt"
+                                           ]
+                         },
+    "Specter":  {
+                    "name":  "Specter",
+                    "description":  "A cold, translucent shape that drifts above the cellar floor.",
+                    "profession":  "Undead",
+                    "level":  3,
+                    "hp":  18,
+                    "hp_max":  18,
+                    "strength_base":  12,
+                    "dexterity_base":  14,
+                    "constitution_base":  10,
+                    "intelligence_base":  10,
+                    "wisdom_base":  12,
+                    "charisma_base":  8,
+                    "token":  "S",
+                    "inventory":  [
+
+                                  ],
+                    "gold":  15,
+                    "friendly":  false,
+                    "abilities":  [
+                                      "spectral_touch"
+                                  ]
+                },
+    "Cultist":  {
+                    "name":  "Cultist",
+                    "description":  "A nervous cultist in a stained robe, clutching a curved knife.",
+                    "profession":  "Cultist",
+                    "level":  2,
+                    "hp":  12,
+                    "hp_max":  12,
+                    "strength_base":  12,
+                    "dexterity_base":  10,
+                    "constitution_base":  10,
+                    "intelligence_base":  8,
+                    "wisdom_base":  8,
+                    "charisma_base":  8,
+                    "token":  "K",
+                    "inventory":  [
+                                      {
+                                          "name":  "dagger",
+                                          "type":  "weapon",
+                                          "effect":  {
+                                                         "strength":  2,
+                                                         "dexterity":  2
+                                                     },
+                                          "value":  10,
+                                          "description":  "A curved knife"
+                                      }
+                                  ],
+                    "gold":  10,
+                    "friendly":  false,
+                    "abilities":  [
+                                      "dark_bolt"
+                                  ]
+                },
+    "Iron Sentinel":  {
+                          "name":  "Iron Sentinel",
+                          "description":  "A towering suit of iron plates, its eye-slits burning with a cold blue light.",
+                          "profession":  "Guardian",
+                          "level":  4,
+                          "hp":  40,
+                          "hp_max":  40,
+                          "strength_base":  26,
+                          "dexterity_base":  8,
+                          "constitution_base":  18,
+                          "intelligence_base":  6,
+                          "wisdom_base":  10,
+                          "charisma_base":  4,
+                          "defense":  4,
+                          "token":  "Z",
+                          "inventory":  [
+                                            {
+                                                "name":  "Sentinel Key",
+                                                "type":  "key",
+                                                "effect":  {
+                                                               "opens":  [
+                                                                             "Relic Chest"
+                                                                         ]
+                                                           },
+                                                "value":  60,
+                                                "description":  "A heavy key shaped like a sentinel\u0027s sigil"
+                                            }
+                                        ],
+                          "gold":  40,
+                          "friendly":  false,
+                          "abilities":  [
+                                            "shield_bash",
+                                            "repair"
+                                        ]
+                      },
+    "Tamsin":  {
+                   "name":  "Tamsin",
+                   "description":  "A road-worn caravan master in a scorched coat, with a cut across one cheek and a ledger-keeper\u0027s careful eyes.",
+                   "profession":  "Caravan Master",
+                   "level":  3,
+                   "hp":  18,
+                   "hp_max":  18,
+                   "strength_base":  12,
+                   "dexterity_base":  13,
+                   "constitution_base":  12,
+                   "intelligence_base":  14,
+                   "wisdom_base":  13,
+                   "charisma_base":  14,
+                   "token":  "T",
+                   "inventory":  [
+                                     {
+                                         "name":  "dagger",
+                                         "type":  "weapon",
+                                         "effect":  {
+                                                        "strength":  2
+                                                    },
+                                         "value":  10,
+                                         "description":  "A small dagger for personal defense"
+                                     },
+                                     {
+                                         "name":  "Light Healing Potion",
+                                         "type":  "light_heal",
+                                         "effect":  {
+                                                        "light_heal":  5
+                                                    },
+                                         "value":  10,
+                                         "description":  "A small healing potion"
+                                     }
+                                 ],
+                   "gold":  35,
+                   "friendly":  true
+               },
+    "Sanctum Echo":  {
+                         "name":  "Sanctum Echo",
+                         "description":  "A translucent figure in a warden\u0027s mantle, its face lost in the rune-light.",
+                         "profession":  "Echo",
+                         "level":  1,
+                         "hp":  1,
+                         "hp_max":  1,
+                         "strength_base":  1,
+                         "dexterity_base":  1,
+                         "constitution_base":  1,
+                         "intelligence_base":  10,
+                         "wisdom_base":  14,
+                         "charisma_base":  10,
+                         "token":  "E",
+                         "inventory":  [
+
+                                       ],
+                         "gold":  0,
+                         "friendly":  true
+                     }
+}

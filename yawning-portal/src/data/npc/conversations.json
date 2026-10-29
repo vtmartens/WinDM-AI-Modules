@@ -1,0 +1,2127 @@
+{
+    "default":  {
+                    "start":  {
+                                  "text":  "Greetings, traveler! What can I do for you?",
+                                  "options":  [
+                                                  [
+                                                      "What can you tell me about this place?",
+                                                      "info_place"
+                                                  ],
+                                                  [
+                                                      "Never mind, farewell.",
+                                                      null
+                                                  ]
+                                              ]
+                              },
+                    "info_place":  {
+                                       "text":  "Not much, I\u0027m afraid. I\u0027m just passing through myself.",
+                                       "options":  [
+                                                       [
+                                                           "I understand, thanks anyway.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   }
+                },
+    "Durnan":  {
+                   "start":  {
+                                 "text":  "Welcome to the Yawning Portal. I am Durnan, the owner. Can I offer you something to drink?",
+                                 "options":  [
+                                                 [
+                                                     "Yes, please. A beer.",
+                                                     "offer_beer"
+                                                 ],
+                                                 [
+                                                     "What can you tell me about this place?",
+                                                     "info_tavern"
+                                                 ],
+                                                 [
+                                                     "Have you heard any interesting rumors lately?",
+                                                     "rumors_info"
+                                                 ],
+                                                 [
+                                                     "No, thanks. Just some information.",
+                                                     "info_general"
+                                                 ]
+                                             ]
+                             },
+                   "offer_beer":  {
+                                      "text":  "Here is a fine dark beer for you. That will be 2 gold coins.",
+                                      "effect":  {
+                                                     "type":  "trade",
+                                                     "item":  "Dark Beer",
+                                                     "cost":  2
+                                                 },
+                                      "options":  [
+                                                      [
+                                                          "Thanks! What can you tell me about this place?",
+                                                          "info_tavern"
+                                                      ],
+                                                      [
+                                                          "Have you heard any interesting rumors lately?",
+                                                          "rumors_info"
+                                                      ],
+                                                      [
+                                                          "Goodbye and thanks.",
+                                                          null
+                                                      ]
+                                                  ]
+                                  },
+                   "info_tavern":  {
+                                       "text":  "The Yawning Portal is the favorite meeting place of adventurers and merchants. Below us is the entrance to the infamous Undermountain, though I would advise anyone against venturing down there without proper preparation.",
+                                       "options":  [
+                                                       [
+                                                           "Tell me more about the dungeon.",
+                                                           "info_dungeon"
+                                                       ],
+                                                       [
+                                                           "Who are the interesting people who frequent the tavern?",
+                                                           "clients_info"
+                                                       ],
+                                                       [
+                                                           "Thanks for the information, goodbye.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   },
+                   "info_dungeon":  {
+                                        "text":  "Undermountain is a deadly labyrinth beneath the city. Many enter, few leave... at least in one piece. If you are interested in exploring it, talk to Elminster; he is sitting in the corner. He knows far more than I do about those cursed halls.",
+                                        "options":  [
+                                                        [
+                                                            "I will speak with him, thanks.",
+                                                            null
+                                                        ]
+                                                    ]
+                                    },
+                   "clients_info":  {
+                                        "text":  "Well, Elminster often comes in for a drink; he is that old man in the corner with the white beard. There is also Mirt, a wealthy merchant who knows all the trading news in the city.",
+                                        "options":  [
+                                                        [
+                                                            "Thanks for the information.",
+                                                            null
+                                                        ]
+                                                    ]
+                                    },
+                   "rumors_info":  {
+                                       "text":  "Lately there is a lot of talk about strange happenings at the market. Objects vanishing, noises in the night... and some say they have seen hooded cultists prowling the streets. But you know how rumors are; often exaggerated.",
+                                       "options":  [
+                                                       [
+                                                           "Do you know anything else about these cultists?",
+                                                           "cultists_info"
+                                                       ],
+                                                       [
+                                                           "Interesting, I will keep my eyes open.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   },
+                   "cultists_info":  {
+                                         "text":  "No, but if you are truly interested, talk to Violet at the market. She has a spice stall and sees everything that happens in the square.",
+                                         "options":  [
+                                                         [
+                                                             "I will, thanks.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                   "info_general":  {
+                                        "text":  "What would you like to know? I can give you information about Waterdeep, the tavern patrons, or the infamous dungeon beneath us.",
+                                        "options":  [
+                                                        [
+                                                            "Tell me about Waterdeep.",
+                                                            "info_waterdeep"
+                                                        ],
+                                                        [
+                                                            "Who are the tavern\u0027s interesting patrons?",
+                                                            "clients_info"
+                                                        ],
+                                                        [
+                                                            "What do you know about the dungeon?",
+                                                            "info_dungeon"
+                                                        ]
+                                                    ]
+                                    },
+                   "info_waterdeep":  {
+                                          "text":  "Waterdeep is the greatest city on the Sword Coast, ruled by the Masked Lords and the Open Lord, Dagult Neverember. It is a center of trade, magic, and political intrigue. If you are looking for something, you will probably find it here... for the right price.",
+                                          "options":  [
+                                                          [
+                                                              "Thanks for the information.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      }
+               },
+    "Elminster":  {
+                      "start":  {
+                                    "text":  "Hmm? Oh, greetings, young adventurer. I am Elminster, a humble scholar of the arcane arts. How can I be of service?",
+                                    "options":  [
+                                                    [
+                                                        "Durnan told me you know a great deal about Undermountain.",
+                                                        "info_dungeon"
+                                                    ],
+                                                    [
+                                                        "Are you really THE famous Elminster?",
+                                                        "identity_info"
+                                                    ],
+                                                    [
+                                                        "Do you need help with any task?",
+                                                        "offer_help"
+                                                    ],
+                                                    [
+                                                        "Sorry to bother you, farewell.",
+                                                        null
+                                                    ],
+                                                    [
+                                                        "I found the sealed sanctum beneath the Underroad.",
+                                                        "chronicle_offer",
+                                                        {
+                                                            "quest":  "sanctum_chapter",
+                                                            "status":  "completed"
+                                                        }
+                                                    ],
+                                                    [
+                                                        "About the Warden\u0027s Chronicle...",
+                                                        "chronicle_reminder",
+                                                        {
+                                                            "quest":  "sanctum_chronicle",
+                                                            "status":  "active"
+                                                        }
+                                                    ],
+                                                    [
+                                                        "I recovered the Warden\u0027s Chronicle.",
+                                                        "chronicle_turn_in",
+                                                        {
+                                                            "quest":  "sanctum_chronicle",
+                                                            "status":  "ready"
+                                                        }
+                                                    ],
+                                                    [
+                                                        "What does the chronicle say?",
+                                                        "chronicle_done",
+                                                        {
+                                                            "quest":  "sanctum_chronicle",
+                                                            "status":  "completed"
+                                                        }
+                                                    ]
+                                                ]
+                                },
+                      "info_dungeon":  {
+                                           "text":  "Ah, the infamous Undermountain. A labyrinth of dangers and forgotten treasures. Created by the mad wizard Halaster Blackcloak centuries ago, it is full of monsters, traps, and magical relics. If you mean to explore it, I advise you to obtain at least a map of the upper levels.",
+                                           "options":  [
+                                                           [
+                                                               "Do you know where I can find a map?",
+                                                               "info_map"
+                                                           ],
+                                                           [
+                                                               "What creatures might I encounter?",
+                                                               "creature_info"
+                                                           ],
+                                                           [
+                                                               "Thanks for the information.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                      "info_map":  {
+                                       "text":  "Hmm, Durnan might have a copy, though he will not part with it easily. Or you could speak with Mirt, that merchant over there. Another option is to visit the black market, but be careful not to be fooled by false maps.",
+                                       "options":  [
+                                                       [
+                                                           "Thanks for the advice.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   },
+                      "creature_info":  {
+                                            "text":  "Oh, Undermountain holds all manner of things: from simple goblins to powerful beholders. In the upper levels you will find mostly undead, goblinoids, and the occasional aberrant beast. But the deeper you go, the stranger and more dangerous the creatures become.",
+                                            "effect":  "rest",
+                                            "options":  [
+                                                            [
+                                                                "Do you have any other advice for an adventurer?",
+                                                                "advice_info"
+                                                            ],
+                                                            [
+                                                                "Thanks for the information.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                      "advice_info":  {
+                                          "text":  "Never venture out alone. Always carry rope, extra torches, and at least one healing potion. And remember: sometimes fleeing is the best strategy. Here, take this healing potion; it may serve you well.",
+                                          "effect":  {
+                                                         "type":  "add_item",
+                                                         "item":  "Healing Potion"
+                                                     },
+                                          "options":  [
+                                                          [
+                                                              "Thank you very much!",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                      "identity_info":  {
+                                            "text":  "*smiles enigmatically* I am just an old man who has seen many things in this world. The stories about me are often exaggerated. But tell me, what brings you to Waterdeep?",
+                                            "options":  [
+                                                            [
+                                                                "I am in search of adventure and riches.",
+                                                                "adventure_answer"
+                                                            ],
+                                                            [
+                                                                "I am seeking knowledge of the arcane arts.",
+                                                                "magic_answer"
+                                                            ],
+                                                            [
+                                                                "Just passing through, exploring the world.",
+                                                                "passage_answer"
+                                                            ]
+                                                        ]
+                                        },
+                      "adventure_answer":  {
+                                               "text":  "Ah, the eternal call of gold and glory. Many before you have followed this path. Some became legendary heroes, others... well, food for worms. The difference often lies in caution and wisdom, not merely in the strength of your arm.",
+                                               "options":  [
+                                                               [
+                                                                   "Do you have any advice for me?",
+                                                                   "advice_info"
+                                                               ],
+                                                               [
+                                                                   "Thank you for your words.",
+                                                                   null
+                                                               ]
+                                                           ]
+                                           },
+                      "magic_answer":  {
+                                           "text":  "A noble goal. Magic is as powerful as it is dangerous. If you are sincerely interested in arcane study, I could give you access to some basic texts. They are nothing extraordinary, but they might aid you on your path.",
+                                           "options":  [
+                                                           [
+                                                               "I would be very interested, thank you!",
+                                                               "offer_book"
+                                                           ],
+                                                           [
+                                                               "Perhaps another time, thank you.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                      "passage_answer":  {
+                                             "text":  "The journey itself is often more important than the destination. I have traveled through many realms and still find wonders that surprise me. May the winds be favorable to you, traveler.",
+                                             "options":  [
+                                                             [
+                                                                 "Thank you, wise Elminster.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                      "offer_book":  {
+                                         "text":  "Here, this is an old manual of basic spells. Take good care of it; it contains knowledge precious to an aspiring wizard.",
+                                         "effect":  {
+                                                        "type":  "add_item",
+                                                        "item":  "Basic Arcane Manual"
+                                                    },
+                                         "options":  [
+                                                         [
+                                                             "I will study it carefully, thank you!",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                      "offer_help":  {
+                                         "text":  "Hmm, now that you mention it... I need some rare herbs for my studies. A plant called \u0027Moon\u0027s Eye\u0027 grows in the woods north of the city. If you could procure me a few leaves, I would be most grateful.",
+                                         "options":  [
+                                                         [
+                                                             "Of course, I will bring them as soon as I can.",
+                                                             "accept_quest"
+                                                         ],
+                                                         [
+                                                             "I am sorry, I am busy with other matters at the moment.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                      "accept_quest":  {
+                                           "text":  "Excellent! The leaves are recognizable by their silvery-blue color, and they glow faintly at night. Be careful; the woods are not always safe. Return to me when you have found them.",
+                                           "options":  [
+                                                           [
+                                                               "I will, see you soon.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                      "chronicle_offer":  {
+                                              "text":  "Elminster\u0027s eyes sharpen. \u0027The sealed sanctum... then the Warden\u0027s Chronicle survives. It is a stone tablet in the Warden\u0027s reliquary, and it may name what the Runeheart truly is. Bring it to me.\u0027",
+                                              "options":  [
+                                                              [
+                                                                  "I will bring you the chronicle.",
+                                                                  "chronicle_accept"
+                                                              ],
+                                                              [
+                                                                  "Not now.",
+                                                                  null
+                                                              ]
+                                                          ]
+                                          },
+                      "chronicle_accept":  {
+                                               "text":  "The reliquary is in the sanctum, past the warded threshold. Take this seal; it is the only key I have left to it. The Rune Warden will not make the visit easy.",
+                                               "effect":  [
+                                                              {
+                                                                  "type":  "add_item",
+                                                                  "item":  "Warden\u0027s Seal"
+                                                              },
+                                                              {
+                                                                  "type":  "start_quest",
+                                                                  "quest":  "sanctum_chronicle"
+                                                              }
+                                                          ],
+                                               "options":  [
+                                                               "I will return with it.",
+                                                               null
+                                                           ]
+                                           },
+                      "chronicle_reminder":  {
+                                                 "text":  "The Warden\u0027s reliquary is in the sealed sanctum. The chronicle is a stone tablet; you will know it by the heart-shaped seal.",
+                                                 "options":  [
+                                                                 "I am on my way.",
+                                                                 null
+                                                             ]
+                                             },
+                      "chronicle_turn_in":  {
+                                                "text":  "Elminster reads the tablet in silence, one finger tracing the old runes. At last he looks up. \u0027This is not a history of a jailer. It is a history of a witness.\u0027 He pays you and presses an old notebook into your hands.",
+                                                "effect":  {
+                                                               "type":  "complete_quest",
+                                                               "quest":  "sanctum_chronicle"
+                                                           },
+                                                "options":  [
+                                                                "What does it say?",
+                                                                "chronicle_done"
+                                                            ]
+                                            },
+                      "chronicle_done":  {
+                                             "text":  "The Runeheart was sealed because it answers whoever can hear it, not whoever can hold it. The Warden stayed to keep that answer out of the wrong hands. The Gate below is the last seal - and the last question.",
+                                             "options":  [
+                                                             "Then I will answer it.",
+                                                             null
+                                                         ]
+                                         }
+                  },
+    "Mirt":  {
+                 "start":  {
+                               "text":  "Greetings, friend! Mirt the Merchant at your service. Are you looking for some business, or simply information?",
+                               "options":  [
+                                               [
+                                                   "What kind of business do you offer?",
+                                                   "business_info"
+                                               ],
+                                               [
+                                                   "I was told you might have a map of Undermountain.",
+                                                   "ask_map"
+                                               ],
+                                               [
+                                                   "I am looking for information about the local market.",
+                                                   "info_market"
+                                               ],
+                                               [
+                                                   "Just passing through, thanks.",
+                                                   null
+                                               ],
+                                               [
+                                                   "About Vargas and the debt...",
+                                                   "vargas_debt_reminder",
+                                                   {
+                                                       "quest":  "vargas_debt",
+                                                       "status":  "active"
+                                                   }
+                                               ],
+                                               [
+                                                   "I have settled Vargas\u0027s debt.",
+                                                   "vargas_debt_turn_in",
+                                                   {
+                                                       "quest":  "vargas_debt",
+                                                       "status":  "ready"
+                                                   }
+                                               ],
+                                               [
+                                                   "About Vargas...",
+                                                   "vargas_debt_done",
+                                                   {
+                                                       "quest":  "vargas_debt",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                                               [
+                                                   "Violet sent me with a warning about the hooded figures.",
+                                                   "violet_warning_turn_in",
+                                                   {
+                                                       "quest":  "violet_warning",
+                                                       "status":  "active"
+                                                   }
+                                               ],
+                                               [
+                                                   "Tell me about the sealed vault beneath the warehouse.",
+                                                   "sentinel_sigil_offer",
+                                                   {
+                                                       "quest":  "shadows_of_the_market",
+                                                       "status":  "active"
+                                                   }
+                                               ],
+                                               [
+                                                   "Tell me about the sealed vault beneath the warehouse.",
+                                                   "sentinel_sigil_offer",
+                                                   {
+                                                       "quest":  "shadows_of_the_market",
+                                                       "status":  "ready"
+                                                   }
+                                               ],
+                                               [
+                                                   "Tell me about the sealed vault beneath the warehouse.",
+                                                   "sentinel_sigil_offer",
+                                                   {
+                                                       "quest":  "shadows_of_the_market",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                                               [
+                                                   "About the sealed vault...",
+                                                   "sentinel_sigil_reminder",
+                                                   {
+                                                       "quest":  "sentinel_sigil",
+                                                       "status":  "active"
+                                                   }
+                                               ],
+                                               [
+                                                   "I recovered Sentinel\u0027s Edge.",
+                                                   "sentinel_sigil_turn_in",
+                                                   {
+                                                       "quest":  "sentinel_sigil",
+                                                       "status":  "ready"
+                                                   }
+                                               ],
+                                               [
+                                                   "What did you do with the sigil?",
+                                                   "sentinel_sigil_done",
+                                                   {
+                                                       "quest":  "sentinel_sigil",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                                               [
+                                                   "You look worried. What troubles you?",
+                                                   "waystation_offer",
+                                                   {
+                                                       "quest":  "waystation_trouble",
+                                                       "status":  "not_started"
+                                                   }
+                                               ],
+                                               [
+                                                   "About the Broken Waystation...",
+                                                   "waystation_reminder",
+                                                   {
+                                                       "quest":  "waystation_trouble",
+                                                       "status":  "active"
+                                                   }
+                                               ],
+                                               [
+                                                   "The waystation is clear.",
+                                                   "waystation_turn_in",
+                                                   {
+                                                       "quest":  "waystation_trouble",
+                                                       "status":  "ready"
+                                                   }
+                                               ],
+                                               [
+                                                   "What will happen to the trade road now?",
+                                                   "waystation_done",
+                                                   {
+                                                       "quest":  "waystation_trouble",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                                               [
+                                                   "About the Underroad...",
+                                                   "underroad_reminder",
+                                                   {
+                                                       "quest":  "underroad_chapter",
+                                                       "status":  "active"
+                                                   }
+                                               ],
+                                               [
+                                                   "The Underroad is clear.",
+                                                   "underroad_turn_in",
+                                                   {
+                                                       "quest":  "underroad_chapter",
+                                                       "status":  "ready"
+                                                   }
+                                               ],
+                                               [
+                                                   "What was in the Underroad?",
+                                                   "underroad_done",
+                                                   {
+                                                       "quest":  "underroad_chapter",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                                               [
+                                                   "You mentioned a sealed sanctum beneath the Underroad.",
+                                                   "sanctum_offer",
+                                                   {
+                                                       "all":  [
+                                                                   {
+                                                                       "quest":  "underroad_chapter",
+                                                                       "status":  "completed"
+                                                                   },
+                                                                   {
+                                                                       "quest":  "sanctum_chapter",
+                                                                       "status":  "not_started"
+                                                                   }
+                                                               ]
+                                                   }
+                                               ],
+                                               [
+                                                   "About the sealed sanctum...",
+                                                   "sanctum_reminder",
+                                                   {
+                                                       "quest":  "sanctum_chapter",
+                                                       "status":  "active"
+                                                   }
+                                               ],
+                                               [
+                                                   "The Rune Warden is destroyed.",
+                                                   "sanctum_turn_in",
+                                                   {
+                                                       "quest":  "sanctum_chapter",
+                                                       "status":  "ready"
+                                                   }
+                                               ],
+                                               [
+                                                   "What lies beyond the sanctum?",
+                                                   "sanctum_done",
+                                                   {
+                                                       "quest":  "sanctum_chapter",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                                               [
+                                                   "Any work for a trusted friend?",
+                                                   "mirt_trusted",
+                                                   {
+                                                       "reputation":  {
+                                                                          "faction":  "mirt_network",
+                                                                          "min":  10
+                                                                      }
+                                                   }
+                                               ],
+                                               [
+                                                   "You do not recognize me, merchant.",
+                                                   "disguise_bluff",
+                                                   {
+                                                       "disguised":  true
+                                                   }
+                                               ],
+                                               [
+                                                   "I know a fence when I see one.",
+                                                   "background_criminal",
+                                                   {
+                                                       "background":  "criminal"
+                                                   }
+                                               ],
+                                               [
+                                                   "Those rune-marks are older than the city.",
+                                                   "background_sage",
+                                                   {
+                                                       "background":  "sage"
+                                                   }
+                                               ],
+                                               [
+                                                   "One of your merchants is selling cursed relics.",
+                                                   "silent_partner_offer",
+                                                   {
+                                                       "all":  [
+                                                                   {
+                                                                       "quest":  "underroad_chapter",
+                                                                       "status":  "completed"
+                                                                   },
+                                                                   {
+                                                                       "quest":  "silent_partner",
+                                                                       "status":  "not_started"
+                                                                   },
+                                                                   {
+                                                                       "reputation":  {
+                                                                                          "faction":  "mirt_network",
+                                                                                          "min":  10
+                                                                                      }
+                                                                   }
+                                                               ]
+                                                   }
+                                               ],
+                                               [
+                                                   "About Gundren\u0027s relics...",
+                                                   "silent_partner_reminder",
+                                                   {
+                                                       "quest":  "silent_partner",
+                                                       "status":  "active"
+                                                   }
+                                               ],
+                                               [
+                                                   "I have Gundren\u0027s ledger.",
+                                                   "silent_partner_turn_in",
+                                                   {
+                                                       "quest":  "silent_partner",
+                                                       "status":  "ready"
+                                                   }
+                                               ],
+                                               [
+                                                   "What happened with Gundren?",
+                                                   "silent_partner_done",
+                                                   {
+                                                       "quest":  "silent_partner",
+                                                       "status":  "completed"
+                                                   }
+                                               ]
+                                           ]
+                           },
+                 "business_info":  {
+                                       "text":  "I have contacts with merchants all along the Sword Coast. I can procure almost anything, from the finest elven wine to dwarven armor. It depends on how much you are willing to spend and, sometimes, on the favors you can do.",
+                                       "options":  [
+                                                       [
+                                                           "Do you have anything interesting at the moment?",
+                                                           "show_items"
+                                                       ],
+                                                       [
+                                                           "What kind of favors?",
+                                                           "favors_info"
+                                                       ],
+                                                       [
+                                                           "Not interested at the moment, thanks.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   },
+                 "violet_warning_turn_in":  {
+                                                "text":  "Mirt\u0027s smile fades. \u0027Violet sent you? Then it is worse than I thought.\u0027 He hears you out, then nods. \u0027Tell her I will watch the warehouse - and here, for your trouble.\u0027",
+                                                "effect":  {
+                                                               "type":  "complete_quest",
+                                                               "quest":  "violet_warning"
+                                                           },
+                                                "options":  [
+                                                                [
+                                                                    "I will tell her.",
+                                                                    null
+                                                                ]
+                                                            ]
+                                            },
+                 "sentinel_sigil_offer":  {
+                                              "text":  "Mirt lowers his voice. \u0027There is a sealed vault under the old warehouse. The warehouse key Violet gave you opens a strongbox there; the Vault Key inside opens the vault door. An iron sentinel guards the relic - Sentinel\u0027s Edge. Bring it to me and we will both profit.\u0027",
+                                              "options":  [
+                                                              [
+                                                                  "I will bring you the relic.",
+                                                                  "sentinel_sigil_accept"
+                                                              ],
+                                                              [
+                                                                  "Not now.",
+                                                                  null
+                                                              ]
+                                                          ]
+                                          },
+                 "sentinel_sigil_accept":  {
+                                               "text":  "Good. The strongbox is in the warehouse; the sentinel carries the key to the reliquary. Try not to wake the whole cult.",
+                                               "effect":  {
+                                                              "type":  "start_quest",
+                                                              "quest":  "sentinel_sigil"
+                                                          },
+                                               "options":  [
+                                                               [
+                                                                   "I will return with Sentinel\u0027s Edge.",
+                                                                   null
+                                                               ]
+                                                           ]
+                                           },
+                 "sentinel_sigil_reminder":  {
+                                                 "text":  "The sealed vault is beneath the warehouse. Use the warehouse key on the strongbox for the Vault Key, then open the Vault Door. The sentinel carries the key to the reliquary.",
+                                                 "options":  [
+                                                                 [
+                                                                     "I am on my way.",
+                                                                     null
+                                                                 ]
+                                                             ]
+                                             },
+                 "sentinel_sigil_turn_in":  {
+                                                "text":  "Mirt turns the rune-etched blade in the light. \u0027Sentinel\u0027s Edge. I had begun to think the vault would keep it.\u0027 He pays you and presses a heavy silver signet into your hand.",
+                                                "effect":  {
+                                                               "type":  "complete_quest",
+                                                               "quest":  "sentinel_sigil"
+                                                           },
+                                                "options":  [
+                                                                [
+                                                                    "A fair trade.",
+                                                                    null
+                                                                ]
+                                                            ]
+                                            },
+                 "sentinel_sigil_done":  {
+                                             "text":  "The sigil is already sold, but Mirt raises his cup. \u0027The vault is open and my purse is heavier. Not a bad day\u0027s work.\u0027",
+                                             "options":  [
+                                                             [
+                                                                 "Until next time.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                 "waystation_offer":  {
+                                          "text":  "Mirt taps the map. \u0027The trade road east of the market has gone quiet. A bandit chief has taken the Broken Waystation and is bleeding my caravans dry. Clear him out and I will make it worth your while.\u0027",
+                                          "options":  [
+                                                          [
+                                                              "I will clear the waystation.",
+                                                              "waystation_accept"
+                                                          ],
+                                                          [
+                                                              "Not now.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                 "waystation_accept":  {
+                                           "text":  "The waystation sits at the far end of the Trade Road. Expect a chief and at least a pair of cutthroats; the road itself is not safe either. Come back when the road is open.",
+                                           "effect":  {
+                                                          "type":  "start_quest",
+                                                          "quest":  "waystation_trouble"
+                                                      },
+                                           "options":  [
+                                                           [
+                                                               "I will return when it is done.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                 "waystation_reminder":  {
+                                             "text":  "Follow the Trade Road east from the market. The Broken Waystation is at the far end. The chief will not give it up without a fight, so carry potions and keep your guard up.",
+                                             "options":  [
+                                                             [
+                                                                 "I am on my way.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                 "waystation_turn_in":  {
+                                            "text":  "Mirt listens to your account, then sets a heavy purse on the table. \u0027The road is open again. That is worth more than coin to me, but take this anyway.\u0027",
+                                            "effect":  {
+                                                           "type":  "complete_quest",
+                                                           "quest":  "waystation_trouble"
+                                                       },
+                                            "options":  [
+                                                            [
+                                                                "A fair reward.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                 "waystation_done":  {
+                                         "text":  "Mirt\u0027s caravans have started moving again. \u0027If you find more trouble on that road, I want to hear about it before it reaches my ledgers.\u0027",
+                                         "options":  [
+                                                         [
+                                                             "I will keep my eyes open.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                 "underroad_reminder":  {
+                                            "text":  "Mirt taps the ledger. \u0027The tunnel beneath the waystation is older than the bandits. If the Smuggler Lord is using it, every quiet road in the region is for sale.\u0027",
+                                            "options":  [
+                                                            [
+                                                                "I will go below.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                 "underroad_turn_in":  {
+                                           "text":  "Mirt reads the names in the ledger twice, then closes it. \u0027The Underroad is clear and the buyers will scatter. That is worth more than the coin, but take this anyway.\u0027",
+                                           "effect":  {
+                                                          "type":  "complete_quest",
+                                                          "quest":  "underroad_chapter"
+                                                      },
+                                           "options":  [
+                                                           [
+                                                               "A fair trade.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                 "underroad_done":  {
+                                        "text":  "Mirt has already begun tracing the names from the ledger. \u0027The Underroad is quiet for now. If another buyer appears, I will know where to send you.\u0027",
+                                        "options":  [
+                                                        [
+                                                            "Until then.",
+                                                            null
+                                                        ]
+                                                    ]
+                                    },
+                 "sanctum_offer":  {
+                                       "text":  "Mirt sets down his cup. \u0027The smugglers\u0027 signet is not just a badge. It opens a sealed sanctum beyond their cache. Something old is waking down there - my sources call it the Rune Warden. End it and the eastern road is finally ours.\u0027",
+                                       "options":  [
+                                                       [
+                                                           "I will open the sanctum.",
+                                                           "sanctum_accept"
+                                                       ],
+                                                       [
+                                                           "Not yet.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   },
+                 "sanctum_accept":  {
+                                        "text":  "Take the signet from the smugglers\u0027 cache if you have not already. Beyond it lies a warded hall; a Rune-Ward charm would make the threshold easier. The Rune Warden will not yield without a fight.",
+                                        "effect":  {
+                                                       "type":  "start_quest",
+                                                       "quest":  "sanctum_chapter"
+                                                   },
+                                        "options":  [
+                                                        [
+                                                            "I will return when it is done.",
+                                                            null
+                                                        ]
+                                                    ]
+                                    },
+                 "sanctum_reminder":  {
+                                          "text":  "The sealed sanctum is beyond the Underroad\u0027s cache. The signet wakes the door; the Rune-Ward Amulet can quiet the ward. The Rune Warden is the last thing standing between the road and a quiet season.",
+                                          "options":  [
+                                                          [
+                                                              "I am on my way.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                 "sanctum_turn_in":  {
+                                         "text":  "Mirt listens without interrupting. When you finish, he pours two cups and pushes one across the table. \u0027The Rune Warden is gone. The road is quiet for the first time in years. That is worth more than coin - but take this anyway.\u0027",
+                                         "effect":  {
+                                                        "type":  "complete_quest",
+                                                        "quest":  "sanctum_chapter"
+                                                    },
+                                         "options":  [
+                                                         [
+                                                             "A good end to a long road.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                 "sanctum_done":  {
+                                      "text":  "The sealed sanctum is silent, and Mirt\u0027s caravans no longer need an escort past the Waystation. \u0027If the road ever wakes again,\u0027 he says, \u0027I know who to call.\u0027",
+                                      "options":  [
+                                                      [
+                                                          "Until then.",
+                                                          null
+                                                      ]
+                                                  ]
+                                  },
+                 "mirt_trusted":  {
+                                      "text":  "Mirt leans back and studies you. \u0027A trusted friend. That is a rare thing in this city.\u0027 He taps the table. \u0027Keep your purse full of potions and your name clean, and my people will keep their prices kind.\u0027",
+                                      "options":  [
+                                                      [
+                                                          "I can live with that.",
+                                                          null
+                                                      ]
+                                                  ]
+                                  },
+                 "disguise_bluff":  {
+                                        "text":  "Mirt squints at your borrowed face, then laughs. \u0027A new face, but the same boots. Sit down before someone less friendly notices.\u0027 Your illusion holds long enough to carry the bluff, then fades.",
+                                        "effect":  {
+                                                       "type":  "clear_disguise"
+                                                   },
+                                        "options":  [
+                                                        [
+                                                            "A pleasure doing business.",
+                                                            null
+                                                        ]
+                                                    ]
+                                    },
+                 "background_criminal":  {
+                                             "text":  "Mirt\u0027s eyes flick to your hands, then to the door. \u0027A professional. Good.\u0027 He lowers his voice. \u0027Gundren keeps a lockbox under his stall with a false plate. If you ever need leverage on him, that is where it lives.\u0027",
+                                             "options":  [
+                                                             [
+                                                                 "Useful.",
+                                                                 null
+                                                             ],
+                                                             [
+                                                                 "I will remember that.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                 "background_sage":  {
+                                         "text":  "Mirt turns a sealed ledger toward you. \u0027These marks are not merchant script. They are older than the city.\u0027 You recognize the same angular forms carved into the sanctum and the Runeheart vault below it.",
+                                         "options":  [
+                                                         [
+                                                             "The gate below is connected to them.",
+                                                             null
+                                                         ],
+                                                         [
+                                                             "I will keep that in mind.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                 "silent_partner_offer":  {
+                                              "text":  "Mirt\u0027s smile disappears. \u0027Gundren has been moving cursed relics through my market and undercutting every honest trader in it. His private ledger is in a lockbox beneath his stall. Bring it to me and we will settle this quietly.\u0027",
+                                              "options":  [
+                                                              [
+                                                                  "I will get the ledger.",
+                                                                  "silent_partner_accept"
+                                                              ],
+                                                              [
+                                                                  "Not now.",
+                                                                  null
+                                                              ]
+                                                          ]
+                                          },
+                 "silent_partner_accept":  {
+                                               "text":  "Gundren keeps his stall near the fountain. The lockbox is beneath it. Be discreet; a public accusation would cost me more than the relics are worth.",
+                                               "effect":  {
+                                                              "type":  "start_quest",
+                                                              "quest":  "silent_partner"
+                                                          },
+                                               "options":  [
+                                                               [
+                                                                   "I will be discreet.",
+                                                                   null
+                                                               ]
+                                                           ]
+                                           },
+                 "silent_partner_reminder":  {
+                                                 "text":  "The lockbox is beneath Gundren\u0027s stall in the market. Bring me the ledger and I will decide how much of this becomes public.",
+                                                 "options":  [
+                                                                 [
+                                                                     "I am on my way.",
+                                                                     null
+                                                                 ]
+                                                             ]
+                                             },
+                 "silent_partner_turn_in":  {
+                                                "text":  "Mirt reads the ledger in silence. \u0027This is enough to ruin him. Or enough to own him. What shall we do with it?\u0027",
+                                                "options":  [
+                                                                [
+                                                                    "Give it to Mirt.",
+                                                                    "silent_partner_mirt"
+                                                                ],
+                                                                [
+                                                                    "Protect Gundren\u0027s trade.",
+                                                                    "silent_partner_underroad"
+                                                                ],
+                                                                [
+                                                                    "Keep the ledger.",
+                                                                    "silent_partner_keep"
+                                                                ]
+                                                            ]
+                                            },
+                 "silent_partner_mirt":  {
+                                             "text":  "Mirt closes the ledger and pours two cups. \u0027The market will be cleaner by morning. You have my thanks, and my coin.\u0027",
+                                             "effect":  [
+                                                            {
+                                                                "type":  "remove_item",
+                                                                "item":  "Merchant Ledger"
+                                                            },
+                                                            {
+                                                                "type":  "adjust_reputation",
+                                                                "faction":  "mirt_network",
+                                                                "amount":  8
+                                                            },
+                                                            {
+                                                                "type":  "complete_quest",
+                                                                "quest":  "silent_partner"
+                                                            }
+                                                        ],
+                                             "options":  [
+                                                             [
+                                                                 "A cleaner market, then.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                 "silent_partner_underroad":  {
+                                                  "text":  "Mirt studies you, then laughs without warmth. \u0027So the smugglers keep their merchant. I will remember this.\u0027 The ledger vanishes into the Underroad\u0027s network, and a heavy purse finds your hand.",
+                                                  "effect":  [
+                                                                 {
+                                                                     "type":  "remove_item",
+                                                                     "item":  "Merchant Ledger"
+                                                                 },
+                                                                 {
+                                                                     "type":  "adjust_reputation",
+                                                                     "faction":  "underroad_smugglers",
+                                                                     "amount":  8
+                                                                 },
+                                                                 {
+                                                                     "type":  "add_gold",
+                                                                     "amount":  80
+                                                                 },
+                                                                 {
+                                                                     "type":  "complete_quest",
+                                                                     "quest":  "silent_partner"
+                                                                 }
+                                                             ],
+                                                  "options":  [
+                                                                  [
+                                                                      "Business is business.",
+                                                                      null
+                                                                  ]
+                                                              ]
+                                              },
+                 "silent_partner_keep":  {
+                                             "text":  "You close the ledger and put it away. Mirt\u0027s expression hardens. \u0027A dangerous thing to carry. Do not expect me to forget where it went.\u0027",
+                                             "effect":  [
+                                                            {
+                                                                "type":  "adjust_reputation",
+                                                                "faction":  "mirt_network",
+                                                                "amount":  -5
+                                                            },
+                                                            {
+                                                                "type":  "complete_quest",
+                                                                "quest":  "silent_partner"
+                                                            }
+                                                        ],
+                                             "options":  [
+                                                             [
+                                                                 "I will take my chances.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                 "silent_partner_done":  {
+                                             "text":  "Gundren\u0027s stall stands quiet, and Mirt\u0027s ledgers balance again. \u0027The market remembers who settled that account,\u0027 he says. \u0027So do I.\u0027",
+                                             "options":  [
+                                                             [
+                                                                 "Good.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                 "show_items":  {
+                                    "text":  "At the moment I have a fine healing potion, only 30 gold coins. And this amulet of protection, for 60. Interested?",
+                                    "options":  [
+                                                    [
+                                                        "I am interested in the healing potion.",
+                                                        "buy_potion"
+                                                    ],
+                                                    [
+                                                        "I would like the amulet of protection.",
+                                                        "buy_amulet"
+                                                    ],
+                                                    [
+                                                        "Maybe later, thanks.",
+                                                        null
+                                                    ]
+                                                ]
+                                },
+                 "buy_potion":  {
+                                    "text":  "Excellent choice! Here is your healing potion.",
+                                    "effect":  {
+                                                   "type":  "trade",
+                                                   "item":  "Healing Potion",
+                                                   "cost":  30
+                                               },
+                                    "options":  [
+                                                    [
+                                                        "Thanks! Do you have anything else to offer?",
+                                                        "show_items"
+                                                    ],
+                                                    [
+                                                        "That is all for now, thanks.",
+                                                        null
+                                                    ]
+                                                ]
+                                },
+                 "buy_amulet":  {
+                                    "text":  "An excellent investment in your safety! Here is the amulet.",
+                                    "effect":  {
+                                                   "type":  "trade",
+                                                   "item":  "Amulet of Protection",
+                                                   "cost":  60
+                                               },
+                                    "options":  [
+                                                    [
+                                                        "Thanks! Do you have anything else to offer?",
+                                                        "show_items"
+                                                    ],
+                                                    [
+                                                        "That is all for now, thanks.",
+                                                        null
+                                                    ]
+                                                ]
+                                },
+                 "favors_info":  {
+                                     "text":  "Oh, nothing illegal! *smiles* Sometimes I need help delivering packages to dangerous places, or recovering goods from... reluctant merchants. The kind of work an adventurer is perfect for.",
+                                     "options":  [
+                                                     [
+                                                         "Do you have any work available now?",
+                                                         "offer_work"
+                                                     ],
+                                                     [
+                                                         "I am not interested in this kind of work.",
+                                                         null
+                                                     ]
+                                                 ]
+                                 },
+                 "offer_work":  {
+                                    "text":  "As a matter of fact, yes. A client has not paid an important debt. His name is Vargas, and he lives in the eastern part of the city. Nothing violent; I just want you to remind him of his... moral responsibility.",
+                                    "options":  [
+                                                    [
+                                                        "I will take care of Vargas.",
+                                                        "accept_job"
+                                                    ],
+                                                    [
+                                                        "That is not the kind of work for me.",
+                                                        null
+                                                    ]
+                                                ]
+                                },
+                 "accept_job":  {
+                                    "text":  "Excellent! Once you have spoken with him, come back here for your reward: 50 gold coins. And if he gives you the money directly, even better; you can keep 10%.",
+                                    "effect":  {
+                                                   "type":  "start_quest",
+                                                   "quest":  "vargas_debt"
+                                               },
+                                    "options":  [
+                                                    [
+                                                        "Deal, see you soon.",
+                                                        null
+                                                    ]
+                                                ]
+                                },
+                 "vargas_debt_reminder":  {
+                                              "text":  "Vargas is hiding in the old warehouse at the eastern edge of the market. He still owes me, and I do not forget a debt.",
+                                              "options":  [
+                                                              [
+                                                                  "I will settle it.",
+                                                                  null
+                                                              ]
+                                                          ]
+                                          },
+                 "vargas_debt_turn_in":  {
+                                             "text":  "So Vargas has paid at last. A pity it took steel to make him remember. Here is your fifty gold, as promised.",
+                                             "effect":  {
+                                                            "type":  "complete_quest",
+                                                            "quest":  "vargas_debt"
+                                                        },
+                                             "options":  [
+                                                             [
+                                                                 "It was a pleasure.",
+                                                                 null
+                                                             ],
+                                                             [
+                                                                 "What happens to the cult now?",
+                                                                 "vargas_followup"
+                                                             ]
+                                                         ]
+                                         },
+                 "vargas_debt_done":  {
+                                          "text":  "The debt is settled, and Vargas will not trouble honest merchants again. If you hear whispers about who was buying his smuggled goods, I would like to know.",
+                                          "options":  [
+                                                          [
+                                                              "I will keep my eyes open.",
+                                                              null
+                                                          ],
+                                                          [
+                                                              "Tell me about that buyer.",
+                                                              "vargas_followup"
+                                                          ]
+                                                      ]
+                                      },
+                 "vargas_followup":  {
+                                         "text":  "Vargas was only a collector. Someone in the city paid for what his cult carried out of the warehouse. A silent partner, and a patient one. That is a name worth finding.",
+                                         "options":  [
+                                                         [
+                                                             "I will find them.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                 "ask_map":  {
+                                 "text":  "Ah, Undermountain... yes, I might have something like that. *lowers his voice* It costs 100 gold coins. It is an authentic map of the first three levels, very detailed. Are you interested?",
+                                 "options":  [
+                                                 [
+                                                     "Yes, I will buy it.",
+                                                     "buy_map"
+                                                 ],
+                                                 [
+                                                     "It is too expensive for me at the moment.",
+                                                     null
+                                                 ]
+                                             ]
+                             },
+                 "buy_map":  {
+                                 "text":  "Deal! Here is your map. Use it wisely, and do not tell anyone you got it from me.",
+                                 "effect":  {
+                                                "type":  "trade",
+                                                "item":  "Map of Undermountain",
+                                                "cost":  100
+                                            },
+                                 "options":  [
+                                                 [
+                                                     "Thanks, I will be discreet.",
+                                                     null
+                                                 ]
+                                             ]
+                             },
+                 "info_market":  {
+                                     "text":  "The market of Waterdeep is the largest on the Sword Coast! You will find everything: from Calimshan fabrics to dwarven-forged weapons, from magic potions to exotic spices. But watch out for pickpockets; they are everywhere.",
+                                     "options":  [
+                                                     [
+                                                         "Have you noticed anything strange at the market lately?",
+                                                         "strange_info"
+                                                     ],
+                                                     [
+                                                         "Thanks for the information.",
+                                                         null
+                                                     ]
+                                                 ]
+                                 },
+                 "strange_info":  {
+                                      "text":  "Hmm... now that you mention it, yes. There have been some mysterious thefts. Objects vanishing without a trace, even when well guarded. And some merchants have seen hooded figures prowling about at night. Bizarre, is it not?",
+                                      "options":  [
+                                                      [
+                                                          "Very strange. I will keep my eyes open.",
+                                                          null
+                                                      ]
+                                                  ]
+                                  }
+             },
+    "Violet":  {
+                   "start":  {
+                                 "text":  "Violet looks up from a tray of dried herbs. \u0027You are the one asking about the hooded figures, yes? Good. I have seen them.\u0027",
+                                 "options":  [
+                                                 [
+                                                     "Durnan said you have seen strange things around the market.",
+                                                     "strange_info"
+                                                 ],
+                                                 [
+                                                     "What do you sell here?",
+                                                     "shop_info"
+                                                 ],
+                                                 [
+                                                     "Just browsing, thanks.",
+                                                     null
+                                                 ],
+                                                 [
+                                                     "I am on my way to the warehouse.",
+                                                     "shadows_reminder",
+                                                     {
+                                                         "quest":  "shadows_of_the_market",
+                                                         "status":  "active"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "I broke up Vargas\u0027s cell.",
+                                                     "shadows_turn_in",
+                                                     {
+                                                         "quest":  "shadows_of_the_market",
+                                                         "status":  "ready"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "What happens now?",
+                                                     "shadows_done",
+                                                     {
+                                                         "quest":  "shadows_of_the_market",
+                                                         "status":  "completed"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "Is there anything else I can do?",
+                                                     "warning_offer"
+                                                 ],
+                                                 [
+                                                     "About that warning for Mirt...",
+                                                     "warning_reminder",
+                                                     {
+                                                         "quest":  "violet_warning",
+                                                         "status":  "active"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "I have walked the trade road before.",
+                                                     "background_outlander",
+                                                     {
+                                                         "background":  "outlander"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "I have tended the sick before.",
+                                                     "background_acolyte",
+                                                     {
+                                                         "background":  "acolyte"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "The Watch could use someone like you.",
+                                                     "violet_trusted",
+                                                     {
+                                                         "reputation":  {
+                                                                            "faction":  "violet_watch",
+                                                                            "min":  10
+                                                                        }
+                                                     }
+                                                 ],
+                                                 [
+                                                     "I heard the Watch has a corruption problem.",
+                                                     "watchman_offer",
+                                                     {
+                                                         "all":  [
+                                                                     {
+                                                                         "quest":  "shadows_of_the_market",
+                                                                         "status":  "completed"
+                                                                     },
+                                                                     {
+                                                                         "quest":  "watchman_ledger",
+                                                                         "status":  "not_started"
+                                                                     },
+                                                                     {
+                                                                         "reputation":  {
+                                                                                            "faction":  "violet_watch",
+                                                                                            "min":  10
+                                                                                        }
+                                                                     }
+                                                                 ]
+                                                     }
+                                                 ],
+                                                 [
+                                                     "About Watch Sergeant Vell...",
+                                                     "watchman_reminder",
+                                                     {
+                                                         "quest":  "watchman_ledger",
+                                                         "status":  "active"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "I found proof against Vell.",
+                                                     "watchman_turn_in",
+                                                     {
+                                                         "quest":  "watchman_ledger",
+                                                         "status":  "ready"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "What happened to Vell?",
+                                                     "watchman_done",
+                                                     {
+                                                         "quest":  "watchman_ledger",
+                                                         "status":  "completed"
+                                                     }
+                                                 ]
+                                             ]
+                             },
+                   "strange_info":  {
+                                        "text":  "Three nights running, hooded figures slipped into the old warehouse at the edge of the square. They carry crates in and nothing comes out. I am a healer, not a soldier, but I know poisons and I will not stand by while they poison this market.",
+                                        "options":  [
+                                                        [
+                                                            "I will help you investigate.",
+                                                            "accept_quest"
+                                                        ],
+                                                        [
+                                                            "What is in the warehouse?",
+                                                            "warehouse_info"
+                                                        ],
+                                                        [
+                                                            "This is not my concern.",
+                                                            null
+                                                        ]
+                                                    ]
+                                    },
+                   "warehouse_info":  {
+                                          "text":  "Old cargo, smuggled herbs, and worse. The man leading them is Vargas. He owes Mirt money, and now he pays his debt in favours to something far worse. If we break his cell, the market may breathe again.",
+                                          "options":  [
+                                                          [
+                                                              "Then let us end it.",
+                                                              "accept_quest"
+                                                          ],
+                                                          [
+                                                              "Not now.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                   "accept_quest":  {
+                                        "text":  "Take this antidote - and the warehouse key I lifted from one of the hooded figures. I am coming with you. I can fight, and my herbs may keep us both alive. The warehouse is at the eastern edge of the market; look for the old loading door.",
+                                        "effect":  [
+                                                       {
+                                                           "type":  "add_item",
+                                                           "item":  "Antidote"
+                                                       },
+                                                       {
+                                                           "type":  "add_item",
+                                                           "item":  "Warehouse Key"
+                                                       },
+                                                       {
+                                                           "type":  "start_quest",
+                                                           "quest":  "shadows_of_the_market"
+                                                       },
+                                                       {
+                                                           "type":  "recruit_ally",
+                                                           "npc":  "Violet"
+                                                       }
+                                                   ],
+                                        "options":  [
+                                                        [
+                                                            "Let us go to the warehouse.",
+                                                            null
+                                                        ]
+                                                    ]
+                                    },
+                   "violet_trusted":  {
+                                          "text":  "Violet smiles without looking up from her herbs. \u0027The Watch remembers who stood with us when the warehouse was full of knives. My door is open to you.\u0027",
+                                          "options":  [
+                                                          [
+                                                              "Good to know.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                   "background_outlander":  {
+                                                "text":  "Violet studies the road dust on your boots. \u0027You know the old paths, then. Watch the grass east of the waystation; the bandits there have learned to wait without a fire. An Outlander sees the signs before the ambush closes.\u0027",
+                                                "options":  [
+                                                                [
+                                                                    "I will watch the road.",
+                                                                    null
+                                                                ],
+                                                                [
+                                                                    "Anything else?",
+                                                                    "strange_info"
+                                                                ]
+                                                            ]
+                                            },
+                   "background_acolyte":  {
+                                              "text":  "Violet pauses over a tray of dried herbs. \u0027You have the look of a temple healer. If the smoke gets into your lungs, do not try to pray it out. Water, salt and a clean cloth first. Faith can follow.\u0027",
+                                              "options":  [
+                                                              [
+                                                                  "I will remember that.",
+                                                                  null
+                                                              ],
+                                                              [
+                                                                  "What do you sell here?",
+                                                                  "shop_info"
+                                                              ]
+                                                          ]
+                                          },
+                   "watchman_offer":  {
+                                          "text":  "Violet lowers her voice. \u0027Watch Sergeant Vell has been selling confiscated goods back to the smugglers. The proof is in a watch cache hidden in the old warehouse. Bring me the ledger and I can put him in front of the Watch.\u0027",
+                                          "options":  [
+                                                          [
+                                                              "I will find the ledger.",
+                                                              "watchman_accept"
+                                                          ],
+                                                          [
+                                                              "Not now.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                   "watchman_accept":  {
+                                           "text":  "The cache is behind the old crates in the warehouse. Vell is careful, but he is not clever. Bring the ledger back to me.",
+                                           "effect":  {
+                                                          "type":  "start_quest",
+                                                          "quest":  "watchman_ledger"
+                                                      },
+                                           "options":  [
+                                                           [
+                                                               "I will return with it.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                   "watchman_reminder":  {
+                                             "text":  "The watch cache is in the old warehouse, behind the crates. The ledger inside names every buyer Vell sold to.",
+                                             "options":  [
+                                                             [
+                                                                 "I am on my way.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                   "watchman_turn_in":  {
+                                            "text":  "Violet weighs the ledger in one hand. \u0027This is enough to break him. What do you want to do with it?\u0027",
+                                            "options":  [
+                                                            [
+                                                                "Give it to Violet.",
+                                                                "watchman_violet"
+                                                            ],
+                                                            [
+                                                                "Give it to Mirt.",
+                                                                "watchman_mirt"
+                                                            ],
+                                                            [
+                                                                "Keep the ledger.",
+                                                                "watchman_keep"
+                                                            ]
+                                                        ]
+                                        },
+                   "watchman_violet":  {
+                                           "text":  "Violet takes the ledger and nods once. \u0027The Watch will answer for this. Thank you.\u0027 She presses a purse into your hand.",
+                                           "effect":  [
+                                                          {
+                                                              "type":  "remove_item",
+                                                              "item":  "Watch Ledger"
+                                                          },
+                                                          {
+                                                              "type":  "adjust_reputation",
+                                                              "faction":  "violet_watch",
+                                                              "amount":  8
+                                                          },
+                                                          {
+                                                              "type":  "complete_quest",
+                                                              "quest":  "watchman_ledger"
+                                                          }
+                                                      ],
+                                           "options":  [
+                                                           [
+                                                               "Make him answer for it.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                   "watchman_mirt":  {
+                                         "text":  "Mirt turns the ledger over and smiles. \u0027Vell has been a problem for several of my people. I will make sure this reaches the right desk.\u0027 He adds a pouch of coin.",
+                                         "effect":  [
+                                                        {
+                                                            "type":  "remove_item",
+                                                            "item":  "Watch Ledger"
+                                                        },
+                                                        {
+                                                            "type":  "adjust_reputation",
+                                                            "faction":  "mirt_network",
+                                                            "amount":  8
+                                                        },
+                                                        {
+                                                            "type":  "add_gold",
+                                                            "amount":  60
+                                                        },
+                                                        {
+                                                            "type":  "complete_quest",
+                                                            "quest":  "watchman_ledger"
+                                                        }
+                                                    ],
+                                         "options":  [
+                                                         [
+                                                             "A pleasure, Mirt.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                   "watchman_keep":  {
+                                         "text":  "You close your hand around the ledger. Violet studies you, then steps back. \u0027I hoped you would trust the Watch. Keep it, then, but do not mistake silence for safety.\u0027",
+                                         "effect":  [
+                                                        {
+                                                            "type":  "adjust_reputation",
+                                                            "faction":  "violet_watch",
+                                                            "amount":  -5
+                                                        },
+                                                        {
+                                                            "type":  "complete_quest",
+                                                            "quest":  "watchman_ledger"
+                                                        }
+                                                    ],
+                                         "options":  [
+                                                         [
+                                                             "I will.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                   "watchman_done":  {
+                                         "text":  "Violet has already begun rebuilding the Watch\u0027s evidence room. \u0027Vell is finished. The next corrupt badge will think twice before using the warehouse.\u0027",
+                                         "options":  [
+                                                         [
+                                                             "Good.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                   "warning_offer":  {
+                                         "text":  "If you are passing through the tavern, tell Mirt to watch the warehouse. He trusts the wrong people, and he will not hear it from me.",
+                                         "options":  [
+                                                         [
+                                                             "I will carry the warning to Mirt.",
+                                                             "warning_accept"
+                                                         ],
+                                                         [
+                                                             "Not now.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                   "warning_accept":  {
+                                          "text":  "Thank you. Mirt keeps a table near the back of the Yawning Portal. Tell him the hooded figures are real.",
+                                          "effect":  {
+                                                         "type":  "start_quest",
+                                                         "quest":  "violet_warning"
+                                                     },
+                                          "options":  [
+                                                          [
+                                                              "I will find him.",
+                                                              null
+                                                          ]
+                                                      ]
+                                      },
+                   "warning_reminder":  {
+                                            "text":  "Mirt is usually in the tavern. Tell him the hooded figures are real - and that he should stop protecting old friends.",
+                                            "options":  [
+                                                            [
+                                                                "I am on my way.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                   "shadows_reminder":  {
+                                            "text":  "The old warehouse is at the eastern edge of the market, past the last stalls. I will be right behind you. Do not let Vargas reach the crates.",
+                                            "options":  [
+                                                            [
+                                                                "I am going now.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                   "shadows_turn_in":  {
+                                           "text":  "You did it! The market can breathe again. Here is what I promised - and thank you. I would not have dared face them alone.",
+                                           "effect":  {
+                                                          "type":  "complete_quest",
+                                                          "quest":  "shadows_of_the_market"
+                                                      },
+                                           "options":  [
+                                                           [
+                                                               "We made a good team.",
+                                                               null
+                                                           ],
+                                                           [
+                                                               "Vargas mentioned a buyer.",
+                                                               "shadows_followup"
+                                                           ]
+                                                       ]
+                                       },
+                   "shadows_done":  {
+                                        "text":  "The cult is broken, but Vargas was only the hand that moved the crates. Someone in the city paid for what he smuggled. A silent partner, still out there.",
+                                        "options":  [
+                                                        [
+                                                            "I will find them.",
+                                                            null
+                                                        ],
+                                                        [
+                                                            "Tell me what you know.",
+                                                            "shadows_followup"
+                                                        ]
+                                                    ]
+                                    },
+                   "shadows_followup":  {
+                                            "text":  "Only a name half-heard over the crates: \u0027the Silent Partner.\u0027 Whoever it is has money and patience. If you find them, come back - I will have a few more antidotes ready.",
+                                            "options":  [
+                                                            [
+                                                                "I will keep my eyes open.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                   "shop_info":  {
+                                     "text":  "Antidotes, salves, and a few herbs that are better not named aloud. If you are going into that warehouse, you will want an antidote more than perfume.",
+                                     "options":  [
+                                                     [
+                                                         "Tell me about the hooded figures.",
+                                                         "strange_info"
+                                                     ],
+                                                     [
+                                                         "I will come back later.",
+                                                         null
+                                                     ]
+                                                 ]
+                                 }
+               },
+    "Nessa":  {
+                  "start":  {
+                                "text":  "A wiry runner steps out of the tunnel shadows. \u0027You are the one who walked through the Lord\u0027s hall and came out breathing. The Watch took our medicine wagon before the dust settled. I need someone with clean hands and a reason to be near the old warehouse.\u0027",
+                                "options":  [
+                                                [
+                                                    "What happened to the cargo?",
+                                                    "quiet_cargo_offer",
+                                                    {
+                                                        "all":  [
+                                                                    {
+                                                                        "quest":  "underroad_chapter",
+                                                                        "status":  "completed"
+                                                                    },
+                                                                    {
+                                                                        "quest":  "quiet_cargo",
+                                                                        "status":  "not_started"
+                                                                    }
+                                                                ]
+                                                    }
+                                                ],
+                                                [
+                                                    "About the impounded cargo...",
+                                                    "quiet_cargo_reminder",
+                                                    {
+                                                        "quest":  "quiet_cargo",
+                                                        "status":  "active"
+                                                    }
+                                                ],
+                                                [
+                                                    "I found the cargo manifest.",
+                                                    "quiet_cargo_turn_in",
+                                                    {
+                                                        "quest":  "quiet_cargo",
+                                                        "status":  "ready"
+                                                    }
+                                                ],
+                                                [
+                                                    "What happened to the tunnel families?",
+                                                    "quiet_cargo_done",
+                                                    {
+                                                        "quest":  "quiet_cargo",
+                                                        "status":  "completed"
+                                                    }
+                                                ],
+                                                [
+                                                    "Who are you?",
+                                                    "nessa_info"
+                                                ],
+                                                [
+                                                    "Not now.",
+                                                    null
+                                                ]
+                                            ]
+                            },
+                  "nessa_info":  {
+                                     "text":  "Nessa turns her wrist, showing the old Watch brand beneath a leather cuff. \u0027I ran cargo for the Lord because the tunnel pays better than the docks. When he fell, the Watch finally remembered our names. They took the wagon and called it evidence. The families below just call it winter.\u0027",
+                                     "options":  [
+                                                     [
+                                                         "Tell me about the wagon.",
+                                                         "quiet_cargo_offer",
+                                                         {
+                                                             "all":  [
+                                                                         {
+                                                                             "quest":  "underroad_chapter",
+                                                                             "status":  "completed"
+                                                                         },
+                                                                         {
+                                                                             "quest":  "quiet_cargo",
+                                                                             "status":  "not_started"
+                                                                         }
+                                                                     ]
+                                                         }
+                                                     ],
+                                                     [
+                                                         "I will come back later.",
+                                                         null
+                                                     ]
+                                                 ]
+                                 },
+                  "quiet_cargo_offer":  {
+                                            "text":  "The wagon is parked beside the old warehouse, under a canvas tarp. The manifest is in a false bottom under the driver\u0027s bench; without it, the Watch can hold the cargo for months. Bring it to me and I can make sure the medicine reaches the tunnel families - or you can decide who deserves the leverage.",
+                                            "options":  [
+                                                            [
+                                                                "I will find the manifest.",
+                                                                "quiet_cargo_accept"
+                                                            ],
+                                                            [
+                                                                "Not now.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                  "quiet_cargo_accept":  {
+                                             "text":  "Search the wagon itself; the tarp hides more than cargo. Once you have the manifest, come back to the Underroad. The Watch will not miss it until the next shift change.",
+                                             "effect":  {
+                                                            "type":  "start_quest",
+                                                            "quest":  "quiet_cargo"
+                                                        },
+                                             "options":  [
+                                                             [
+                                                                 "I will return with it.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                  "quiet_cargo_reminder":  {
+                                               "text":  "The impound wagon is parked beside the old warehouse in the market. Search near it; the false bottom is hidden under the driver\u0027s bench. Bring the manifest back to the Underroad.",
+                                               "options":  [
+                                                               [
+                                                                   "I am on my way.",
+                                                                   null
+                                                               ]
+                                                           ]
+                                           },
+                  "quiet_cargo_turn_in":  {
+                                              "text":  "Nessa reads the manifest twice, then looks up. \u0027Medicine, blankets, lamp oil. The Watch will call it contraband, but the tunnel will call it winter. What do you want to do with it?\u0027",
+                                              "options":  [
+                                                              [
+                                                                  "Give it to Nessa.",
+                                                                  "quiet_cargo_nessa"
+                                                              ],
+                                                              [
+                                                                  "Send it to Violet\u0027s Watch.",
+                                                                  "quiet_cargo_violet"
+                                                              ],
+                                                              [
+                                                                  "Sell it to Mirt.",
+                                                                  "quiet_cargo_mirt"
+                                                              ]
+                                                          ]
+                                          },
+                  "quiet_cargo_nessa":  {
+                                            "text":  "Nessa folds the manifest into her sleeve. \u0027The runners will remember this. So will the families.\u0027 She presses a flat courier\u0027s satchel into your hands, its hidden pockets already heavy with a few coins.",
+                                            "effect":  [
+                                                           {
+                                                               "type":  "remove_item",
+                                                               "item":  "Cargo Manifest"
+                                                           },
+                                                           {
+                                                               "type":  "adjust_reputation",
+                                                               "faction":  "underroad_smugglers",
+                                                               "amount":  8
+                                                           },
+                                                           {
+                                                               "type":  "add_item",
+                                                               "item":  "Runner\u0027s Satchel"
+                                                           },
+                                                           {
+                                                               "type":  "complete_quest",
+                                                               "quest":  "quiet_cargo"
+                                                           }
+                                                       ],
+                                            "options":  [
+                                                            [
+                                                                "See that they get it.",
+                                                                null
+                                                            ]
+                                                        ]
+                                        },
+                  "quiet_cargo_violet":  {
+                                             "text":  "Nessa listens, then nods once. \u0027The Watch healer is fair. She will make sure the medicine is logged, not lost.\u0027 A runner carries the manifest into the market, and Violet\u0027s people send back a purse and a receipt stamped with the Watch seal.",
+                                             "effect":  [
+                                                            {
+                                                                "type":  "remove_item",
+                                                                "item":  "Cargo Manifest"
+                                                            },
+                                                            {
+                                                                "type":  "adjust_reputation",
+                                                                "faction":  "violet_watch",
+                                                                "amount":  8
+                                                            },
+                                                            {
+                                                                "type":  "add_gold",
+                                                                "amount":  100
+                                                            },
+                                                            {
+                                                                "type":  "complete_quest",
+                                                                "quest":  "quiet_cargo"
+                                                            }
+                                                        ],
+                                             "options":  [
+                                                             [
+                                                                 "The Watch owes the tunnel that much.",
+                                                                 null
+                                                             ]
+                                                         ]
+                                         },
+                  "quiet_cargo_mirt":  {
+                                           "text":  "Nessa laughs without much humour. \u0027Mirt will sell the route back to us before the ink dries. Still, coin spends the same.\u0027 The manifest disappears into Mirt\u0027s network, and a heavy purse arrives before the next bell.",
+                                           "effect":  [
+                                                          {
+                                                              "type":  "remove_item",
+                                                              "item":  "Cargo Manifest"
+                                                          },
+                                                          {
+                                                              "type":  "adjust_reputation",
+                                                              "faction":  "mirt_network",
+                                                              "amount":  8
+                                                          },
+                                                          {
+                                                              "type":  "add_gold",
+                                                              "amount":  100
+                                                          },
+                                                          {
+                                                              "type":  "complete_quest",
+                                                              "quest":  "quiet_cargo"
+                                                          }
+                                                      ],
+                                           "options":  [
+                                                           [
+                                                               "Business is business.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                  "quiet_cargo_done":  {
+                                           "text":  "Nessa is counting crates with two other runners. \u0027The tunnel families have medicine again. The Watch has its paperwork. Mirt has his cut, if that is the road you chose. The Underroad remembers who moved the cargo.\u0027",
+                                           "options":  [
+                                                           [
+                                                               "Keep the tunnel open.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       }
+              },
+    "Tamsin":  {
+                   "start":  {
+                                 "text":  "A road-worn woman in a scorched coat looks up from behind the palisade. \u0027You are not with the bandits. Good. I am Tamsin - what is left of the caravan they took.\u0027",
+                                 "options":  [
+                                                 [
+                                                     "What happened to your caravan?",
+                                                     "tamsin_info"
+                                                 ],
+                                                 [
+                                                     "Can I help?",
+                                                     "waybill_offer",
+                                                     {
+                                                         "quest":  "waystation_waybill",
+                                                         "status":  "not_started"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "About the waybill...",
+                                                     "waybill_reminder",
+                                                     {
+                                                         "quest":  "waystation_waybill",
+                                                         "status":  "active"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "I found the caravan waybill.",
+                                                     "waybill_turn_in",
+                                                     {
+                                                         "quest":  "waystation_waybill",
+                                                         "status":  "ready"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "What will you do now?",
+                                                     "waybill_done",
+                                                     {
+                                                         "quest":  "waystation_waybill",
+                                                         "status":  "completed"
+                                                     }
+                                                 ],
+                                                 [
+                                                     "I will leave you be.",
+                                                     null
+                                                 ]
+                                             ]
+                             },
+                   "tamsin_info":  {
+                                       "text":  "The chief\u0027s riders took the road tax in steel. When our master refused to pay twice, they burned the wagon and left us for the crows. The waybill was in the driver\u0027s box - names, cargo, the caravan seal. Without it, the families cannot claim a copper.",
+                                       "options":  [
+                                                       [
+                                                           "Tell me about the waybill.",
+                                                           "waybill_offer",
+                                                           {
+                                                               "quest":  "waystation_waybill",
+                                                               "status":  "not_started"
+                                                           }
+                                                       ],
+                                                       [
+                                                           "I will come back later.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   },
+                   "waybill_offer":  {
+                                         "text":  "The burnt wagon is still in the yard. Find the waybill in the driver\u0027s box and bring it to me. I can pay, and Mirt\u0027s people will hear that the road is worth keeping open.",
+                                         "options":  [
+                                                         [
+                                                             "I will find the waybill.",
+                                                             "waybill_accept"
+                                                         ],
+                                                         [
+                                                             "Not now.",
+                                                             null
+                                                         ]
+                                                     ]
+                                     },
+                   "waybill_accept":  {
+                                          "text":  "Mind the bandits. Take the wagon key from my ring; it opens the driver\u0027s box. They have not stopped counting what they took.",
+                                          "effect":  [
+                                                         {
+                                                             "type":  "add_item",
+                                                             "item":  "Wagon Key"
+                                                         },
+                                                         {
+                                                             "type":  "start_quest",
+                                                             "quest":  "waystation_waybill"
+                                                         }
+                                                     ],
+                                          "options":  [
+                                                          "I will return with it.",
+                                                          null
+                                                      ]
+                                      },
+                   "waybill_reminder":  {
+                                            "text":  "The burnt wagon sits in the yard, its canvas gone and its driver\u0027s box split open. The waybill should still be inside.",
+                                            "options":  [
+                                                            "I am on my way.",
+                                                            null
+                                                        ]
+                                        },
+                   "waybill_turn_in":  {
+                                           "text":  "Tamsin reads the waybill twice, then closes her eyes. \u0027This is the proof. The families can claim the cargo, and Mirt can stop pretending the road belongs to the bandits.\u0027 She presses a small road-charm into your hand.",
+                                           "effect":  {
+                                                          "type":  "complete_quest",
+                                                          "quest":  "waystation_waybill"
+                                                      },
+                                           "options":  [
+                                                           "See that they get it.",
+                                                           null
+                                                       ]
+                                       },
+                   "waybill_done":  {
+                                        "text":  "Tamsin has already sent a runner east with the waybill. \u0027The caravan will ride again,\u0027 she says. \u0027Not today, but soon.\u0027",
+                                        "options":  [
+                                                        "Good.",
+                                                        null
+                                                    ]
+                                    }
+               },
+    "Sanctum Echo":  {
+                         "start":  {
+                                       "text":  "A translucent figure in a warden\u0027s mantle turns toward you. Its voice arrives a breath after its lips move. \u0027The ward remembers me. It will remember you too.\u0027",
+                                       "options":  [
+                                                       [
+                                                           "What are you?",
+                                                           "echo_what"
+                                                       ],
+                                                       [
+                                                           "What is the Runeheart?",
+                                                           "echo_runeheart"
+                                                       ],
+                                                       [
+                                                           "How do I pass the ward?",
+                                                           "echo_ward"
+                                                       ],
+                                                       [
+                                                           "Farewell.",
+                                                           null
+                                                       ]
+                                                   ]
+                                   },
+                         "echo_what":  {
+                                           "text":  "I was the Warden\u0027s memory, left behind when the stone learned to stand without us. The hall keeps what it can.",
+                                           "options":  [
+                                                           [
+                                                               "What is the Runeheart?",
+                                                               "echo_runeheart"
+                                                           ],
+                                                           [
+                                                               "Farewell.",
+                                                               null
+                                                           ]
+                                                       ]
+                                       },
+                         "echo_runeheart":  {
+                                                "text":  "A heart of living stone, sealed below this hall. It was not made to be owned. It was made to be answered.",
+                                                "options":  [
+                                                                [
+                                                                    "How do I pass the ward?",
+                                                                    "echo_ward"
+                                                                ],
+                                                                [
+                                                                    "Farewell.",
+                                                                    null
+                                                                ]
+                                                            ]
+                                            },
+                         "echo_ward":  {
+                                           "text":  "The Vault keeps a key shaped like a black-stone amulet. Raise it and the threshold will know its twin. Force the ward without it, and it will take its price in blood.",
+                                           "options":  [
+                                                           "I understand.",
+                                                           null
+                                                       ]
+                                       }
+                     }
+}

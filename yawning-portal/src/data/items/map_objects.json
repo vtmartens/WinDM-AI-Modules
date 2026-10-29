@@ -1,0 +1,266 @@
+{
+    "tavern":  [
+                   {
+                       "name":  "counter",
+                       "position":  [
+                                        3,
+                                        2
+                                    ]
+                   },
+                   {
+                       "name":  "fireplace",
+                       "position":  [
+                                        9,
+                                        1
+                                    ]
+                   },
+                   {
+                       "name":  "table",
+                       "position":  [
+                                        7,
+                                        5
+                                    ]
+                   },
+                   {
+                       "name":  "chair",
+                       "position":  [
+                                        6,
+                                        5
+                                    ]
+                   },
+                   {
+                       "name":  "barrel",
+                       "position":  [
+                                        1,
+                                        1
+                                    ]
+                   },
+                   {
+                       "name":  "stairs",
+                       "position":  [
+                                        9,
+                                        9
+                                    ]
+                   },
+                   {
+                       "name":  "cellar_door",
+                       "position":  [
+                                        22,
+                                        9
+                                    ]
+                   },
+                   {
+                       "name":  "Treasure Chest",
+                       "position":  [
+                                        2,
+                                        2
+                                    ]
+                   }
+               ],
+    "market":  [
+                   {
+                       "name":  "stall",
+                       "position":  [
+                                        3,
+                                        3
+                                    ]
+                   },
+                   {
+                       "name":  "fountain",
+                       "position":  [
+                                        10,
+                                        5
+                                    ]
+                   },
+                   {
+                       "name":  "statue",
+                       "position":  [
+                                        7,
+                                        7
+                                    ]
+                   },
+                   {
+                       "name":  "tavern_door",
+                       "position":  [
+                                        12,
+                                        1
+                                    ]
+                   },
+                   {
+                       "name":  "Warehouse Door",
+                       "position":  [
+                                        20,
+                                        7
+                                    ]
+                   },
+                   {
+                       "name":  "Merchant\u0027s Lockbox",
+                       "position":  [
+                                        5,
+                                        9
+                                    ]
+                   },
+                   {
+                       "name":  "Watch Impound Wagon",
+                       "position":  [
+                                        23,
+                                        8
+                                    ]
+                   }
+               ],
+    "cellar":  [
+                   {
+                       "name":  "hidden_chest",
+                       "position":  [
+                                        8,
+                                        10
+                                    ]
+                   },
+                   {
+                       "name":  "floor_trap",
+                       "position":  [
+                                        10,
+                                        5
+                                    ]
+                   },
+                   {
+                       "name":  "magic_altar",
+                       "position":  [
+                                        15,
+                                        3
+                                    ]
+                   },
+                   {
+                       "name":  "exit_door",
+                       "position":  [
+                                        18,
+                                        7
+                                    ]
+                   }
+               ],
+    "road":  [
+
+             ],
+    "waystation":  [
+                       {
+                           "name":  "Burnt Wagon",
+                           "position":  [
+                                            6,
+                                            10
+                                        ]
+                       },
+                       {
+                           "name":  "Bandit Totem",
+                           "position":  [
+                                            19,
+                                            3
+                                        ]
+                       }
+                   ],
+    "underroad":  [
+                      {
+                          "name":  "Spike Trap",
+                          "position":  [
+                                           8,
+                                           6
+                                       ]
+                      },
+                      {
+                          "name":  "Blinding Dust Trap",
+                          "position":  [
+                                           12,
+                                           2
+                                       ]
+                      },
+                      {
+                          "name":  "Runner\u0027s Stash",
+                          "position":  [
+                                           18,
+                                           10
+                                       ]
+                      },
+                      {
+                          "name":  "Smugglers\u0027 Mark",
+                          "position":  [
+                                           6,
+                                           2
+                                       ]
+                      }
+                  ],
+    "warehouse":  [
+                      {
+                          "name":  "Vault Door",
+                          "position":  [
+                                           18,
+                                           2
+                                       ]
+                      },
+                      {
+                          "name":  "Sealed Strongbox",
+                          "position":  [
+                                           16,
+                                           9
+                                       ]
+                      },
+                      {
+                          "name":  "Watch Cache",
+                          "position":  [
+                                           8,
+                                           10
+                                       ]
+                      }
+                  ],
+    "vault":  [
+                  {
+                      "name":  "Vault Exit",
+                      "position":  [
+                                       1,
+                                       8
+                                   ]
+                  },
+                  {
+                      "name":  "Pit Trap",
+                      "position":  [
+                                       8,
+                                       8
+                                   ]
+                  },
+                  {
+                      "name":  "Relic Chest",
+                      "position":  [
+                                       16,
+                                       5
+                                   ]
+                  },
+                  {
+                      "name":  "Rune Pillar",
+                      "position":  [
+                                       10,
+                                       5
+                                   ]
+                  }
+              ],
+    "sanctum":  [
+                    {
+                        "name":  "Rune Archive",
+                        "position":  [
+                                         10,
+                                         3
+                                     ]
+                    },
+                    {
+                        "name":  "Warden\u0027s Reliquary",
+                        "position":  [
+                                         10,
+                                         9
+                                     ]
+                    },
+                    {
+                        "name":  "Broken Ward Stone",
+                        "position":  [
+                                         15,
+                                         5
+                                     ]
+                    }
+                ]
+}

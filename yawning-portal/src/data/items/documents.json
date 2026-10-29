@@ -1,0 +1,65 @@
+[
+    {
+        "name":  "Watch Ledger",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  50,
+        "description":  "A watch ledger recording confiscated goods that never reached the evidence room"
+    },
+    {
+        "name":  "Merchant Ledger",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  60,
+        "description":  "A merchant\u0027s private ledger listing cursed relics sold under the table"
+    },
+    {
+        "name":  "Cargo Manifest",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  55,
+        "description":  "A Watch impound manifest listing medicine, lamp oil and blankets bound for the Underroad"
+    },
+    {
+        "name":  "Sage\u0027s Notebook",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  25,
+        "description":  "A narrow notebook of rune sketches, old family names and half-finished theories"
+    },
+    {
+        "name":  "Spellbook",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  25,
+        "description":  "A wizard\u0027s grimoire of cantrips and formulas"
+    },
+    {
+        "name":  "Caravan Waybill",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  30,
+        "description":  "A water-stained waybill naming the wagons, cargo and drivers of Tamsin\u0027s caravan"
+    },
+    {
+        "name":  "Warden\u0027s Chronicle",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  80,
+        "description":  "A cracked stone tablet recording the Rune Warden\u0027s vigil and the first sealing of the Runeheart"
+    }
+]
