@@ -61,5 +61,32 @@
                    },
         "value":  80,
         "description":  "A cracked stone tablet recording the Rune Warden\u0027s vigil and the first sealing of the Runeheart"
+    },
+    {
+        "name":  "Basic Arcane Manual",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  50,
+        "description":  "A book of basic spells for apprentice wizards"
+    },
+    {
+        "name":  "Map of Undermountain",
+        "type":  "document",
+        "effect":  {
+
+                   },
+        "value":  100,
+        "description":  "A detailed map of the first three levels of Undermountain"
+    },
+    {
+        "name":  "Dark Beer",
+        "type":  "food",
+        "effect":  {
+                       "heal":  1
+                   },
+        "value":  2,
+        "description":  "A dark beer from the Yawning Portal cellar"
     }
 ]

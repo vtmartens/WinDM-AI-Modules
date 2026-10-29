@@ -371,15 +371,19 @@
                                                               }
                                                           ],
                                                "options":  [
-                                                               "I will return with it.",
-                                                               null
+                                                               [
+                                                                   "I will return with it.",
+                                                                   null
+                                                               ]
                                                            ]
                                            },
                       "chronicle_reminder":  {
                                                  "text":  "The Warden\u0027s reliquary is in the sealed sanctum. The chronicle is a stone tablet; you will know it by the heart-shaped seal.",
                                                  "options":  [
-                                                                 "I am on my way.",
-                                                                 null
+                                                                 [
+                                                                     "I am on my way.",
+                                                                     null
+                                                                 ]
                                                              ]
                                              },
                       "chronicle_turn_in":  {
@@ -389,15 +393,19 @@
                                                                "quest":  "sanctum_chronicle"
                                                            },
                                                 "options":  [
-                                                                "What does it say?",
-                                                                "chronicle_done"
+                                                                [
+                                                                    "What does it say?",
+                                                                    "chronicle_done"
+                                                                ]
                                                             ]
                                             },
                       "chronicle_done":  {
                                              "text":  "The Runeheart was sealed because it answers whoever can hear it, not whoever can hold it. The Warden stayed to keep that answer out of the wrong hands. The Gate below is the last seal - and the last question.",
                                              "options":  [
-                                                             "Then I will answer it.",
-                                                             null
+                                                             [
+                                                                 "Then I will answer it.",
+                                                                 null
+                                                             ]
                                                          ]
                                          }
                   },
@@ -2038,15 +2046,19 @@
                                                          }
                                                      ],
                                           "options":  [
-                                                          "I will return with it.",
-                                                          null
+                                                          [
+                                                              "I will return with it.",
+                                                              null
+                                                          ]
                                                       ]
                                       },
                    "waybill_reminder":  {
                                             "text":  "The burnt wagon sits in the yard, its canvas gone and its driver\u0027s box split open. The waybill should still be inside.",
                                             "options":  [
-                                                            "I am on my way.",
-                                                            null
+                                                            [
+                                                                "I am on my way.",
+                                                                null
+                                                            ]
                                                         ]
                                         },
                    "waybill_turn_in":  {
@@ -2056,15 +2068,19 @@
                                                           "quest":  "waystation_waybill"
                                                       },
                                            "options":  [
-                                                           "See that they get it.",
-                                                           null
+                                                           [
+                                                               "See that they get it.",
+                                                               null
+                                                           ]
                                                        ]
                                        },
                    "waybill_done":  {
                                         "text":  "Tamsin has already sent a runner east with the waybill. \u0027The caravan will ride again,\u0027 she says. \u0027Not today, but soon.\u0027",
                                         "options":  [
-                                                        "Good.",
-                                                        null
+                                                        [
+                                                            "Good.",
+                                                            null
+                                                        ]
                                                     ]
                                     }
                },
@@ -2119,8 +2135,10 @@
                          "echo_ward":  {
                                            "text":  "The Vault keeps a key shaped like a black-stone amulet. Raise it and the threshold will know its twin. Force the ward without it, and it will take its price in blood.",
                                            "options":  [
-                                                           "I understand.",
-                                                           null
+                                                           [
+                                                               "I understand.",
+                                                               null
+                                                           ]
                                                        ]
                                        }
                      }

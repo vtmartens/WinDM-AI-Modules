@@ -6,7 +6,7 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.2 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Yawning Portal Demo 1.1.3 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 | The Sunken Bell 1.0.3 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
 
 ## Install
@@ -74,6 +74,11 @@ README.
   Mara's quest, so it cannot be fought before the quest is accepted.
 - Editable source tree and `sunken-bell/build.ps1`.
 
+### The Yawning Portal 1.1.3
+
+- Repaired single-option dialogue nodes that lost their nested option shape.
+- Added the Dark Beer, Basic Arcane Manual and Map of Undermountain trade items.
+
 ### The Yawning Portal 1.1.2
 
 - The Rune Warden and Runeheart Sovereign gain 50% HP phases with summons, guard and
@@ -121,5 +126,5 @@ README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.2` is the
-Yawning Portal demo 1.1.2, and `sunken-bell-v1.0.3` is The Sunken Bell 1.0.3.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.3` is the
+Yawning Portal demo 1.1.3, and `sunken-bell-v1.0.3` is The Sunken Bell 1.0.3.
