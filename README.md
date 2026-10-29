@@ -7,7 +7,7 @@ format it loads.
 | Module | Id | Engine | File |
 |---|---|---|---|
 | The Yawning Portal Demo 1.1.0 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.0 | `sunken_bell_demo` | 1.3.1 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Sunken Bell 1.0.1 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
 
 ## Install
 
@@ -48,6 +48,11 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 README.
 
 ## Changes
+
+### The Sunken Bell 1.0.1
+
+- Compatibility metadata for WinDM-AI 1.3.2: module-independent map loading, map-scoped
+  encounters and quest-gated encounters.
 
 ### The Sunken Bell 1.0.0
 
@@ -95,4 +100,4 @@ README.
 ## Versioning
 
 Module versions follow `manifest.json`. Tags in this repository match: `v1.1.0` is the
-Yawning Portal demo 1.1.0, and `sunken-bell-v1.0.0` is The Sunken Bell 1.0.0.
+Yawning Portal demo 1.1.0, and `sunken-bell-v1.0.1` is The Sunken Bell 1.0.1.
