@@ -656,7 +656,8 @@
                            "armor":  "Waxed Coat",
                            "gold":  10,
                            "experience":  35,
-                           "token":  "s"
+                           "token":  "s",
+                           "morale":  true
                        },
     "bell_wight":  {
                        "name":  "Bell Wight",
@@ -710,6 +711,20 @@
                         "abilities":  [
                                           "bell_toll",
                                           "drowning_grasp"
-                                      ]
+                                      ],
+                        "phases":  [
+                                       {
+                                           "hp_percent":  50,
+                                           "message":  "The Bell Warden plants its maul and the bell answers.",
+                                           "heal":  8,
+                                           "guard":  4,
+                                           "summon":  [
+                                                          {
+                                                              "monster_type":  "bell_wight",
+                                                              "name":  "Bell Wight C"
+                                                          }
+                                                      ]
+                                       }
+                                   ]
                     }
 }

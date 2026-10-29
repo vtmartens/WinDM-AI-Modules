@@ -6,8 +6,8 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.1 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.2 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Yawning Portal Demo 1.1.2 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.3 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
 
 ## Install
 
@@ -49,6 +49,11 @@ README.
 
 ## Changes
 
+### The Sunken Bell 1.0.3
+
+- The Bell Warden gains a 50% HP phase (guard, heal and a summoned Bell Wight) and a
+  recurring **Bell Toll** hazard. Reef scavengers now use morale.
+
 ### The Sunken Bell 1.0.2
 
 - Authored `data/campaign/chapters.json` so the campaign panel uses the module's own
@@ -68,6 +73,12 @@ README.
 - New monsters, encounters, items and factions. The Bell Warden encounter is gated behind
   Mara's quest, so it cannot be fought before the quest is accepted.
 - Editable source tree and `sunken-bell/build.ps1`.
+
+### The Yawning Portal 1.1.2
+
+- The Rune Warden and Runeheart Sovereign gain 50% HP phases with summons, guard and
+  healing. The Sovereign fight adds a recurring **Heartbeat** hazard. Waystation bandits
+  and Underroad smugglers now use morale.
 
 ### The Yawning Portal 1.1.1
 
@@ -110,5 +121,5 @@ README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.1` is the
-Yawning Portal demo 1.1.1, and `sunken-bell-v1.0.2` is The Sunken Bell 1.0.2.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.2` is the
+Yawning Portal demo 1.1.2, and `sunken-bell-v1.0.3` is The Sunken Bell 1.0.3.

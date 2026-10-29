@@ -60,6 +60,22 @@
                                             "monster_type":  "bell_wight",
                                             "name":  "Bell Wight B"
                                         }
+                                    ],
+                        "hazards":  [
+                                        {
+                                            "name":  "Bell Toll",
+                                            "description":  "A note from the drowned bell rolls through bone.",
+                                            "damage":  5,
+                                            "ability":  "wisdom",
+                                            "dc":  13,
+                                            "condition":  {
+                                                              "id":  "frightened",
+                                                              "turns":  2
+                                                          },
+                                            "target":  "player",
+                                            "start_round":  2,
+                                            "every_rounds":  2
+                                        }
                                     ]
                     }
 }
