@@ -1,0 +1,28 @@
+{
+  "alert": {
+    "name": "Alert",
+    "description": "Your senses sharpen: +2 Wisdom and Perception proficiency.",
+    "stats": { "wisdom": 2 },
+    "skills": [ "perception" ]
+  },
+  "arcane_reservoir": {
+    "name": "Arcane Reservoir",
+    "description": "Your magical reserve deepens: +5 maximum mana.",
+    "max_mana": 5
+  },
+  "brute": {
+    "name": "Brute",
+    "description": "Your raw strength grows: +2 Strength.",
+    "stats": { "strength": 2 }
+  },
+  "quick": {
+    "name": "Quick",
+    "description": "Your reflexes sharpen: +2 Dexterity.",
+    "stats": { "dexterity": 2 }
+  },
+  "tough": {
+    "name": "Tough",
+    "description": "Your hit point maximum increases by 10.",
+    "max_hp": 10
+  }
+}
