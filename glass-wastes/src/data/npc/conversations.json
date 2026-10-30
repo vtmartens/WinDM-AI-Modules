@@ -7,6 +7,9 @@
         [ "About the observatory...", "sun_reminder", { "quest": "sun_lens", "status": "active" } ],
         [ "The Mirror Warden is broken.", "sun_turnin", { "quest": "sun_lens", "status": "ready" } ],
         [ "The Flats are quiet.", "sun_done", { "quest": "sun_lens", "status": "completed" } ],
+        [ "What should I do with the Sun Lens?", "lens_choice", { "all": [ { "flag": "sun_lens_recovered" }, { "not_flag": "sun_lens_given" }, { "not_flag": "sun_lens_kept" } ] } ],
+        [ "I gave the lens to the caravan.", "lens_given_done", { "flag": "sun_lens_given" } ],
+        [ "I kept the Sun Lens.", "lens_kept_done", { "flag": "sun_lens_kept" } ],
         [ "What about the Prism Shard?", "shard_offer", { "quest": "shard_bargain", "status": "not_started" } ],
         [ "The shard...", "shard_reminder", { "quest": "shard_bargain", "status": "active" } ],
         [ "I found the Prism Shard.", "shard_turnin", { "quest": "shard_bargain", "status": "ready" } ],
@@ -42,6 +45,38 @@
     "sun_done": {
       "text": "The caravan road is open again. Sera has set the Sun Lens on a pole above the camp, and the evening light falls clean and harmless across the sand.",
       "options": [ [ "Good.", null ] ]
+    },
+    "lens_choice": {
+      "text": "Sera holds the Sun Lens between two fingers. 'This is worth more than the whole caravan. I will not pretend otherwise. What will you do with it?'",
+      "options": [
+        [ "The caravan should have it.", "lens_given" ],
+        [ "I will keep it.", "lens_kept" ],
+        [ "Not yet.", null ]
+      ]
+    },
+    "lens_given": {
+      "text": "Sera wraps the lens in oilcloth and locks it in the strongbox. 'The road remembers who kept it open.' The caravan's drivers will speak well of you.",
+      "effect": [
+        { "type": "set_flag", "flag": "sun_lens_given" },
+        { "type": "adjust_reputation", "faction": "caravan_league", "amount": 2 }
+      ],
+      "options": [ [ "Keep the road open.", null ] ]
+    },
+    "lens_kept": {
+      "text": "Sera studies you for a long moment, then nods. 'A lens is a tool. I hope it serves you better than it served Renn.' Some of the drivers will remember the choice.",
+      "effect": [
+        { "type": "set_flag", "flag": "sun_lens_kept" },
+        { "type": "adjust_reputation", "faction": "caravan_league", "amount": -2 }
+      ],
+      "options": [ [ "It will.", null ] ]
+    },
+    "lens_given_done": {
+      "text": "The Sun Lens sits in the caravan strongbox, and Sera has already found a buyer who will keep it out of the wrong hands.",
+      "options": [ [ "Good.", null ] ]
+    },
+    "lens_kept_done": {
+      "text": "Sera does not ask about the Sun Lens again. The drivers still nod when you pass, but the welcome is a little cooler.",
+      "options": [ [ "Farewell.", null ] ]
     },
     "shard_offer": {
       "text": "There is a prism shard in the observatory, the size of a fist and clear as winter. Bring it to me and the caravan eats through the next season.",

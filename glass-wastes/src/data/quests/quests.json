@@ -7,6 +7,8 @@
     "turn_in": "Sera Voss",
     "faction": "caravan_league",
     "reputation": 6,
+    "accept_flag": "sun_lens_accepted",
+    "complete_flag": "sun_lens_recovered",
     "reward": { "gold": 140, "experience": 400, "items": [ "Sun Lens" ] }
   },
   "surveyor_notes": {
@@ -17,6 +19,7 @@
     "turn_in": "Ilyan",
     "faction": "caravan_league",
     "reputation": 3,
+    "complete_flag": "surveyor_notes_recovered",
     "reward": { "gold": 70, "experience": 140, "items": [ "Glass Talisman" ] }
   },
   "shard_bargain": {
@@ -27,6 +30,7 @@
     "turn_in": "Sera Voss",
     "faction": "caravan_league",
     "reputation": 5,
+    "complete_flag": "prism_shard_recovered",
     "reward": { "gold": 110, "experience": 220, "items": [ "Mirage Tonic" ] }
   }
 }
