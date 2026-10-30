@@ -835,5 +835,106 @@
       "condition": "restrained",
       "turns": 2
     }
+  },
+  "Hunter's Mark": {
+    "id": "hunters_mark",
+    "class": "ranger",
+    "description": "You mark a target; its openings are easy to find for 3 turns.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "curse",
+      "condition": "hexed",
+      "turns": 3
+    }
+  },
+  "Ensnaring Strike": {
+    "id": "ensnaring_strike",
+    "class": "ranger",
+    "description": "Thorned vines bind a target for 2 turns.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "curse",
+      "condition": "restrained",
+      "turns": 2
+    }
+  },
+  "Nature's Remedy": {
+    "id": "natures_remedy",
+    "class": "ranger",
+    "description": "A poultice of wild herbs restores 8 HP.",
+    "mana_cost": 4,
+    "effect": {
+      "type": "heal",
+      "amount": 8
+    }
+  },
+  "Hail of Thorns": {
+    "id": "hail_of_thorns",
+    "class": "ranger",
+    "description": "A burst of thorns deals a flat 12 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 12
+    }
+  },
+  "Lightning Arrow": {
+    "id": "lightning_arrow",
+    "class": "ranger",
+    "description": "A charged arrow deals a flat 18 damage.",
+    "mana_cost": 6,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 18
+    }
+  },
+  "Swift Quiver": {
+    "id": "swift_quiver",
+    "class": "ranger",
+    "description": "Your next strike gains +3 attack and your next ward +1 defense.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 3,
+      "defense": 1
+    }
+  },
+  "Hunter's Volley": {
+    "id": "hunters_volley",
+    "class": "ranger",
+    "description": "A rapid volley deals a flat 24 damage.",
+    "mana_cost": 8,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 24
+    }
+  },
+  "Colossus Slayer": {
+    "id": "colossus_slayer",
+    "class": "ranger",
+    "description": "A finishing shot deals a flat 10 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 10
+    }
+  },
+  "Bestial Fury": {
+    "id": "bestial_fury",
+    "class": "ranger",
+    "description": "You and your beast strike together for a flat 14 damage.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 14
+    }
   }
 }

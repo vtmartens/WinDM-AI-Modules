@@ -1,0 +1,12 @@
+{
+  "wolf": {
+    "name": "Wolf Companion",
+    "description": "A grey wolf with a hunter's patience and a pack's instinct.",
+    "hp": 14,
+    "ac": 13,
+    "strength": 14,
+    "dexterity": 15,
+    "constitution": 12,
+    "token": "W"
+  }
+}

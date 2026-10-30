@@ -6,10 +6,10 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.13 | `yawning_portal_demo` | 1.3.42 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.13 | `sunken_bell_demo` | 1.3.42 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.11 | `ember_mill` | 1.3.42 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.10 | `glass_wastes` | 1.3.42 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Yawning Portal Demo 1.1.14 | `yawning_portal_demo` | 1.3.43 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.14 | `sunken_bell_demo` | 1.3.43 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.12 | `ember_mill` | 1.3.43 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.11 | `glass_wastes` | 1.3.43 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -45,9 +45,9 @@ and do not need the engine repository.
 ## Module format
 
 A module is a zip containing `manifest.json` and a `data/` tree: classes, subclasses,
-wild shapes, feats, backgrounds, maps, NPCs, conversations, quests, items, monsters,
-encounters, factions, conditions, crafting recipes, rune trials, campaign endings,
-scenes and tutorials. Module id, name and version live in the manifest.
+wild shapes, companions, feats, backgrounds, maps, NPCs, conversations, quests, items,
+monsters, encounters, factions, conditions, crafting recipes, rune trials, campaign
+endings, scenes and tutorials. Module id, name and version live in the manifest.
 
 Content lives here; rules do not. Combat, shops, abilities, levelling, class skills and
 the profession/reputation rules are implemented in the engine.
@@ -59,6 +59,23 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.14
+
+- Adds the **Ranger** class with known ranged magic, Hunter and Beast Master subclasses,
+  and the wolf companion that fights beside a Beast Master.
+
+### The Sunken Bell 1.0.14
+
+- Adds the shared Ranger class, Hunter and Beast Master subclasses and the wolf companion.
+
+### The Ember Mill 1.0.12
+
+- Adds the shared Ranger class, Hunter and Beast Master subclasses and the wolf companion.
+
+### The Glass Wastes 1.0.11
+
+- Adds the shared Ranger class, Hunter and Beast Master subclasses and the wolf companion.
 
 ### The Yawning Portal Demo 1.1.13
 
@@ -343,7 +360,7 @@ on monsters or encounter enemies — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.13` is the
-Yawning Portal demo 1.1.13, `sunken-bell-v1.0.13` is The Sunken Bell 1.0.13,
-`ember-mill-v1.0.11` is The Ember Mill 1.0.11, and `glass-wastes-v1.0.10` is The Glass
-Wastes 1.0.10.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.14` is the
+Yawning Portal demo 1.1.14, `sunken-bell-v1.0.14` is The Sunken Bell 1.0.14,
+`ember-mill-v1.0.12` is The Ember Mill 1.0.12, and `glass-wastes-v1.0.11` is The Glass
+Wastes 1.0.11.

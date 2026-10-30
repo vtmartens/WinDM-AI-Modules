@@ -333,5 +333,39 @@
                                      "mana_per_level":  0,
                                      "abilities_per_level":  {}
                                  }
-             }
+             },
+    "ranger":  {
+                   "description":  "A hunter of the wilds who tracks, shoots and fights beside a beast",
+                   "base_stats":  {
+                                      "strength":  12,
+                                      "dexterity":  16,
+                                      "constitution":  12,
+                                      "intelligence":  10,
+                                      "wisdom":  14,
+                                      "charisma":  8
+                                  },
+                   "special_abilities":  [
+                                              "Hunter's Mark",
+                                              "Ensnaring Strike",
+                                              "Nature's Remedy"
+                                          ],
+                   "starting_equipment":  [
+                                              "Short Bow",
+                                              "Leather Armor",
+                                              "dagger"
+                                          ],
+                   "hp_base":  10,
+                   "mana_base":  8,
+                   "spontaneous_caster":  true,
+                   "progression":  {
+                                       "hp_per_level":  8,
+                                       "mana_per_level":  4,
+                                       "abilities_per_level":  {
+                                                                   "3":  "Hail of Thorns",
+                                                                   "5":  "Lightning Arrow",
+                                                                   "7":  "Swift Quiver",
+                                                                   "10":  "Hunter's Volley"
+                                                               }
+                                   }
+               }
 }

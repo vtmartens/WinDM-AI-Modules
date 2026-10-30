@@ -156,5 +156,22 @@
     "stats": { "wisdom": 2 },
     "max_hp": 5,
     "ki_abilities": [ "shadow_step" ]
+  },
+  "ranger_hunter": {
+    "name": "Hunter",
+    "description": "A focused predator who finishes wounded quarry with a single shot.",
+    "class": "ranger",
+    "stats": { "dexterity": 2 },
+    "max_hp": 10,
+    "granted_abilities": [ "Colossus Slayer" ]
+  },
+  "ranger_beast": {
+    "name": "Beast Master",
+    "description": "A bond of trust between hunter and beast, fought side by side.",
+    "class": "ranger",
+    "stats": { "wisdom": 2 },
+    "max_hp": 5,
+    "granted_abilities": [ "Bestial Fury" ],
+    "companion": "wolf"
   }
 }
