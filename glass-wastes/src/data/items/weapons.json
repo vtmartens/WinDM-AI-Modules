@@ -1,0 +1,142 @@
+[
+    {
+        "name":  "Short Sword",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  3
+                   },
+        "value":  25,
+        "properties":  {
+                           "finesse":  true
+                       },
+        "description":  "A small sword suited to close-quarters combat"
+    },
+    {
+        "name":  "Long Sword",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  5
+                   },
+        "value":  50,
+        "description":  "A one-handed sword with a sharp blade"
+    },
+    {
+        "name":  "Battle Axe",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  7
+                   },
+        "value":  75,
+        "description":  "A heavy axe capable of dealing considerable damage"
+    },
+    {
+        "name":  "Short Bow",
+        "type":  "weapon",
+        "effect":  {
+                       "dexterity":  1
+                   },
+        "value":  30,
+        "properties":  {
+                           "ranged":  true,
+                           "attack_stat":  "dexterity",
+                           "damage_bonus":  4
+                       },
+        "description":  "A light bow that is easy to use"
+    },
+    {
+        "name":  "dagger",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  2,
+                       "dexterity":  2
+                   },
+        "value":  15,
+        "properties":  {
+                           "finesse":  true
+                       },
+        "description":  "A small but deadly weapon when wielded with precision"
+    },
+    {
+        "name":  "Mage Staff",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  2,
+                       "intelligence":  3
+                   },
+        "value":  100,
+        "properties":  {
+                           "attack_stat":  "intelligence"
+                       },
+        "description":  "A staff that amplifies magical powers"
+    },
+    {
+        "name":  "Dragonbane",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  8,
+                       "charisma":  1
+                   },
+        "value":  400,
+        "rarity":  "legendary",
+        "description":  "A blackened longsword whose edge hums with old draconic spite"
+    },
+    {
+        "name":  "Sentinel\u0027s Edge",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  6
+                   },
+        "value":  300,
+        "rarity":  "rare",
+        "description":  "A rune-etched blade that hums when the vault is disturbed"
+    },
+    {
+        "name":  "Rune-Forged Blade",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  7,
+                       "dexterity":  1
+                   },
+        "value":  500,
+        "rarity":  "legendary",
+        "description":  "A blade folded around a Rune Trial shard, its edge bright with contained force"
+    },
+    {
+        "name":  "staff",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  1,
+                       "intelligence":  2
+                   },
+        "value":  20,
+        "description":  "A plain wooden staff suited to channelling spells"
+    },
+    {
+        "name":  "mace",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  3
+                   },
+        "value":  25,
+        "description":  "A blunt iron mace"
+    },
+    {
+        "name":  "Sailor\u0027s Cutlass",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  4
+                   },
+        "value":  45,
+        "description":  "A broad, salt-pitted blade balanced for shipboard work"
+    },
+    {
+        "name":  "Bell Iron Sword",
+        "type":  "weapon",
+        "effect":  {
+                       "strength":  6
+                   },
+        "value":  220,
+        "rarity":  "rare",
+        "description":  "A dark iron blade quenched in reef water, its guard shaped like a bell"
+    }
+]

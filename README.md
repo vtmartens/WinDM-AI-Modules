@@ -9,6 +9,7 @@ format it loads.
 | The Yawning Portal Demo 1.1.5 | `yawning_portal_demo` | 1.3.30 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 | The Sunken Bell 1.0.5 | `sunken_bell_demo` | 1.3.30 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
 | The Ember Mill 1.0.3 | `ember_mill` | 1.3.30 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.0 | `glass_wastes` | 1.3.30 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -22,6 +23,9 @@ library, or copy it into the module folder and refresh the library.
 The Ember Mill is the third module. Select `ember-mill/demo.zip` from the module library,
 or copy it into the module folder and refresh.
 
+The Glass Wastes is the fourth module. Select `glass-wastes/demo.zip` from the module
+library, or copy it into the module folder and refresh.
+
 ## Building a module
 
 Each module's source lives in its `src/` directory (manifest plus the `data/` tree).
@@ -31,6 +35,7 @@ Rebuild an archive with its build script:
 .\yawning-portal\build.ps1
 .\sunken-bell\build.ps1
 .\ember-mill\build.ps1
+.\glass-wastes\build.ps1
 ```
 
 The scripts write `demo.zip` beside each source tree with forward-slash archive paths, so
@@ -53,6 +58,15 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 README.
 
 ## Changes
+
+### The Glass Wastes 1.0.0
+
+- New three-map module: Wayfarer's Rest, the Glass Flats and the Sunken Observatory.
+- Three quests: Sera's **The Sun Lens**, Ilyan's **The Surveyor's Notes** and Sera's
+  **A Shard for the Road**.
+- Survive, protect, escape and defeat-target objective encounters, including Nim's Watch
+  and the Mirror Warden.
+- Sorcerer class, level-up feats, glass items, a caravan shop and source tree.
 
 ### The Yawning Portal Demo 1.1.5
 
@@ -175,5 +189,6 @@ README.
 ## Versioning
 
 Module versions follow `manifest.json`. Tags in this repository match: `v1.1.5` is the
-Yawning Portal demo 1.1.5, `sunken-bell-v1.0.5` is The Sunken Bell 1.0.5, and
-`ember-mill-v1.0.3` is The Ember Mill 1.0.3.
+Yawning Portal demo 1.1.5, `sunken-bell-v1.0.5` is The Sunken Bell 1.0.5,
+`ember-mill-v1.0.3` is The Ember Mill 1.0.3, and `glass-wastes-v1.0.0` is The Glass
+Wastes 1.0.0.

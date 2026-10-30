@@ -1,0 +1,32 @@
+{
+  "sun_lens": {
+    "title": "The Sun Lens",
+    "description": "Surveyor Renn vanished beneath the Glass Flats while mapping the old observatory. Sera believes the Mirror Warden is using Renn's lens to focus the desert sun.",
+    "objective": "Defeat the Mirror Warden in the Sunken Observatory and recover the Sun Lens.",
+    "target": "Mirror Warden",
+    "turn_in": "Sera Voss",
+    "faction": "caravan_league",
+    "reputation": 6,
+    "reward": { "gold": 140, "experience": 400, "items": [ "Sun Lens" ] }
+  },
+  "surveyor_notes": {
+    "title": "The Surveyor's Notes",
+    "description": "Ilyan needs Renn's field notes to finish a lens that can read the observatory's buried charts.",
+    "objective": "Recover the Surveyor's Notes from the Sunken Observatory and return them to Ilyan.",
+    "target_item": "Surveyor's Notes",
+    "turn_in": "Ilyan",
+    "faction": "caravan_league",
+    "reputation": 3,
+    "reward": { "gold": 70, "experience": 140, "items": [ "Glass Talisman" ] }
+  },
+  "shard_bargain": {
+    "title": "A Shard for the Road",
+    "description": "A prism shard from the observatory would pay the caravan's debts and keep the road open for another season.",
+    "objective": "Recover the Prism Shard from the Sunken Observatory and return it to Sera Voss.",
+    "target_item": "Prism Shard",
+    "turn_in": "Sera Voss",
+    "faction": "caravan_league",
+    "reputation": 5,
+    "reward": { "gold": 110, "experience": 220, "items": [ "Mirage Tonic" ] }
+  }
+}

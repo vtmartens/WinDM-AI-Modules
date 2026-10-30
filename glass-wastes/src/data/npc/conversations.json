@@ -1,0 +1,114 @@
+{
+  "Sera Voss": {
+    "start": {
+      "text": "Sera Voss folds her telescope and plants it in the sand. 'Surveyor Renn went into the Glass Flats three days ago. His last signal came from the old observatory, and the lens he carried is worth more than this caravan.'",
+      "options": [
+        [ "Tell me about Renn.", "sun_offer", { "quest": "sun_lens", "status": "not_started" } ],
+        [ "About the observatory...", "sun_reminder", { "quest": "sun_lens", "status": "active" } ],
+        [ "The Mirror Warden is broken.", "sun_turnin", { "quest": "sun_lens", "status": "ready" } ],
+        [ "The Flats are quiet.", "sun_done", { "quest": "sun_lens", "status": "completed" } ],
+        [ "What about the Prism Shard?", "shard_offer", { "quest": "shard_bargain", "status": "not_started" } ],
+        [ "The shard...", "shard_reminder", { "quest": "shard_bargain", "status": "active" } ],
+        [ "I found the Prism Shard.", "shard_turnin", { "quest": "shard_bargain", "status": "ready" } ],
+        [ "Tell me about the caravan.", "sera_info" ],
+        [ "Farewell.", null ]
+      ]
+    },
+    "sera_info": {
+      "text": "We haul water, salt and glass along the edge of the Flats. The observatory used to be a landmark, then a ruin, then a warning. Renn thought he could map it safely. The desert disagreed.",
+      "options": [ [ "I will look for him.", "sun_offer", { "quest": "sun_lens", "status": "not_started" } ], [ "Farewell.", null ] ]
+    },
+    "sun_offer": {
+      "text": "Renn was carrying the Sun Lens. If the Warden has it, the mirror will burn a path straight through the caravan road. Reach the observatory, break the Warden and bring the lens back.",
+      "options": [ [ "I will bring it back.", "sun_accept" ], [ "Not yet.", null ] ]
+    },
+    "sun_accept": {
+      "text": "Take the Glass Flats east. Nim knows the safe stones and will go with you. Ilyan can look at anything you find in the ruin.",
+      "effect": [
+        { "type": "start_quest", "quest": "sun_lens" },
+        { "type": "recruit_ally", "npc": "Nim" }
+      ],
+      "options": [ [ "I will return.", null ] ]
+    },
+    "sun_reminder": {
+      "text": "East across the Flats, then down into the observatory. The Mirror Warden is at the heart of it. Bring the Sun Lens back.",
+      "options": [ [ "I am going.", null ] ]
+    },
+    "sun_turnin": {
+      "text": "Sera turns the Sun Lens toward the sky and watches the light bend through it. 'Renn would have called this a fair trade.' She pays you from the caravan strongbox.",
+      "effect": { "type": "complete_quest", "quest": "sun_lens" },
+      "options": [ [ "Keep the road open.", null ] ]
+    },
+    "sun_done": {
+      "text": "The caravan road is open again. Sera has set the Sun Lens on a pole above the camp, and the evening light falls clean and harmless across the sand.",
+      "options": [ [ "Good.", null ] ]
+    },
+    "shard_offer": {
+      "text": "There is a prism shard in the observatory, the size of a fist and clear as winter. Bring it to me and the caravan eats through the next season.",
+      "options": [ [ "I will find it.", "shard_accept" ], [ "Not now.", null ] ]
+    },
+    "shard_accept": {
+      "text": "Ilyan says the surveyor's chest sits near the observatory altar. The shard should be with his notes.",
+      "effect": { "type": "start_quest", "quest": "shard_bargain" },
+      "options": [ [ "I will bring it.", null ] ]
+    },
+    "shard_reminder": {
+      "text": "The prism shard is still in the observatory. The caravan cannot wait forever.",
+      "options": [ [ "I will find it.", null ] ]
+    },
+    "shard_turnin": {
+      "text": "Sera weighs the shard in one hand, then locks it in the strongbox. 'A fair price for a hard road.' She counts out your share.",
+      "effect": { "type": "complete_quest", "quest": "shard_bargain" },
+      "options": [ [ "Use it well.", null ] ]
+    }
+  },
+  "Ilyan": {
+    "start": {
+      "text": "Ilyan holds a half-finished lens up to the light. 'Renn's field notes would tell me how the observatory focuses the sun. Without them, I am guessing at the shape of the glass.'",
+      "options": [
+        [ "I will look for the notes.", "notes_offer", { "quest": "surveyor_notes", "status": "not_started" } ],
+        [ "About the notes...", "notes_reminder", { "quest": "surveyor_notes", "status": "active" } ],
+        [ "I found the Surveyor's Notes.", "notes_turnin", { "quest": "surveyor_notes", "status": "ready" } ],
+        [ "The notes are safe.", "notes_done", { "quest": "surveyor_notes", "status": "completed" } ],
+        [ "What are you working on?", "ilyan_info" ],
+        [ "Farewell.", null ]
+      ]
+    },
+    "ilyan_info": {
+      "text": "A lens is only glass until someone gives it a purpose. The old surveyors ground theirs to read the heat above the Flats. I am trying to remember the trick.",
+      "options": [ [ "I will find the notes.", "notes_offer", { "quest": "surveyor_notes", "status": "not_started" } ], [ "Farewell.", null ] ]
+    },
+    "notes_offer": {
+      "text": "Renn kept his notes in a surveyor's chest near the observatory altar. Bring them back and I can finish the lens before the next storm.",
+      "options": [ [ "I will bring them.", "notes_accept" ], [ "Later.", null ] ]
+    },
+    "notes_accept": {
+      "text": "The observatory is east across the Flats. Sera's scout knows the way. Look for the chest near the altar.",
+      "effect": { "type": "start_quest", "quest": "surveyor_notes" },
+      "options": [ [ "I will return.", null ] ]
+    },
+    "notes_reminder": {
+      "text": "The notes are still in the ruin. I need Renn's measurements.",
+      "options": [ [ "I will find them.", null ] ]
+    },
+    "notes_turnin": {
+      "text": "Ilyan reads the notes twice, then sets them down carefully. 'He was close. Very close.' He gives you a glass talisman from the bench.",
+      "effect": { "type": "complete_quest", "quest": "surveyor_notes" },
+      "options": [ [ "Finish the lens.", null ] ]
+    },
+    "notes_done": {
+      "text": "Ilyan's new lens sits in a velvet cradle, and the notes are bound in oilcloth beside it.",
+      "options": [ [ "Farewell.", null ] ]
+    }
+  },
+  "Nim": {
+    "start": {
+      "text": "Nim keeps her eyes on the horizon. 'The Flats look empty. They are not. Follow the dark stones and do not step where the sand shines.'",
+      "options": [ [ "What are you watching for?", "nim_info" ], [ "Stay close.", null ] ]
+    },
+    "nim_info": {
+      "text": "Glass stalks, shard raiders, and the shimmer when the sun comes down too hard. The ruins are worse. The Warden sings to the mirrors, and the mirrors answer.",
+      "options": [ [ "I will be ready.", null ] ]
+    }
+  }
+}

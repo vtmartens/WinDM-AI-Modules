@@ -1,0 +1,107 @@
+{
+  "glass_stalkers": {
+    "title": "Glass Stalkers",
+    "description": "Two lean shapes pace the caravan track, their hides crusted with splinters of glass.",
+    "difficulty": "easy",
+    "reward": { "gold": 15, "experience": 50 },
+    "enemies": [
+      { "monster_type": "wolf", "name": "Glass Stalker A" },
+      { "monster_type": "wolf", "name": "Glass Stalker B" }
+    ]
+  },
+  "shard_raiders": {
+    "title": "Shard Raiders",
+    "description": "A bandit chief and two raiders step out from behind a glass outcrop, blades wrapped against the glare.",
+    "difficulty": "medium",
+    "reward": { "gold": 35, "experience": 100 },
+    "enemies": [
+      { "monster_type": "bandit_chief", "name": "Shard Chief" },
+      { "monster_type": "bandit", "name": "Shard Raider A" },
+      { "monster_type": "bandit", "name": "Shard Raider B" }
+    ]
+  },
+  "shimmer_storm": {
+    "title": "The Shimmer Storm",
+    "description": "The horizon folds into a wall of white light. There is no shelter on the open Flats, only the long run through the glare.",
+    "difficulty": "easy",
+    "reward": { "gold": 25, "experience": 80 },
+    "objective": {
+      "type": "survive",
+      "rounds": 3,
+      "description": "Hold the Glass Flats until the shimmer passes.",
+      "success": "The shimmer passes. The road shines clean again.",
+      "failure": "The storm drives you back toward camp."
+    },
+    "hazards": [
+      { "name": "Shimmer Wind", "description": "The heat turns the air to knives.", "damage": 3, "ability": "constitution", "dc": 12, "target": "player", "start_round": 1, "every_rounds": 2 }
+    ],
+    "enemies": [
+      { "monster_type": "wolf", "name": "Glass Stalker" }
+    ]
+  },
+  "shard_ambush": {
+    "title": "Nim's Watch",
+    "description": "Raiders close in while Nim is exposed on the ridge. Keep her on her feet until the caravan horn answers.",
+    "difficulty": "medium",
+    "requires_quest": "sun_lens",
+    "reward": { "gold": 30, "experience": 100 },
+    "objective": {
+      "type": "protect",
+      "ally": "Nim",
+      "rounds": 2,
+      "description": "Keep Nim alive until the caravan horn answers.",
+      "success": "Nim drops down beside you, breathing hard.",
+      "failure": "Nim falls, and the raiders close over the ridge."
+    },
+    "enemies": [
+      { "monster_type": "bandit", "name": "Ridge Raider A" },
+      { "monster_type": "bandit", "name": "Ridge Raider B" }
+    ]
+  },
+  "mirror_warden": {
+    "title": "The Mirror Warden",
+    "description": "A figure of black glass unfolds beneath the observatory dome, flanked by echoes that wear Renn's face.",
+    "difficulty": "hard",
+    "elite": true,
+    "requires_quest": "sun_lens",
+    "location": "sunken_observatory",
+    "clears_area": "sunken_observatory",
+    "reward": { "gold": 150, "experience": 450 },
+    "objective": {
+      "type": "defeat_target",
+      "target": "Mirror Warden",
+      "description": "Break the Mirror Warden before the echoes drag you down.",
+      "success": "The Mirror Warden shatters; the echoes lose their shape.",
+      "failure": "The Warden turns the Sun Lens on the caravan road."
+    },
+    "hazards": [
+      { "name": "Prism Flash", "description": "The mirrors throw the desert sun across the dome.", "damage": 5, "ability": "constitution", "dc": 13, "target": "all", "start_round": 2, "every_rounds": 2 }
+    ],
+    "enemies": [
+      { "monster_type": "rune_warden", "name": "Mirror Warden" },
+      { "monster_type": "bell_wight", "name": "Glass Echo A" },
+      { "monster_type": "bell_wight", "name": "Glass Echo B" }
+    ]
+  },
+  "collapsing_vault": {
+    "title": "The Falling Dome",
+    "description": "The observatory groans as the mirrors crack. The exit is behind you, and the echoes are between.",
+    "difficulty": "medium",
+    "requires_quest": "sun_lens",
+    "reward": { "gold": 40, "experience": 120 },
+    "objective": {
+      "type": "escape",
+      "rounds": 2,
+      "description": "Survive the falling glass and escape the observatory.",
+      "success": "You reach the Flats as the dome comes down behind you.",
+      "failure": "The falling dome seals the observatory."
+    },
+    "hazards": [
+      { "name": "Falling Glass", "description": "The mirrors come down in sheets.", "damage": 4, "ability": "dexterity", "dc": 13, "target": "player", "start_round": 1, "every_rounds": 2 }
+    ],
+    "enemies": [
+      { "monster_type": "bell_wight", "name": "Glass Echo A" },
+      { "monster_type": "bell_wight", "name": "Glass Echo B" }
+    ]
+  }
+}

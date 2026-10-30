@@ -1,0 +1,14 @@
+{
+  "caravan_league": {
+    "name": "The Caravan League",
+    "description": "Drivers, guides and traders who keep the desert road open.",
+    "shop_discount": { "friendly": 5, "trusted": 10, "allied": 15 },
+    "quest_bonus": { "friendly": 5, "trusted": 10, "allied": 15 }
+  },
+  "prism_choir": {
+    "name": "The Prism Choir",
+    "description": "A cult that worships the focused light beneath the Glass Flats.",
+    "shop_discount": {},
+    "quest_bonus": {}
+  }
+}

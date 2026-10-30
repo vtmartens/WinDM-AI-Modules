@@ -1,0 +1,6 @@
+{
+  "Weapons": [ "Short Sword", "Long Sword", "Battle Axe", "Short Bow", "dagger" ],
+  "Armor": [ "Leather Armor", "Chainmail" ],
+  "Accessories": [ "Wooden Shield", "Ring of Strength", "Amulet of Protection", "Glass Talisman" ],
+  "Potions": [ "Light Healing Potion", "Healing Potion", "Mirage Tonic", "Antidote" ]
+}

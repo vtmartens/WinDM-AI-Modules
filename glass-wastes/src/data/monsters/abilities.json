@@ -1,0 +1,408 @@
+{
+    "poison_arrow":  {
+                         "id":  "poison_arrow",
+                         "name":  "Poison Arrow",
+                         "description":  "A green-stained arrow that leaves venom in the wound.",
+                         "cooldown":  3,
+                         "telegraph":  "The goblin nocks a green-stained arrow.",
+                         "save":  {
+                                      "ability":  "constitution",
+                                      "dc":  12,
+                                      "success":  "half"
+                                  },
+                         "effect":  {
+                                        "type":  "attack",
+                                        "damage":  6,
+                                        "poison":  {
+                                                       "damage":  2,
+                                                       "turns":  3
+                                                   }
+                                    }
+                     },
+    "bone_volley":  {
+                        "id":  "bone_volley",
+                        "name":  "Bone Volley",
+                        "description":  "A clatter of sharpened bone shards.",
+                        "cooldown":  2,
+                        "telegraph":  "The skeleton rattles and raises a fistful of bone shards.",
+                        "save":  {
+                                     "ability":  "dexterity",
+                                     "dc":  12,
+                                     "success":  "half"
+                                 },
+                        "effect":  {
+                                       "type":  "attack",
+                                       "damage":  7
+                                   }
+                    },
+    "savage_bite":  {
+                        "id":  "savage_bite",
+                        "name":  "Savage Bite",
+                        "description":  "A tearing bite that feeds the beast.",
+                        "cooldown":  3,
+                        "telegraph":  "The wolf lowers its head and snarls.",
+                        "effect":  {
+                                       "type":  "attack",
+                                       "damage":  6,
+                                       "self_heal":  2
+                                   }
+                    },
+    "dark_bolt":  {
+                      "id":  "dark_bolt",
+                      "name":  "Dark Bolt",
+                      "description":  "A lance of cold, whispered power.",
+                      "cooldown":  2,
+                      "telegraph":  "The cultist\u0027s voice drops to a whisper.",
+                      "save":  {
+                                   "ability":  "wisdom",
+                                   "dc":  12,
+                                   "success":  "half"
+                               },
+                      "condition":  {
+                                        "id":  "frightened",
+                                        "turns":  3
+                                    },
+                      "effect":  {
+                                     "type":  "attack",
+                                     "damage":  6
+                                 }
+                  },
+    "spectral_touch":  {
+                           "id":  "spectral_touch",
+                           "name":  "Spectral Touch",
+                           "description":  "A numbing touch from beyond the grave.",
+                           "cooldown":  2,
+                           "telegraph":  "The specter\u0027s outline thins and reaches toward you.",
+                           "effect":  {
+                                          "type":  "attack",
+                                          "damage":  7
+                                      }
+                       },
+    "cheap_shot":  {
+                       "id":  "cheap_shot",
+                       "name":  "Cheap Shot",
+                       "description":  "A quick jab at an exposed opening.",
+                       "cooldown":  2,
+                       "telegraph":  "The bandit feints and looks for an opening.",
+                       "effect":  {
+                                      "type":  "attack",
+                                      "damage":  5
+                                  }
+                   },
+    "blinding_powder":  {
+                            "id":  "blinding_powder",
+                            "name":  "Blinding Powder",
+                            "description":  "A fistful of caustic dust thrown into the eyes.",
+                            "cooldown":  3,
+                            "telegraph":  "The bandit reaches into a pouch and hurls a handful of dust.",
+                            "save":  {
+                                         "ability":  "dexterity",
+                                         "dc":  12,
+                                         "success":  "half"
+                                     },
+                            "condition":  {
+                                              "id":  "blinded",
+                                              "turns":  2
+                                          },
+                            "effect":  {
+                                           "type":  "attack",
+                                           "damage":  3
+                                       }
+                        },
+    "web_shot":  {
+                     "id":  "web_shot",
+                     "name":  "Sticky Web",
+                     "description":  "A mass of silk pins the target in place.",
+                     "cooldown":  3,
+                     "telegraph":  "The giant spider gathers a bundle of webbing under its abdomen.",
+                     "save":  {
+                                  "ability":  "dexterity",
+                                  "dc":  12,
+                                  "success":  "half"
+                              },
+                     "condition":  {
+                                       "id":  "restrained",
+                                       "turns":  2
+                                   },
+                     "effect":  {
+                                    "type":  "attack",
+                                    "damage":  4
+                                }
+                 },
+    "silver_tongue":  {
+                          "id":  "silver_tongue",
+                          "name":  "Silver Tongue",
+                          "description":  "A honeyed command that makes the target reluctant to strike back.",
+                          "cooldown":  4,
+                          "telegraph":  "The Smuggler Lord smiles and speaks a few soft, measured words.",
+                          "save":  {
+                                       "ability":  "wisdom",
+                                       "dc":  13,
+                                       "success":  "half"
+                                   },
+                          "condition":  {
+                                            "id":  "charmed",
+                                            "turns":  2,
+                                            "source":  "attacker"
+                                        },
+                          "effect":  {
+                                         "type":  "attack",
+                                         "damage":  4
+                                     }
+                      },
+    "hex_bolt":  {
+                     "id":  "hex_bolt",
+                     "name":  "Hex Bolt",
+                     "description":  "A knot of cursing light that bursts across the eyes.",
+                     "cooldown":  3,
+                     "telegraph":  "The goblin hexer traces a jagged sign in the air.",
+                     "save":  {
+                                  "ability":  "wisdom",
+                                  "dc":  13,
+                                  "success":  "half"
+                              },
+                     "condition":  {
+                                       "id":  "blinded",
+                                       "turns":  2
+                                   },
+                     "effect":  {
+                                    "type":  "attack",
+                                    "damage":  5
+                                }
+                 },
+    "reckless_cleave":  {
+                            "id":  "reckless_cleave",
+                            "name":  "Reckless Cleave",
+                            "description":  "A wild two-handed cut that leaves both fighter and target off balance.",
+                            "cooldown":  3,
+                            "telegraph":  "The berserker drags both axes back for a wide, reckless swing.",
+                            "save":  {
+                                         "ability":  "dexterity",
+                                         "dc":  13,
+                                         "success":  "half"
+                                     },
+                            "condition":  {
+                                              "id":  "weakened",
+                                              "turns":  2
+                                          },
+                            "effect":  {
+                                           "type":  "attack",
+                                           "damage":  12
+                                       }
+                        },
+    "grave_guard":  {
+                        "id":  "grave_guard",
+                        "name":  "Grave Guard",
+                        "description":  "The champion raises a dead shield, warding itself as the grave-chill bites.",
+                        "cooldown":  3,
+                        "telegraph":  "The Risen Champion plants its rusted blade and raises a dead shield.",
+                        "save":  {
+                                     "ability":  "wisdom",
+                                     "dc":  13,
+                                     "success":  "half"
+                                 },
+                        "condition":  {
+                                          "id":  "frightened",
+                                          "turns":  2
+                                      },
+                        "effect":  {
+                                       "type":  "attack",
+                                       "damage":  8,
+                                       "guard":  5
+                                   }
+                    },
+    "shield_bash":  {
+                        "id":  "shield_bash",
+                        "name":  "Shield Bash",
+                        "description":  "A crushing blow that leaves the sentinel braced.",
+                        "cooldown":  3,
+                        "telegraph":  "The Iron Sentinel locks its shield forward.",
+                        "save":  {
+                                     "ability":  "dexterity",
+                                     "dc":  13,
+                                     "success":  "half"
+                                 },
+                        "condition":  {
+                                          "id":  "weakened",
+                                          "turns":  3
+                                      },
+                        "effect":  {
+                                       "type":  "attack",
+                                       "damage":  12,
+                                       "guard":  5
+                                   }
+                    },
+    "repair":  {
+                   "id":  "repair",
+                   "name":  "Repair",
+                   "description":  "Runes knit the sentinel\u0027s plates back together.",
+                   "cooldown":  4,
+                   "telegraph":  "The Iron Sentinel\u0027s runes flicker to life.",
+                   "effect":  {
+                                  "type":  "heal",
+                                  "amount":  10
+                              }
+               },
+    "dirty_trick":  {
+                        "id":  "dirty_trick",
+                        "name":  "Dirty Trick",
+                        "description":  "A pocketful of stinging powder and a low blow.",
+                        "cooldown":  3,
+                        "telegraph":  "Vargas reaches into his coat with a thin smile.",
+                        "save":  {
+                                     "ability":  "constitution",
+                                     "dc":  12,
+                                     "success":  "half"
+                                 },
+                        "effect":  {
+                                       "type":  "attack",
+                                       "damage":  8,
+                                       "poison":  {
+                                                      "damage":  2,
+                                                      "turns":  2
+                                                  }
+                                   }
+                    },
+    "flame_breath":  {
+                         "id":  "flame_breath",
+                         "name":  "Flame Breath",
+                         "description":  "A cone of red fire that leaves the target burning.",
+                         "cooldown":  4,
+                         "telegraph":  "The young dragon draws a deep, glowing breath.",
+                         "save":  {
+                                      "ability":  "dexterity",
+                                      "dc":  13,
+                                      "success":  "half"
+                                  },
+                         "condition":  {
+                                           "id":  "burning",
+                                           "turns":  3
+                                       },
+                         "effect":  {
+                                        "type":  "attack",
+                                        "damage":  12
+                                    }
+                     },
+    "rune_lash":  {
+                      "id":  "rune_lash",
+                      "name":  "Rune Lash",
+                      "description":  "A whip of searing rune-light cuts across the hall.",
+                      "cooldown":  2,
+                      "telegraph":  "The rune sentinel\u0027s core brightens and its spear splits the air.",
+                      "effect":  {
+                                     "type":  "attack",
+                                     "damage":  7
+                                 }
+                  },
+    "rune_pulse":  {
+                       "id":  "rune_pulse",
+                       "name":  "Rune Pulse",
+                       "description":  "A wave of force erupts from the Warden\u0027s chest.",
+                       "cooldown":  3,
+                       "telegraph":  "The Rune Warden\u0027s chest-plate opens like a furnace door.",
+                       "save":  {
+                                    "ability":  "dexterity",
+                                    "dc":  14,
+                                    "success":  "half"
+                                },
+                       "condition":  {
+                                         "id":  "staggered",
+                                         "turns":  1
+                                     },
+                       "effect":  {
+                                      "type":  "attack",
+                                      "damage":  14
+                                  }
+                   },
+    "warding_light":  {
+                          "id":  "warding_light",
+                          "name":  "Warding Light",
+                          "description":  "Runic light crawls over the Warden\u0027s broken plates.",
+                          "cooldown":  3,
+                          "telegraph":  "The Rune Warden plants its blade and the runes flare.",
+                          "effect":  {
+                                         "type":  "heal",
+                                         "amount":  12
+                                     }
+                      },
+    "gravity_well":  {
+                         "id":  "gravity_well",
+                         "name":  "Gravity Well",
+                         "description":  "The sanctum\u0027s ward crushes the air around you.",
+                         "cooldown":  4,
+                         "telegraph":  "The Rune Warden raises one hand and the floor groans.",
+                         "save":  {
+                                      "ability":  "strength",
+                                      "dc":  14,
+                                      "success":  "half"
+                                  },
+                         "condition":  {
+                                           "id":  "weakened",
+                                           "turns":  2
+                                       },
+                         "effect":  {
+                                        "type":  "attack",
+                                        "damage":  10
+                                    }
+                     },
+    "heart_seal":  {
+                       "id":  "heart_seal",
+                       "name":  "Heart Seal",
+                       "description":  "A ring of white runes closes around the target and pins them in place.",
+                       "cooldown":  4,
+                       "telegraph":  "The Runeheart Sovereign presses one hand to the heart-shaped floor.",
+                       "save":  {
+                                    "ability":  "strength",
+                                    "dc":  14,
+                                    "success":  "half"
+                                },
+                       "condition":  {
+                                         "id":  "restrained",
+                                         "turns":  2
+                                     },
+                       "effect":  {
+                                      "type":  "attack",
+                                      "damage":  8
+                                  }
+                   },
+    "drowning_grasp":  {
+                           "id":  "drowning_grasp",
+                           "name":  "Drowning Grasp",
+                           "description":  "A cold hand closes around the throat and pulls.",
+                           "cooldown":  3,
+                           "telegraph":  "The drowned figure reaches out with both hands.",
+                           "save":  {
+                                        "ability":  "constitution",
+                                        "dc":  12,
+                                        "success":  "half"
+                                    },
+                           "condition":  {
+                                             "id":  "weakened",
+                                             "turns":  2
+                                         },
+                           "effect":  {
+                                          "type":  "attack",
+                                          "damage":  5
+                                      }
+                       },
+    "bell_toll":  {
+                      "id":  "bell_toll",
+                      "name":  "Bell Toll",
+                      "description":  "A single note from the drowned bell rolls through bone and thought.",
+                      "cooldown":  3,
+                      "telegraph":  "The bell above the chamber shivers, though no hand touches it.",
+                      "save":  {
+                                   "ability":  "wisdom",
+                                   "dc":  13,
+                                   "success":  "half"
+                               },
+                      "condition":  {
+                                        "id":  "frightened",
+                                        "turns":  2
+                                    },
+                      "effect":  {
+                                     "type":  "attack",
+                                     "damage":  6
+                                 }
+                  }
+}

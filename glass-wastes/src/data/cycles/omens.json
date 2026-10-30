@@ -1,0 +1,42 @@
+{
+  "shimmer_surge": {
+    "name": "Shimmer Surge",
+    "description": "The glass throws back the sun in burning sheets. Enemies gain +1 AC; Rune Shards increase by 50%; all rewards increase by 10%.",
+    "enemy": {"hp_percent": 0, "damage_bonus": 0, "ac_bonus": 1},
+    "reward_percent": 10,
+    "rune_shards_percent": 50,
+    "rest_cost_bonus": 0,
+    "market_discount_bonus": 0,
+    "black_market_discount_bonus": 0
+  },
+  "caravan_auction": {
+    "name": "Caravan Auction",
+    "description": "Every trader on the road has goods to move. Market prices fall by 10% and all rewards increase by 10%.",
+    "enemy": {"hp_percent": 0, "damage_bonus": 0, "ac_bonus": 0},
+    "reward_percent": 10,
+    "rune_shards_percent": 0,
+    "rest_cost_bonus": 0,
+    "market_discount_bonus": 10,
+    "black_market_discount_bonus": 0
+  },
+  "quiet_dunes": {
+    "name": "Quiet Dunes",
+    "description": "The Flats are still and the hidden markets wake. Black-market prices fall by 20% and all rewards increase by 10%.",
+    "enemy": {"hp_percent": 0, "damage_bonus": 0, "ac_bonus": 0},
+    "reward_percent": 10,
+    "rune_shards_percent": 0,
+    "rest_cost_bonus": 0,
+    "market_discount_bonus": 0,
+    "black_market_discount_bonus": 20
+  },
+  "long_heat": {
+    "name": "The Long Heat",
+    "description": "The sun refuses to set. Enemies gain 10% HP, rests cost 5 more gold, and all rewards increase by 20%.",
+    "enemy": {"hp_percent": 10, "damage_bonus": 0, "ac_bonus": 0},
+    "reward_percent": 20,
+    "rune_shards_percent": 0,
+    "rest_cost_bonus": 5,
+    "market_discount_bonus": 0,
+    "black_market_discount_bonus": 0
+  }
+}

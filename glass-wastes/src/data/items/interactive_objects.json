@@ -1,0 +1,74 @@
+[
+  {
+    "name": "camp fire",
+    "type": "interactive_object",
+    "description": "A low fire of dry scrub and camel dung, banked against the night wind.",
+    "state": "lit",
+    "token": "F",
+    "provides_cover": true,
+    "state_descriptions": {
+      "lit": "The camp fire burns steadily, and the kettle above it ticks.",
+      "doused": "The fire is out, and the ashes are already cold."
+    },
+    "possible_states": { "lit": [ "doused" ], "doused": [ "lit" ] }
+  },
+  {
+    "name": "supply wagon",
+    "type": "interactive_object",
+    "description": "A high-wheeled wagon under a patched canvas, its bed packed with water skins and trade goods.",
+    "state": "loaded",
+    "token": "W",
+    "provides_cover": true
+  },
+  {
+    "name": "survey map",
+    "type": "interactive_object",
+    "description": "A pinned survey map of the Glass Flats, marked with safe stones and a black cross over the observatory.",
+    "state": "posted",
+    "token": "M"
+  },
+  {
+    "name": "caravan ledger",
+    "type": "interactive_object",
+    "description": "Sera's ledger lies open on a folding table, its columns weighted against the wind.",
+    "state": "open",
+    "token": "L"
+  },
+  {
+    "name": "shard shrine",
+    "type": "interactive_object",
+    "description": "A cairn of dark stones with a splinter of glass set in the top, humming faintly in the heat.",
+    "state": "quiet",
+    "token": "S",
+    "magical": true
+  },
+  {
+    "name": "prism altar",
+    "type": "interactive_object",
+    "description": "A ring of mirrors around a black stone altar. The air above it bends the light into colours.",
+    "state": "dormant",
+    "token": "A",
+    "magical": true,
+    "provides_cover": true,
+    "state_descriptions": {
+      "dormant": "The altar is dark, but the mirrors still hold a thin line of light.",
+      "awake": "The mirrors turn as one, and the altar burns white."
+    },
+    "possible_states": { "dormant": [ "awake" ], "awake": [ "dormant" ] }
+  },
+  {
+    "name": "surveyor's chest",
+    "type": "chest",
+    "description": "A brass-bound surveyor's chest, half-buried beneath a drifted pane of glass.",
+    "state": "closed",
+    "requires_key": false,
+    "provides_cover": true,
+    "token": "C",
+    "content": [
+      { "name": "Surveyor's Notes", "type": "document", "value": 45, "description": "Renn's field notes on the observatory's mirrors and the safe paths across the Flats" },
+      { "name": "Prism Shard", "type": "key", "effect": { "opens": [ "prism seal" ] }, "value": 30, "description": "A fist-sized shard of clear glass that bends the light into a spectrum" },
+      { "name": "Mirage Tonic", "type": "heal", "effect": { "heal": 14 }, "value": 35, "description": "A pale tonic that steadies the eye and restores health" },
+      { "name": "Light Healing Potion", "type": "light_heal", "effect": { "light_heal": 5 }, "value": 10, "description": "A small healing potion" }
+    ]
+  }
+]

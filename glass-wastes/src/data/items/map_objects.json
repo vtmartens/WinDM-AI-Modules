@@ -1,0 +1,15 @@
+{
+  "wayfarer_camp": [
+    { "name": "camp fire", "position": [3, 3] },
+    { "name": "supply wagon", "position": [7, 4] },
+    { "name": "survey map", "position": [12, 2] },
+    { "name": "caravan ledger", "position": [15, 3] }
+  ],
+  "glass_flats": [
+    { "name": "shard shrine", "position": [17, 4] }
+  ],
+  "sunken_observatory": [
+    { "name": "prism altar", "position": [8, 4] },
+    { "name": "surveyor's chest", "position": [12, 8] }
+  ]
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Rusty Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Treasure Chest"
+      ]
+    },
+    "value": 5,
+    "description": "An old rusty key for a chest"
+  },
+  {
+    "name": "Cellar Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Cellar Door",
+        "Secret Door"
+      ]
+    },
+    "value": 10,
+    "description": "A key that opens the cellar door"
+  },
+  {
+    "name": "Golden Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Royal Strongbox"
+      ]
+    },
+    "value": 100,
+    "description": "A precious golden key for an important strongbox"
+  },
+  {
+    "name": "Tower Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Tower Door"
+      ]
+    },
+    "value": 15,
+    "description": "A key used to gain access to the wizards\u0027 tower"
+  },
+  {
+    "name": "Skeleton Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "*"
+      ]
+    },
+    "value": 150,
+    "description": "A special key that can open any simple lock"
+  },
+  {
+    "name": "Warehouse Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Warehouse Door",
+        "Sealed Strongbox"
+      ]
+    },
+    "value": 25,
+    "description": "An iron key taken from one of the hooded figures"
+  },
+  {
+    "name": "Vault Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Vault Door"
+      ]
+    },
+    "value": 40,
+    "description": "A cold iron key stamped with a vault sigil"
+  },
+  {
+    "name": "Sentinel Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Relic Chest"
+      ]
+    },
+    "value": 60,
+    "description": "A heavy key shaped like a sentinel\u0027s sigil"
+  },
+  {
+    "name": "Wagon Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Burnt Wagon"
+      ]
+    },
+    "value": 1,
+    "description": "A bent key from the caravan master\u0027s ring"
+  },
+  {
+    "name": "Warden\u0027s Seal",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Warden\u0027s Reliquary"
+      ]
+    },
+    "value": 1,
+    "description": "A black-iron seal that fits the reliquary beneath the sanctum"
+  },
+  {
+    "name": "Tide Key",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "Barnacle Chest"
+      ]
+    },
+    "value": 1,
+    "description": "A coral-crusted key found in a drowned sailor\u0027s chest"
+  },
+  {
+    "name": "Prism Shard",
+    "type": "key",
+    "effect": {
+      "opens": [
+        "prism seal"
+      ]
+    },
+    "value": 30,
+    "description": "A fist-sized shard of clear glass that bends the light into a spectrum."
+  }
+]

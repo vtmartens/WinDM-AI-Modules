@@ -1,0 +1,14 @@
+{
+  "wayfarer_camp": {
+    "title": "Wayfarer's Rest",
+    "description": "A caravan camp spreads across the last firm ground before the Glass Flats. Canvas snaps in the wind, and the horizon throws back the sun in pieces."
+  },
+  "glass_flats": {
+    "title": "The Glass Flats",
+    "description": "A plain of fused sand stretches to the horizon. Dark stones mark the safe path, while the light between them shifts like water."
+  },
+  "sunken_observatory": {
+    "title": "The Sunken Observatory",
+    "description": "A half-buried dome of brass and black glass, its mirrors still turning to follow a sun that has not moved in years."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "wayfarer_camp": [
+    { "name": "Sera Voss", "position": [5, 5] },
+    { "name": "Ilyan", "position": [10, 5] },
+    { "name": "Nim", "position": [13, 7] }
+  ],
+  "glass_flats": [],
+  "sunken_observatory": []
+}

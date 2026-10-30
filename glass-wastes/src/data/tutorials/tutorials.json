@@ -1,0 +1,25 @@
+{
+  "general": {
+    "title": "Wayfarer's Rest",
+    "steps": [
+      { "id": 1, "title": "The caravan camp", "content": "Talk to Sera Voss. She knows why the surveyor vanished into the glass." },
+      { "id": 2, "title": "The Glass Flats", "content": "The east door leads across the Flats to the Sunken Observatory." },
+      { "id": 3, "title": "Encounters", "content": "Maps with a curated encounter list show the fight panel in the context pane." }
+    ]
+  },
+  "combat": {
+    "title": "Combat Guide",
+    "steps": [
+      { "id": 1, "title": "Turns", "content": "Combat unfolds in turns. Attack, defend, take cover or use a potion." },
+      { "id": 2, "title": "Reactions", "content": "Ready an attack, riposte a miss, or disengage before fleeing." },
+      { "id": 3, "title": "Abilities", "content": "Class abilities consume mana and are listed in the context pane." }
+    ]
+  },
+  "quests": {
+    "title": "Quests",
+    "steps": [
+      { "id": 1, "title": "Talking", "content": "Talk to NPCs and choose the quest option. Quests appear in the quest log." },
+      { "id": 2, "title": "Turn in", "content": "Return to the NPC named in the quest when the objective is complete." }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "burning": {
+    "name": "Burning",
+    "description": "Flames cling to you and sear every movement.",
+    "duration": 3,
+    "tick": {"damage": 3},
+    "save": {"ability": "dexterity", "dc": 12},
+    "message": "You are burning!"
+  },
+  "frightened": {
+    "name": "Frightened",
+    "description": "Fear gnaws at your resolve.",
+    "duration": 3,
+    "save": {"ability": "wisdom", "dc": 12},
+    "rolls": {"disadvantage": ["check", "save"]},
+    "message": "You are frightened!"
+  },
+  "weakened": {
+    "name": "Weakened",
+    "description": "Your blows lack force.",
+    "duration": 3,
+    "save": {"ability": "constitution", "dc": 12},
+    "damage_modifier": -2,
+    "message": "You feel weakened!"
+  },
+  "prone": {
+    "name": "Prone",
+    "description": "You are on the ground and must spend a turn standing up.",
+    "duration": 2,
+    "stand_up": true,
+    "rolls": {"disadvantage": ["attack"]},
+    "incoming_rolls": {"advantage": ["attack"]},
+    "message": "You are knocked prone!"
+  },
+  "staggered": {
+    "name": "Staggered",
+    "description": "The impact leaves you off balance and unable to use special abilities.",
+    "duration": 1,
+    "blocks_abilities": true,
+    "rolls": {"disadvantage": ["attack"]},
+    "message": "You are staggered!"
+  },
+  "blinded": {
+    "name": "Blinded",
+    "description": "Dust and darkness blur everything beyond arm's reach.",
+    "duration": 2,
+    "save": {"ability": "constitution", "dc": 12},
+    "rolls": {"disadvantage": ["attack", "check"]},
+    "incoming_rolls": {"advantage": ["attack"]},
+    "message": "You are blinded!"
+  },
+  "restrained": {
+    "name": "Restrained",
+    "description": "Webbing or bonds pin you in place and leave you unable to flee.",
+    "duration": 3,
+    "save": {"ability": "strength", "dc": 13},
+    "rolls": {"disadvantage": ["attack", "check"]},
+    "incoming_rolls": {"advantage": ["attack"]},
+    "blocks_escape": true,
+    "escape_action": {
+      "label": "Break Free",
+      "aliases": ["break free", "struggle"],
+      "skill": "athletics",
+      "dc": 13,
+      "success": "You tear free of the bonds.",
+      "failure": "You struggle, but the bonds still hold."
+    },
+    "message": "You are restrained!"
+  },
+  "charmed": {
+    "name": "Charmed",
+    "description": "A honeyed voice makes it hard to raise your hand against its owner.",
+    "duration": 2,
+    "save": {"ability": "wisdom", "dc": 13},
+    "blocks_attacks_against_source": true,
+    "escape_action": {
+      "label": "Resist the Charm",
+      "aliases": ["resist", "resist charm", "shake it off"],
+      "save": "wisdom",
+      "dc": 13,
+      "success": "You shake off the charming voice.",
+      "failure": "The charming voice tightens its hold."
+    },
+    "message": "You are charmed!"
+  }
+}

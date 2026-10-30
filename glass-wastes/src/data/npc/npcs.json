@@ -1,0 +1,63 @@
+{
+  "Sera Voss": {
+    "name": "Sera Voss",
+    "description": "A sun-weathered caravan master with a brass telescope and a ledger of overdue debts.",
+    "profession": "Merchant",
+    "level": 5,
+    "hp": 30,
+    "hp_max": 30,
+    "strength_base": 12,
+    "dexterity_base": 14,
+    "constitution_base": 13,
+    "intelligence_base": 14,
+    "wisdom_base": 15,
+    "charisma_base": 16,
+    "token": "S",
+    "gold": 180,
+    "friendly": true,
+    "inventory": [
+      { "name": "dagger", "type": "weapon", "effect": { "strength": 2 }, "value": 10, "description": "A caravan knife" }
+    ]
+  },
+  "Ilyan": {
+    "name": "Ilyan",
+    "description": "A glasswright in a leather apron, his fingers scarred by heat and tiny cuts.",
+    "profession": "Jeweler",
+    "level": 4,
+    "hp": 22,
+    "hp_max": 22,
+    "strength_base": 9,
+    "dexterity_base": 15,
+    "constitution_base": 11,
+    "intelligence_base": 16,
+    "wisdom_base": 13,
+    "charisma_base": 12,
+    "token": "I",
+    "gold": 130,
+    "friendly": true,
+    "inventory": [
+      { "name": "Glass Talisman", "type": "accessory", "effect": { "defense": 1, "initiative": 1 }, "value": 85, "description": "A cool glass charm that turns the eye aside" }
+    ]
+  },
+  "Nim": {
+    "name": "Nim",
+    "description": "A quick-eyed scout with a scarf pulled over the lower half of her face and a sling at her belt.",
+    "profession": "Scout",
+    "level": 3,
+    "hp": 20,
+    "hp_max": 20,
+    "strength_base": 10,
+    "dexterity_base": 16,
+    "constitution_base": 11,
+    "intelligence_base": 12,
+    "wisdom_base": 14,
+    "charisma_base": 11,
+    "token": "N",
+    "gold": 25,
+    "friendly": true,
+    "ally_abilities": [ "field_dressing" ],
+    "inventory": [
+      { "name": "dagger", "type": "weapon", "effect": { "strength": 2 }, "value": 10, "description": "A scout's belt knife" }
+    ]
+  }
+}

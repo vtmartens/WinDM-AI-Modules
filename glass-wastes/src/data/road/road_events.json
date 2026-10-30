@@ -1,0 +1,22 @@
+{
+  "glass_caravan": {
+    "id": "glass_caravan",
+    "type": "merchant",
+    "title": "A Caravan on the Flats",
+    "description": "A high-wheeled cart waits in the shade of a glass outcrop. The trader spreads a few goods across the tailgate.",
+    "weight": 2,
+    "once": false,
+    "stock": [ "Light Healing Potion", "Healing Potion", "Mirage Tonic", "Antidote" ]
+  },
+  "shard_shrine": {
+    "id": "shard_shrine",
+    "type": "shrine",
+    "title": "The Shard Shrine",
+    "description": "A cairn of dark stones with a splinter of glass at its crown. The air around it is cool and still.",
+    "weight": 1,
+    "once": true,
+    "reward_flag": "shard_shrine",
+    "heal": 10,
+    "clear_conditions": true
+  }
+}
