@@ -5,7 +5,7 @@
     "class": "fighter",
     "stats": { "strength": 2 },
     "max_hp": 10,
-    "granted_abilities": [ "Multiattack" ]
+    "granted_abilities": [ "Second Wind" ]
   },
   "fighter_guardian": {
     "name": "Guardian",
@@ -13,7 +13,7 @@
     "class": "fighter",
     "stats": { "constitution": 2 },
     "max_hp": 10,
-    "granted_abilities": [ "Parry" ]
+    "granted_abilities": [ "Shield Wall" ]
   },
   "wizard_evoker": {
     "name": "Evoker",
@@ -21,7 +21,7 @@
     "class": "wizard",
     "stats": { "intelligence": 2 },
     "max_mana": 5,
-    "granted_abilities": [ "Lightning Bolt" ]
+    "granted_abilities": [ "Scorching Ray" ]
   },
   "wizard_abjurer": {
     "name": "Abjurer",
@@ -29,21 +29,21 @@
     "class": "wizard",
     "stats": { "wisdom": 2 },
     "max_hp": 5,
-    "granted_abilities": [ "Mage Shield" ]
+    "granted_abilities": [ "Arcane Ward" ]
   },
   "rogue_assassin": {
     "name": "Assassin",
     "description": "A killer who turns every opening into a killing stroke.",
     "class": "rogue",
     "stats": { "dexterity": 2 },
-    "granted_abilities": [ "Backstab" ]
+    "granted_abilities": [ "Death Mark" ]
   },
   "rogue_trickster": {
     "name": "Trickster",
     "description": "A scoundrel who survives by being somewhere else when the blow lands.",
     "class": "rogue",
     "stats": { "charisma": 2 },
-    "granted_abilities": [ "Evasion" ]
+    "granted_abilities": [ "Misdirection" ]
   },
   "cleric_warpriest": {
     "name": "War Priest",
@@ -51,7 +51,7 @@
     "class": "cleric",
     "stats": { "strength": 2 },
     "max_hp": 5,
-    "granted_abilities": [ "Restoration" ]
+    "granted_abilities": [ "War Blessing" ]
   },
   "cleric_oracle": {
     "name": "Oracle",
@@ -59,7 +59,7 @@
     "class": "cleric",
     "stats": { "wisdom": 2 },
     "max_mana": 5,
-    "granted_abilities": [ "Remove Curse" ]
+    "granted_abilities": [ "Foresight" ]
   },
   "sorcerer_draconic": {
     "name": "Draconic Bloodline",
@@ -67,7 +67,7 @@
     "class": "sorcerer",
     "stats": { "constitution": 2 },
     "max_hp": 10,
-    "granted_abilities": [ "Fireball" ]
+    "granted_abilities": [ "Dragon Breath" ]
   },
   "sorcerer_wild": {
     "name": "Wild Magic",
@@ -75,6 +75,6 @@
     "class": "sorcerer",
     "stats": { "charisma": 2 },
     "max_mana": 5,
-    "granted_abilities": [ "Lightning Bolt" ]
+    "granted_abilities": [ "Chaos Bolt" ]
   }
 }

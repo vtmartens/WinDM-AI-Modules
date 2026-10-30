@@ -326,5 +326,114 @@
     "effect": {
       "type": "comprehend_languages"
     }
+  },
+  "Second Wind": {
+    "id": "second_wind",
+    "class": "fighter",
+    "description": "Draw a deep breath and recover 10 hit points.",
+    "mana_cost": 0,
+    "combat_only": true,
+    "effect": {
+      "type": "heal",
+      "amount": 10
+    }
+  },
+  "Shield Wall": {
+    "id": "shield_wall",
+    "class": "fighter",
+    "description": "Set your shield and reduce the next incoming hit by 8.",
+    "mana_cost": 0,
+    "combat_only": true,
+    "effect": {
+      "type": "guard",
+      "amount": 8
+    }
+  },
+  "Scorching Ray": {
+    "id": "scorching_ray",
+    "class": "wizard",
+    "description": "A searing ray deals a flat 10 damage.",
+    "mana_cost": 6,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 10
+    }
+  },
+  "Arcane Ward": {
+    "id": "arcane_ward",
+    "class": "wizard",
+    "description": "A layered ward absorbs up to 10 damage.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "shield",
+      "amount": 10
+    }
+  },
+  "Death Mark": {
+    "id": "death_mark",
+    "class": "rogue",
+    "description": "Mark a weakness and add 8 damage to your next strike.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "bonus": 8
+    }
+  },
+  "Misdirection": {
+    "id": "misdirection",
+    "class": "rogue",
+    "description": "Mislead the enemy and avoid the next attack entirely.",
+    "mana_cost": 2,
+    "combat_only": true,
+    "effect": {
+      "type": "evade"
+    }
+  },
+  "War Blessing": {
+    "id": "war_blessing",
+    "class": "cleric",
+    "description": "A martial blessing adds 2 damage and wards off 3 damage.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 2,
+      "defense": 3
+    }
+  },
+  "Foresight": {
+    "id": "foresight",
+    "class": "cleric",
+    "description": "Read the next blow before it lands and avoid it.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "evade"
+    }
+  },
+  "Dragon Breath": {
+    "id": "dragon_breath",
+    "class": "sorcerer",
+    "description": "Exhale draconic fire for a flat 14 damage.",
+    "mana_cost": 6,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 14
+    }
+  },
+  "Chaos Bolt": {
+    "id": "chaos_bolt",
+    "class": "sorcerer",
+    "description": "A wild bolt of magic deals a flat 12 damage.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 12
+    }
   }
 }

@@ -6,10 +6,10 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.6 | `yawning_portal_demo` | 1.3.35 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.6 | `sunken_bell_demo` | 1.3.35 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.4 | `ember_mill` | 1.3.35 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.4 | `glass_wastes` | 1.3.35 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Yawning Portal Demo 1.1.7 | `yawning_portal_demo` | 1.3.36 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.7 | `sunken_bell_demo` | 1.3.36 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.5 | `ember_mill` | 1.3.36 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.5 | `glass_wastes` | 1.3.36 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -59,6 +59,24 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.7
+
+- Each subclass now grants a unique ability: Second Wind, Shield Wall, Scorching Ray,
+  Arcane Ward, Death Mark, Misdirection, War Blessing, Foresight, Dragon Breath or
+  Chaos Bolt.
+
+### The Sunken Bell 1.0.7
+
+- Adds the unique subclass abilities to the shared class data.
+
+### The Ember Mill 1.0.5
+
+- Adds the unique subclass abilities to the shared class data.
+
+### The Glass Wastes 1.0.5
+
+- Adds the unique subclass abilities to the shared class data.
 
 ### The Yawning Portal Demo 1.1.6
 
@@ -224,7 +242,7 @@ on monsters or encounter enemies — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.6` is the
-Yawning Portal demo 1.1.6, `sunken-bell-v1.0.6` is The Sunken Bell 1.0.6,
-`ember-mill-v1.0.4` is The Ember Mill 1.0.4, and `glass-wastes-v1.0.4` is The Glass
-Wastes 1.0.4.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.7` is the
+Yawning Portal demo 1.1.7, `sunken-bell-v1.0.7` is The Sunken Bell 1.0.7,
+`ember-mill-v1.0.5` is The Ember Mill 1.0.5, and `glass-wastes-v1.0.5` is The Glass
+Wastes 1.0.5.
