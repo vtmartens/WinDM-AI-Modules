@@ -6,10 +6,10 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.8 | `yawning_portal_demo` | 1.3.36 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.8 | `sunken_bell_demo` | 1.3.36 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.6 | `ember_mill` | 1.3.36 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.5 | `glass_wastes` | 1.3.36 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Yawning Portal Demo 1.1.9 | `yawning_portal_demo` | 1.3.38 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.9 | `sunken_bell_demo` | 1.3.38 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.7 | `ember_mill` | 1.3.38 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.6 | `glass_wastes` | 1.3.38 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -59,6 +59,23 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.9
+
+- Adds the **Bard** class with spontaneous spellcasting, bardic abilities, College of Lore
+  and College of Valor subclasses.
+
+### The Sunken Bell 1.0.9
+
+- Adds the shared Bard class and subclasses.
+
+### The Ember Mill 1.0.7
+
+- Adds the shared Bard class and subclasses.
+
+### The Glass Wastes 1.0.6
+
+- Adds the shared Bard class and subclasses.
 
 ### The Yawning Portal Demo 1.1.8
 
@@ -257,7 +274,7 @@ on monsters or encounter enemies — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.8` is the
-Yawning Portal demo 1.1.8, `sunken-bell-v1.0.8` is The Sunken Bell 1.0.8,
-`ember-mill-v1.0.6` is The Ember Mill 1.0.6, and `glass-wastes-v1.0.5` is The Glass
-Wastes 1.0.5.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.9` is the
+Yawning Portal demo 1.1.9, `sunken-bell-v1.0.9` is The Sunken Bell 1.0.9,
+`ember-mill-v1.0.7` is The Ember Mill 1.0.7, and `glass-wastes-v1.0.6` is The Glass
+Wastes 1.0.6.

@@ -76,5 +76,21 @@
     "stats": { "charisma": 2 },
     "max_mana": 5,
     "granted_abilities": [ "Chaos Bolt" ]
+  },
+  "bard_lore": {
+    "name": "College of Lore",
+    "description": "A scholar-performer who cuts with wit and collected knowledge.",
+    "class": "bard",
+    "stats": { "intelligence": 2 },
+    "max_mana": 5,
+    "granted_abilities": [ "Cutting Words" ]
+  },
+  "bard_valor": {
+    "name": "College of Valor",
+    "description": "A battle-bard who carries the song into the front rank.",
+    "class": "bard",
+    "stats": { "strength": 2 },
+    "max_hp": 5,
+    "granted_abilities": [ "Combat Inspiration" ]
   }
 }

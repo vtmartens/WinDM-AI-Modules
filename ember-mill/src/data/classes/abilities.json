@@ -435,5 +435,104 @@
       "type": "damage",
       "flat": 12
     }
+  },
+  "Vicious Mockery": {
+    "id": "vicious_mockery",
+    "class": "bard",
+    "description": "A cutting insult deals a flat 6 damage.",
+    "mana_cost": 2,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 6
+    }
+  },
+  "Healing Word": {
+    "id": "healing_word",
+    "class": "bard",
+    "description": "A word of encouragement restores 6 hit points.",
+    "mana_cost": 3,
+    "combat_only": false,
+    "effect": {
+      "type": "heal",
+      "amount": 6
+    }
+  },
+  "Bardic Inspiration": {
+    "id": "bardic_inspiration",
+    "class": "bard",
+    "description": "Inspire yourself: \u002B2 damage and \u002B1 defense on the next exchange.",
+    "mana_cost": 2,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 2,
+      "defense": 1
+    }
+  },
+  "Dissonant Whispers": {
+    "id": "dissonant_whispers",
+    "class": "bard",
+    "description": "A discordant note deals a flat 10 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 10
+    }
+  },
+  "Hypnotic Pattern": {
+    "id": "hypnotic_pattern",
+    "class": "bard",
+    "description": "A twisting pattern turns the next attack aside.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "evade"
+    }
+  },
+  "Dimension Door": {
+    "id": "dimension_door",
+    "class": "bard",
+    "description": "Step through a fold in space and avoid the next attack.",
+    "mana_cost": 6,
+    "combat_only": true,
+    "effect": {
+      "type": "evade"
+    }
+  },
+  "Power Word Stun": {
+    "id": "power_word_stun",
+    "class": "bard",
+    "description": "A word of command deals a flat 20 damage.",
+    "mana_cost": 10,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 20
+    }
+  },
+  "Cutting Words": {
+    "id": "cutting_words",
+    "class": "bard",
+    "description": "A well-timed insult turns the next hit aside, reducing it by 6.",
+    "mana_cost": 2,
+    "combat_only": true,
+    "effect": {
+      "type": "guard",
+      "amount": 6
+    }
+  },
+  "Combat Inspiration": {
+    "id": "combat_inspiration",
+    "class": "bard",
+    "description": "A rallying phrase adds 2 damage and wards off 2 damage.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 2,
+      "defense": 2
+    }
   }
 }
