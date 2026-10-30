@@ -1,0 +1,23 @@
+[
+  {
+    "id": "runeheart_silent",
+    "title": "The Runeheart Stilled",
+    "priority": 10,
+    "condition": { "quest": "runeheart_gate", "status": "completed" },
+    "description": "The Runeheart Sovereign is broken and the gate beneath the Sealed Sanctum closes on an empty throne. The Watch clears the Underroad, Mirt's caravans return to the Trade Road, and the Yawning Portal fills again with stories that do not end in the dark. Your name is one of them."
+  },
+  {
+    "id": "market_quiet",
+    "title": "A Quieter Market",
+    "priority": 5,
+    "condition": { "quest": "shadows_of_the_market", "status": "completed" },
+    "description": "Vargas is finished and the market settles into an uneasy peace. Violet's Watch keeps the lanes open, Mirt counts his ledgers twice, and the Yawning Portal pours a little more freely. Below the city, the old roads are still waiting."
+  },
+  {
+    "id": "underroad_open",
+    "title": "The Road Below",
+    "priority": 1,
+    "condition": { "quest": "underroad_chapter", "status": "completed" },
+    "description": "The Underroad is clear enough to travel again, though every tunnel still asks a price. You leave the Yawning Portal with a lantern, a map, and the sense that the city has more doors than anyone admits."
+  }
+]

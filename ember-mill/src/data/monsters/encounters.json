@@ -9,6 +9,16 @@
       { "monster_type": "wolf", "name": "Ash Hound B" }
     ]
   },
+  "ash_archers": {
+    "title": "Ash Archers",
+    "description": "Two raiders climb the blackened hedgerow and loose arrows through the falling ash.",
+    "difficulty": "medium",
+    "reward": { "gold": 25, "experience": 80 },
+    "enemies": [
+      { "monster_type": "bandit", "name": "Ash Archer A", "ranged": true },
+      { "monster_type": "bandit", "name": "Ash Archer B", "ranged": true }
+    ]
+  },
   "ash_surge": {
     "title": "The Ash Squall",
     "description": "A shrieking wall of cinders rolls down the path. There is no shelter ahead, only the long run to the mill.",

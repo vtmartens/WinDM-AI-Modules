@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mill_restored",
+    "title": "The Mill Stands",
+    "priority": 10,
+    "condition": {
+      "all": [
+        { "quest": "ember_mill", "status": "completed" },
+        { "quest": "mill_ledger", "status": "completed" },
+        { "quest": "ash_bargain", "status": "completed" }
+      ]
+    },
+    "description": "The Ash Warden is ended, the ledger names the Covenant's friends, and the Ember Seal is locked away. Elsa hangs the burnt sign over a cold mill, and the village eats bread that no longer tastes of ash."
+  },
+  {
+    "id": "mill_and_ledger",
+    "title": "Names in the Ash",
+    "priority": 6,
+    "condition": {
+      "all": [
+        { "quest": "ember_mill", "status": "completed" },
+        { "quest": "mill_ledger", "status": "completed" }
+      ]
+    },
+    "description": "The mill is quiet and the ledger is safe. Cael reads the names by the fire while Elsa decides what the village owes to the families the Covenant marked."
+  },
+  {
+    "id": "mill_and_seal",
+    "title": "The Bargain Locked",
+    "priority": 6,
+    "condition": {
+      "all": [
+        { "quest": "ember_mill", "status": "completed" },
+        { "quest": "ash_bargain", "status": "completed" }
+      ]
+    },
+    "description": "The Ash Warden is dead and the Ember Seal is locked in the mill's strongbox. The furnace is cold, and Elsa sleeps through the night for the first time in seven days."
+  },
+  {
+    "id": "mill_quiet",
+    "title": "The Fire Out",
+    "priority": 1,
+    "condition": { "quest": "ember_mill", "status": "completed" },
+    "description": "The Ash Warden is finished and the mill has stopped burning. The village is quieter, but the ledger is still lost and the old bargain waits in the dark."
+  }
+]

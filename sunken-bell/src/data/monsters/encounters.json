@@ -18,6 +18,16 @@
                                             }
                                         ]
                         },
+    "reef_archers":  {
+                         "title":  "Reef Archers",
+                         "description":  "Two scavengers climb the black rocks and hurl coral-tipped spears from above.",
+                         "difficulty":  "medium",
+                         "reward":  { "gold":  25, "experience":  75 },
+                         "enemies":  [
+                                         { "monster_type":  "reef_scavenger", "name":  "Reef Archer A", "ranged":  true },
+                                         { "monster_type":  "reef_scavenger", "name":  "Reef Archer B", "ranged":  true }
+                                     ]
+                     },
     "drowned_sailors":  {
                             "title":  "The Drowned Crew",
                             "description":  "Two sailors in ruined oilskins turn from the black water, still trying to work a rope that is not there.",

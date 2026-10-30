@@ -1,0 +1,34 @@
+[
+  {
+    "id": "bell_restored",
+    "title": "The Lantern and Anchor",
+    "priority": 10,
+    "condition": {
+      "all": [
+        { "quest": "silence_the_bell", "status": "completed" },
+        { "quest": "drowned_names", "status": "completed" },
+        { "quest": "salt_and_iron", "status": "completed" }
+      ]
+    },
+    "description": "The bell is silent, the drowned names are written, and Halla's iron holds the Lantern and Anchor together through the next storm. Keeper Mara sets a lamp in the window for the boats that will come back, and the village begins to sound like a place where people live."
+  },
+  {
+    "id": "bell_and_names",
+    "title": "Names in the Tide",
+    "priority": 8,
+    "condition": {
+      "all": [
+        { "quest": "silence_the_bell", "status": "completed" },
+        { "quest": "drowned_names", "status": "completed" }
+      ]
+    },
+    "description": "The Bell Warden is dead and the drowned names are recovered. Orin copies them into the village record while Mara reads each one aloud. The forge is cold, but the village has its history back."
+  },
+  {
+    "id": "bell_silenced",
+    "title": "The Bell Below",
+    "priority": 1,
+    "condition": { "quest": "silence_the_bell", "status": "completed" },
+    "description": "The Bell Warden is dead and the reef is quiet. The Lantern and Anchor keeps its lights low, and the village listens for a sound that no longer comes."
+  }
+]

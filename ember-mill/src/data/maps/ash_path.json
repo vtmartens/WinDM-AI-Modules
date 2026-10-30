@@ -290,6 +290,7 @@
     "bounty_board":  false,
     "encounters":  [
                        "ash_hounds",
+                       "ash_archers",
                        "ash_surge",
                        "cinder_raiders"
                    ]

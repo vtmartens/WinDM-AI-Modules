@@ -18,6 +18,16 @@
                                           }
                                       ]
                       },
+    "goblin_skirmishers":  {
+                              "title":  "Goblin Skirmishers",
+                              "description":  "Two goblin archers work the edge of the road, loosing arrows from beyond reach.",
+                              "difficulty":  "easy",
+                              "reward":  { "gold":  20, "experience":  70 },
+                              "enemies":  [
+                                              { "monster_type":  "goblin", "name":  "Goblin Archer A", "ranged":  true },
+                                              { "monster_type":  "goblin", "name":  "Goblin Archer B", "ranged":  true }
+                                          ]
+                          },
     "orc_patrol":  {
                        "title":  "Orc Patrol",
                        "description":  "An orc brute leads a goblin archer through the market edge.",
