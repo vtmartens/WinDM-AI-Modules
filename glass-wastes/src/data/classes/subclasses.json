@@ -1,0 +1,80 @@
+{
+  "fighter_champion": {
+    "name": "Champion",
+    "description": "A straightforward master of arms who trusts strength and staying power.",
+    "class": "fighter",
+    "stats": { "strength": 2 },
+    "max_hp": 10,
+    "granted_abilities": [ "Multiattack" ]
+  },
+  "fighter_guardian": {
+    "name": "Guardian",
+    "description": "A shield-first defender who outlasts the enemy line.",
+    "class": "fighter",
+    "stats": { "constitution": 2 },
+    "max_hp": 10,
+    "granted_abilities": [ "Parry" ]
+  },
+  "wizard_evoker": {
+    "name": "Evoker",
+    "description": "A spellcaster who shapes raw elemental force into a weapon.",
+    "class": "wizard",
+    "stats": { "intelligence": 2 },
+    "max_mana": 5,
+    "granted_abilities": [ "Lightning Bolt" ]
+  },
+  "wizard_abjurer": {
+    "name": "Abjurer",
+    "description": "A careful caster who turns magic inward to hold the line.",
+    "class": "wizard",
+    "stats": { "wisdom": 2 },
+    "max_hp": 5,
+    "granted_abilities": [ "Mage Shield" ]
+  },
+  "rogue_assassin": {
+    "name": "Assassin",
+    "description": "A killer who turns every opening into a killing stroke.",
+    "class": "rogue",
+    "stats": { "dexterity": 2 },
+    "granted_abilities": [ "Backstab" ]
+  },
+  "rogue_trickster": {
+    "name": "Trickster",
+    "description": "A scoundrel who survives by being somewhere else when the blow lands.",
+    "class": "rogue",
+    "stats": { "charisma": 2 },
+    "granted_abilities": [ "Evasion" ]
+  },
+  "cleric_warpriest": {
+    "name": "War Priest",
+    "description": "A militant vessel of the faith, armored in conviction.",
+    "class": "cleric",
+    "stats": { "strength": 2 },
+    "max_hp": 5,
+    "granted_abilities": [ "Restoration" ]
+  },
+  "cleric_oracle": {
+    "name": "Oracle",
+    "description": "A seer who reads the shape of the battle before it closes.",
+    "class": "cleric",
+    "stats": { "wisdom": 2 },
+    "max_mana": 5,
+    "granted_abilities": [ "Remove Curse" ]
+  },
+  "sorcerer_draconic": {
+    "name": "Draconic Bloodline",
+    "description": "Your magic runs hot and close beneath the skin.",
+    "class": "sorcerer",
+    "stats": { "constitution": 2 },
+    "max_hp": 10,
+    "granted_abilities": [ "Fireball" ]
+  },
+  "sorcerer_wild": {
+    "name": "Wild Magic",
+    "description": "Your power refuses a fixed shape and spills out in storms.",
+    "class": "sorcerer",
+    "stats": { "charisma": 2 },
+    "max_mana": 5,
+    "granted_abilities": [ "Lightning Bolt" ]
+  }
+}
