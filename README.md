@@ -6,10 +6,10 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.10 | `yawning_portal_demo` | 1.3.39 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.10 | `sunken_bell_demo` | 1.3.39 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.8 | `ember_mill` | 1.3.39 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.7 | `glass_wastes` | 1.3.39 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Yawning Portal Demo 1.1.11 | `yawning_portal_demo` | 1.3.40 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.11 | `sunken_bell_demo` | 1.3.40 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.9 | `ember_mill` | 1.3.40 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.8 | `glass_wastes` | 1.3.40 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -45,9 +45,9 @@ and do not need the engine repository.
 ## Module format
 
 A module is a zip containing `manifest.json` and a `data/` tree: classes, subclasses,
-feats, backgrounds, maps, NPCs, conversations, quests, items, monsters, encounters,
-factions, conditions, crafting recipes, rune trials, campaign endings, scenes and
-tutorials. Module id, name and version live in the manifest.
+wild shapes, feats, backgrounds, maps, NPCs, conversations, quests, items, monsters,
+encounters, factions, conditions, crafting recipes, rune trials, campaign endings,
+scenes and tutorials. Module id, name and version live in the manifest.
 
 Content lives here; rules do not. Combat, shops, abilities, levelling, class skills and
 the profession/reputation rules are implemented in the engine.
@@ -59,6 +59,23 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.11
+
+- Adds the **Druid** class with prepared Wisdom magic, the Circle of the Moon and Circle
+  of the Land subclasses, and bear, wolf and eagle wild shapes with temporary form HP.
+
+### The Sunken Bell 1.0.11
+
+- Adds the shared Druid class, Circle subclasses and wild shapes.
+
+### The Ember Mill 1.0.9
+
+- Adds the shared Druid class, Circle subclasses and wild shapes.
+
+### The Glass Wastes 1.0.8
+
+- Adds the shared Druid class, Circle subclasses and wild shapes.
 
 ### The Yawning Portal Demo 1.1.10
 
@@ -291,7 +308,7 @@ on monsters or encounter enemies — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.10` is the
-Yawning Portal demo 1.1.10, `sunken-bell-v1.0.10` is The Sunken Bell 1.0.10,
-`ember-mill-v1.0.8` is The Ember Mill 1.0.8, and `glass-wastes-v1.0.7` is The Glass
-Wastes 1.0.7.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.11` is the
+Yawning Portal demo 1.1.11, `sunken-bell-v1.0.11` is The Sunken Bell 1.0.11,
+`ember-mill-v1.0.9` is The Ember Mill 1.0.9, and `glass-wastes-v1.0.8` is The Glass
+Wastes 1.0.8.

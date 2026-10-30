@@ -635,5 +635,106 @@
       "condition": "staggered",
       "turns": 1
     }
+  },
+  "Thorn Whip": {
+    "id": "thorn_whip",
+    "class": "druid",
+    "description": "A lash of thorns deals a flat 7 damage.",
+    "mana_cost": 2,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 7
+    }
+  },
+  "Entangle": {
+    "id": "entangle",
+    "class": "druid",
+    "description": "Roots restrain a target for 2 turns.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "curse",
+      "condition": "restrained",
+      "turns": 2
+    }
+  },
+  "Barkskin": {
+    "id": "barkskin",
+    "class": "druid",
+    "description": "Your hide hardens and absorbs up to 6 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "shield",
+      "amount": 6
+    }
+  },
+  "Moonbeam": {
+    "id": "moonbeam",
+    "class": "druid",
+    "description": "A column of moonlight deals a flat 12 damage.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 12
+    }
+  },
+  "Call Lightning": {
+    "id": "call_lightning",
+    "class": "druid",
+    "description": "A bolt of storm-light deals a flat 14 damage.",
+    "mana_cost": 6,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 14
+    }
+  },
+  "Wall of Thorns": {
+    "id": "wall_of_thorns",
+    "class": "druid",
+    "description": "A wall of thorns restrains a target for 2 turns.",
+    "mana_cost": 6,
+    "combat_only": true,
+    "effect": {
+      "type": "curse",
+      "condition": "restrained",
+      "turns": 2
+    }
+  },
+  "Storm of Vengeance": {
+    "id": "storm_of_vengeance",
+    "class": "druid",
+    "description": "A storm of raw nature deals a flat 25 damage.",
+    "mana_cost": 10,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 25
+    }
+  },
+  "Primal Strike": {
+    "id": "primal_strike",
+    "class": "druid",
+    "description": "A primal blow deals a flat 12 damage.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 12
+    }
+  },
+  "Nature\u0027s Ward": {
+    "id": "natures_ward",
+    "class": "druid",
+    "description": "A ward of living wood absorbs up to 8 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "shield",
+      "amount": 8
+    }
   }
 }

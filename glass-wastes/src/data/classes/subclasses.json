@@ -108,5 +108,21 @@
     "stats": { "intelligence": 2 },
     "max_mana": 5,
     "granted_abilities": [ "Psychic Lance" ]
+  },
+  "druid_moon": {
+    "name": "Circle of the Moon",
+    "description": "A guardian of the old hunt who fights best in a beast's skin.",
+    "class": "druid",
+    "stats": { "constitution": 2 },
+    "max_hp": 10,
+    "granted_abilities": [ "Primal Strike" ]
+  },
+  "druid_land": {
+    "name": "Circle of the Land",
+    "description": "A keeper of boundaries who draws power from the ground beneath the fight.",
+    "class": "druid",
+    "stats": { "wisdom": 2 },
+    "max_mana": 5,
+    "granted_abilities": [ "Nature's Ward" ]
   }
 }

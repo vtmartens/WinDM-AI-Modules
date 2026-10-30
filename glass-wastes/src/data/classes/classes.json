@@ -236,5 +236,41 @@
                                                                     "10":  "Power Word Kill"
                                                                 }
                                     }
-                }
+                },
+    "druid":  {
+                  "description":  "A keeper of old growth who channels nature and takes beast shape",
+                  "base_stats":  {
+                                     "strength":  10,
+                                     "dexterity":  12,
+                                     "constitution":  14,
+                                     "intelligence":  10,
+                                     "wisdom":  16,
+                                     "charisma":  10
+                                 },
+                  "special_abilities":  [
+                                            "Thorn Whip",
+                                            "Entangle",
+                                            "Barkskin",
+                                            "Guidance"
+                                        ],
+                  "starting_equipment":  [
+                                             "staff",
+                                             "Leather Armor",
+                                             "Antidote"
+                                         ],
+                  "hp_base":  8,
+                  "mana_base":  14,
+                  "prepared_caster":  true,
+                  "wild_shape":  true,
+                  "progression":  {
+                                      "hp_per_level":  6,
+                                      "mana_per_level":  8,
+                                      "abilities_per_level":  {
+                                                                  "3":  "Moonbeam",
+                                                                  "5":  "Call Lightning",
+                                                                  "7":  "Wall of Thorns",
+                                                                  "10":  "Storm of Vengeance"
+                                                              }
+                                  }
+              }
 }

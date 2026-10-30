@@ -1,0 +1,26 @@
+{
+  "bear": {
+    "name": "Brown Bear",
+    "description": "A heavy frame of muscle and fur, built to take a hit and give one back.",
+    "hp": 20,
+    "ac": 12,
+    "attack_bonus": 4,
+    "damage": 8
+  },
+  "wolf": {
+    "name": "Grey Wolf",
+    "description": "Lean, fast and used to bringing down larger prey in a pack.",
+    "hp": 14,
+    "ac": 13,
+    "attack_bonus": 4,
+    "damage": 6
+  },
+  "eagle": {
+    "name": "Mountain Eagle",
+    "description": "A wide-winged hunter with talons made for the high passes.",
+    "hp": 10,
+    "ac": 14,
+    "attack_bonus": 3,
+    "damage": 5
+  }
+}
