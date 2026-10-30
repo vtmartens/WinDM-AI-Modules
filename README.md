@@ -9,7 +9,7 @@ format it loads.
 | The Yawning Portal Demo 1.1.5 | `yawning_portal_demo` | 1.3.30 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 | The Sunken Bell 1.0.5 | `sunken_bell_demo` | 1.3.30 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
 | The Ember Mill 1.0.3 | `ember_mill` | 1.3.30 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.1 | `glass_wastes` | 1.3.32 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Glass Wastes 1.0.2 | `glass_wastes` | 1.3.33 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -46,8 +46,8 @@ and do not need the engine repository.
 
 A module is a zip containing `manifest.json` and a `data/` tree: classes, feats,
 backgrounds, maps, NPCs, conversations, quests, items, monsters, encounters, factions,
-conditions, crafting recipes, rune trials, scenes and tutorials. Module id, name and
-version live in the manifest.
+conditions, crafting recipes, rune trials, campaign endings, scenes and tutorials.
+Module id, name and version live in the manifest.
 
 Content lives here; rules do not. Combat, shops, abilities, levelling, class skills and
 the profession/reputation rules are implemented in the engine.
@@ -59,6 +59,12 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 documented in the engine README.
 
 ## Changes
+
+### The Glass Wastes 1.0.2
+
+- Adds campaign endings for keeping the Sun Lens, giving it to the caravan, or simply
+  reopening the road.
+- Compatibility metadata for WinDM-AI 1.3.33 campaign endings.
 
 ### The Glass Wastes 1.0.1
 
@@ -197,5 +203,5 @@ documented in the engine README.
 
 Module versions follow `manifest.json`. Tags in this repository match: `v1.1.5` is the
 Yawning Portal demo 1.1.5, `sunken-bell-v1.0.5` is The Sunken Bell 1.0.5,
-`ember-mill-v1.0.3` is The Ember Mill 1.0.3, and `glass-wastes-v1.0.1` is The Glass
-Wastes 1.0.1.
+`ember-mill-v1.0.3` is The Ember Mill 1.0.3, and `glass-wastes-v1.0.2` is The Glass
+Wastes 1.0.2.

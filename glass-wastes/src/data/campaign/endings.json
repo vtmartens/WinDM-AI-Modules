@@ -1,0 +1,23 @@
+[
+  {
+    "id": "lens_given",
+    "title": "The Lens at the Caravansary",
+    "priority": 10,
+    "condition": { "flag": "sun_lens_given" },
+    "description": "The Sun Lens is locked in Sera's strongbox, and the caravan road stays open through another season. Ilyan's new lens reads the heat above the Flats, and the drivers raise a cup to the surveyor who did not come back. You leave Wayfarer's Rest with the caravan's thanks and a road that remembers your name."
+  },
+  {
+    "id": "lens_kept",
+    "title": "The Lens in Your Hand",
+    "priority": 10,
+    "condition": { "flag": "sun_lens_kept" },
+    "description": "The Sun Lens rides in your pack, warm even in the dark. Sera does not ask about it again, and the caravan road closes behind you one wagon at a time. Ilyan finishes his own lens from Renn's notes. The Flats keep their light, and you keep the thing that bends it."
+  },
+  {
+    "id": "road_open",
+    "title": "The Road Open",
+    "priority": 1,
+    "condition": { "quest": "sun_lens", "status": "completed" },
+    "description": "The Mirror Warden is broken and the Sun Lens is back in the caravan's hands. Sera's drivers repack the wagons, Ilyan sets his lens against the evening sky, and Wayfarer's Rest begins to look like a place people will pass through again."
+  }
+]
