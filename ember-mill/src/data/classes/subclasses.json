@@ -140,5 +140,21 @@
     "stats": { "charisma": 2 },
     "max_mana": 5,
     "granted_abilities": [ "Nature's Wrath" ]
+  },
+  "monk_open_hand": {
+    "name": "Way of the Open Hand",
+    "description": "A disciplined striker who turns a flurry into a knockdown.",
+    "class": "monk",
+    "stats": { "dexterity": 2 },
+    "max_hp": 10,
+    "ki_abilities": [ "open_hand" ]
+  },
+  "monk_shadow": {
+    "name": "Way of Shadow",
+    "description": "A silent hunter who bends darkness around every step.",
+    "class": "monk",
+    "stats": { "wisdom": 2 },
+    "max_hp": 5,
+    "ki_abilities": [ "shadow_step" ]
   }
 }

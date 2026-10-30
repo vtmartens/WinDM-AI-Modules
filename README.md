@@ -6,10 +6,10 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.12 | `yawning_portal_demo` | 1.3.41 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.12 | `sunken_bell_demo` | 1.3.41 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.10 | `ember_mill` | 1.3.41 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.9 | `glass_wastes` | 1.3.41 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Yawning Portal Demo 1.1.13 | `yawning_portal_demo` | 1.3.42 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.13 | `sunken_bell_demo` | 1.3.42 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.11 | `ember_mill` | 1.3.42 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.10 | `glass_wastes` | 1.3.42 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -59,6 +59,24 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.13
+
+- Adds the **Monk** class with a ki pool, Flurry of Blows, Patient Defense, Step of the
+  Wind, Stunning Strike, unarmored defense and the Way of the Open Hand and Way of Shadow
+  traditions.
+
+### The Sunken Bell 1.0.13
+
+- Adds the shared Monk class, ki techniques, Unarmored Defense and monastic traditions.
+
+### The Ember Mill 1.0.11
+
+- Adds the shared Monk class, ki techniques, Unarmored Defense and monastic traditions.
+
+### The Glass Wastes 1.0.10
+
+- Adds the shared Monk class, ki techniques, Unarmored Defense and monastic traditions.
 
 ### The Yawning Portal Demo 1.1.12
 
@@ -325,7 +343,7 @@ on monsters or encounter enemies — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.12` is the
-Yawning Portal demo 1.1.12, `sunken-bell-v1.0.12` is The Sunken Bell 1.0.12,
-`ember-mill-v1.0.10` is The Ember Mill 1.0.10, and `glass-wastes-v1.0.9` is The Glass
-Wastes 1.0.9.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.13` is the
+Yawning Portal demo 1.1.13, `sunken-bell-v1.0.13` is The Sunken Bell 1.0.13,
+`ember-mill-v1.0.11` is The Ember Mill 1.0.11, and `glass-wastes-v1.0.10` is The Glass
+Wastes 1.0.10.

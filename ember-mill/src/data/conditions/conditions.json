@@ -89,5 +89,14 @@
     "duration": 3,
     "incoming_rolls": {"advantage": ["attack"]},
     "message": "You are hexed!"
+  },
+  "stunned": {
+    "name": "Stunned",
+    "description": "A ringing blow leaves you unable to act for a moment.",
+    "duration": 1,
+    "blocks_abilities": true,
+    "rolls": {"disadvantage": ["attack"]},
+    "incoming_rolls": {"advantage": ["attack"]},
+    "message": "You are stunned!"
   }
 }

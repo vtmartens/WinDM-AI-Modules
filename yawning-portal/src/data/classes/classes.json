@@ -307,5 +307,31 @@
                                                                      "10":  "Radiant Restoration"
                                                                  }
                                      }
-                 }
+                 },
+    "monk":  {
+                 "description":  "A martial artist who turns inner energy into speed, strikes and stillness",
+                 "base_stats":  {
+                                    "strength":  12,
+                                    "dexterity":  16,
+                                    "constitution":  12,
+                                    "intelligence":  10,
+                                    "wisdom":  14,
+                                    "charisma":  8
+                                },
+                 "special_abilities":  [],
+                 "starting_equipment":  [
+                                            "staff",
+                                            "dagger",
+                                            "Traveller's Charm"
+                                        ],
+                 "hp_base":  9,
+                 "mana_base":  0,
+                 "ki":  true,
+                 "unarmored_defense":  true,
+                 "progression":  {
+                                     "hp_per_level":  6,
+                                     "mana_per_level":  0,
+                                     "abilities_per_level":  {}
+                                 }
+             }
 }
