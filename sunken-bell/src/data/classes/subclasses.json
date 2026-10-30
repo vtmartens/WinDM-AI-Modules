@@ -92,5 +92,21 @@
     "stats": { "strength": 2 },
     "max_hp": 5,
     "granted_abilities": [ "Combat Inspiration" ]
+  },
+  "warlock_fiend": {
+    "name": "The Fiend",
+    "description": "A patron of fire and debt, quick to answer cruelty with more of it.",
+    "class": "warlock",
+    "stats": { "constitution": 2 },
+    "max_hp": 10,
+    "granted_abilities": [ "Hellish Rebuke" ]
+  },
+  "warlock_goo": {
+    "name": "The Great Old One",
+    "description": "A patron of dreams and pressure, whose thoughts move behind your eyes.",
+    "class": "warlock",
+    "stats": { "intelligence": 2 },
+    "max_mana": 5,
+    "granted_abilities": [ "Psychic Lance" ]
   }
 }

@@ -534,5 +534,106 @@
       "attack": 2,
       "defense": 2
     }
+  },
+  "Eldritch Blast": {
+    "id": "eldritch_blast",
+    "class": "warlock",
+    "description": "A lance of force deals a flat 8 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 8
+    }
+  },
+  "Hex": {
+    "id": "hex",
+    "class": "warlock",
+    "description": "Curse a target, granting advantage on attacks against it for 3 turns.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "curse",
+      "condition": "hexed",
+      "turns": 3
+    }
+  },
+  "Armor of Agathys": {
+    "id": "armor_of_agathys",
+    "class": "warlock",
+    "description": "A cold ward absorbs up to 8 damage.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "shield",
+      "amount": 8
+    }
+  },
+  "Misty Step": {
+    "id": "misty_step",
+    "class": "warlock",
+    "description": "Step through the veil and avoid the next attack.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "evade"
+    }
+  },
+  "Hunger of Hadar": {
+    "id": "hunger_of_hadar",
+    "class": "warlock",
+    "description": "A void of cold and hunger deals a flat 12 damage.",
+    "mana_cost": 6,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 12
+    }
+  },
+  "Fear": {
+    "id": "fear",
+    "class": "warlock",
+    "description": "Curse a target with fright for 2 turns.",
+    "mana_cost": 5,
+    "combat_only": true,
+    "effect": {
+      "type": "curse",
+      "condition": "frightened",
+      "turns": 2
+    }
+  },
+  "Power Word Kill": {
+    "id": "power_word_kill",
+    "class": "warlock",
+    "description": "A word of ending deals a flat 25 damage.",
+    "mana_cost": 10,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 25
+    }
+  },
+  "Hellish Rebuke": {
+    "id": "hellish_rebuke",
+    "class": "warlock",
+    "description": "A burst of hellfire deals a flat 10 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 10
+    }
+  },
+  "Psychic Lance": {
+    "id": "psychic_lance",
+    "class": "warlock",
+    "description": "A lance of thought staggers a target for 1 turn.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "curse",
+      "condition": "staggered",
+      "turns": 1
+    }
   }
 }

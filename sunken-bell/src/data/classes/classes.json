@@ -201,5 +201,40 @@
                                                                  "10":  "Power Word Stun"
                                                              }
                                  }
-             }
+             },
+    "warlock":  {
+                    "description":  "A spellcaster bound to a patron, trading service for forbidden power",
+                    "base_stats":  {
+                                       "strength":  8,
+                                       "dexterity":  14,
+                                       "constitution":  12,
+                                       "intelligence":  10,
+                                       "wisdom":  10,
+                                       "charisma":  16
+                                   },
+                    "special_abilities":  [
+                                              "Eldritch Blast",
+                                              "Hex",
+                                              "Armor of Agathys",
+                                              "Misty Step"
+                                          ],
+                    "starting_equipment":  [
+                                               "dagger",
+                                               "Leather Armor",
+                                               "Traveller's Charm"
+                                           ],
+                    "hp_base":  8,
+                    "mana_base":  14,
+                    "spontaneous_caster":  true,
+                    "progression":  {
+                                        "hp_per_level":  6,
+                                        "mana_per_level":  8,
+                                        "abilities_per_level":  {
+                                                                    "3":  "Hunger of Hadar",
+                                                                    "5":  "Fear",
+                                                                    "7":  "Dimension Door",
+                                                                    "10":  "Power Word Kill"
+                                                                }
+                                    }
+                }
 }

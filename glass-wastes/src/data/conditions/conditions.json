@@ -82,5 +82,12 @@
       "failure": "The charming voice tightens its hold."
     },
     "message": "You are charmed!"
+  },
+  "hexed": {
+    "name": "Hexed",
+    "description": "A warlock's curse makes every opening easier to find.",
+    "duration": 3,
+    "incoming_rolls": {"advantage": ["attack"]},
+    "message": "You are hexed!"
   }
 }

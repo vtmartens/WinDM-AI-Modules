@@ -6,10 +6,10 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.9 | `yawning_portal_demo` | 1.3.38 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.9 | `sunken_bell_demo` | 1.3.38 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.7 | `ember_mill` | 1.3.38 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.6 | `glass_wastes` | 1.3.38 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Yawning Portal Demo 1.1.10 | `yawning_portal_demo` | 1.3.39 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.10 | `sunken_bell_demo` | 1.3.39 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.8 | `ember_mill` | 1.3.39 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.7 | `glass_wastes` | 1.3.39 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -59,6 +59,23 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.10
+
+- Adds the **Warlock** class with Eldritch Blast, Hex, patron subclasses and the new
+  Hexed curse.
+
+### The Sunken Bell 1.0.10
+
+- Adds the shared Warlock class, patron subclasses and Hexed condition.
+
+### The Ember Mill 1.0.8
+
+- Adds the shared Warlock class, patron subclasses and Hexed condition.
+
+### The Glass Wastes 1.0.7
+
+- Adds the shared Warlock class, patron subclasses and Hexed condition.
 
 ### The Yawning Portal Demo 1.1.9
 
@@ -274,7 +291,7 @@ on monsters or encounter enemies — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.9` is the
-Yawning Portal demo 1.1.9, `sunken-bell-v1.0.9` is The Sunken Bell 1.0.9,
-`ember-mill-v1.0.7` is The Ember Mill 1.0.7, and `glass-wastes-v1.0.6` is The Glass
-Wastes 1.0.6.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.10` is the
+Yawning Portal demo 1.1.10, `sunken-bell-v1.0.10` is The Sunken Bell 1.0.10,
+`ember-mill-v1.0.8` is The Ember Mill 1.0.8, and `glass-wastes-v1.0.7` is The Glass
+Wastes 1.0.7.
