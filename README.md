@@ -6,9 +6,9 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.3 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.3 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.1 | `ember_mill` | 1.3.25 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Yawning Portal Demo 1.1.4 | `yawning_portal_demo` | 1.3.27 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.4 | `sunken_bell_demo` | 1.3.27 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.2 | `ember_mill` | 1.3.27 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
 
 ## Install
 
@@ -53,6 +53,19 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.4
+
+- Adds the **Sorcerer** class: innate magic, Charisma-focused stats, and a known-spell
+  repertoire that is always available without preparation.
+
+### The Sunken Bell 1.0.4
+
+- Adds the **Sorcerer** class with spontaneous spellcasting.
+
+### The Ember Mill 1.0.2
+
+- Adds the **Sorcerer** class with spontaneous spellcasting.
 
 ### The Ember Mill 1.0.1
 
@@ -148,6 +161,6 @@ README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.3` is the
-Yawning Portal demo 1.1.3, `sunken-bell-v1.0.3` is The Sunken Bell 1.0.3, and
-`ember-mill-v1.0.1` is The Ember Mill 1.0.1.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.4` is the
+Yawning Portal demo 1.1.4, `sunken-bell-v1.0.4` is The Sunken Bell 1.0.4, and
+`ember-mill-v1.0.2` is The Ember Mill 1.0.2.

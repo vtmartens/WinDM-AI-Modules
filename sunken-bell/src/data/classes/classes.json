@@ -131,5 +131,40 @@
                                                                    "10":  "Divine Intervention"
                                                                }
                                    }
-               }
+               },
+    "sorcerer":  {
+                     "description":  "A spellcaster whose magic is innate, volatile and always ready",
+                     "base_stats":  {
+                                        "strength":  8,
+                                        "dexterity":  12,
+                                        "constitution":  12,
+                                        "intelligence":  10,
+                                        "wisdom":  10,
+                                        "charisma":  16
+                                    },
+                     "special_abilities":  [
+                                               "Magic Missile",
+                                               "Mage Shield",
+                                               "Knock",
+                                               "Detect Magic"
+                                           ],
+                     "starting_equipment":  [
+                                                "staff",
+                                                "Wizard's Robe",
+                                                "dagger"
+                                            ],
+                     "hp_base":  7,
+                     "mana_base":  16,
+                     "spontaneous_caster":  true,
+                     "progression":  {
+                                         "hp_per_level":  5,
+                                         "mana_per_level":  8,
+                                         "abilities_per_level":  {
+                                                                     "3":  "Fireball",
+                                                                     "5":  "Lightning Bolt",
+                                                                     "7":  "Teleport",
+                                                                     "10":  "Meteor Swarm"
+                                                                 }
+                                     }
+                 }
 }
