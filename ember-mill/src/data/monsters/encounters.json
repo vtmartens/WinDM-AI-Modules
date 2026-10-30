@@ -1,0 +1,41 @@
+{
+  "ash_hounds": {
+    "title": "Ash Hounds",
+    "description": "Two lean shapes break from the hedgerow, their coats grey with ash and their eyes like coals.",
+    "difficulty": "easy",
+    "reward": { "gold": 15, "experience": 50 },
+    "enemies": [
+      { "monster_type": "wolf", "name": "Ash Hound A" },
+      { "monster_type": "wolf", "name": "Ash Hound B" }
+    ]
+  },
+  "cinder_raiders": {
+    "title": "Cinder Raiders",
+    "description": "A bandit chief and two ash-smeared raiders block the cart track, axes already drawn.",
+    "difficulty": "medium",
+    "reward": { "gold": 35, "experience": 100 },
+    "enemies": [
+      { "monster_type": "bandit_chief", "name": "Cinder Chief" },
+      { "monster_type": "bandit", "name": "Cinder Raider A" },
+      { "monster_type": "bandit", "name": "Cinder Raider B" }
+    ]
+  },
+  "ash_warden": {
+    "title": "The Ash Warden",
+    "description": "A figure of cinders and iron rises from the furnace mouth, flanked by two wights that still remember being mill hands.",
+    "difficulty": "hard",
+    "elite": true,
+    "requires_quest": "ember_mill",
+    "location": "ember_vault",
+    "clears_area": "ember_vault",
+    "reward": { "gold": 120, "experience": 400 },
+    "hazards": [
+      { "name": "Cinder Wind", "description": "The furnace breathes a wave of hot ash across the vault.", "damage": 5, "ability": "constitution", "dc": 13, "target": "all", "start_round": 2, "every_rounds": 2 }
+    ],
+    "enemies": [
+      { "monster_type": "rune_warden", "name": "Ash Warden" },
+      { "monster_type": "bell_wight", "name": "Cinder Wight A" },
+      { "monster_type": "bell_wight", "name": "Cinder Wight B" }
+    ]
+  }
+}

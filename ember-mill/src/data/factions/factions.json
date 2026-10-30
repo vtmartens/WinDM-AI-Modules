@@ -1,0 +1,14 @@
+{
+  "mill_folk": {
+    "name": "The Mill Folk",
+    "description": "Farmers, carters and mill hands who depend on the Cinder Mill for their bread.",
+    "shop_discount": { "friendly": 5, "trusted": 10, "allied": 15 },
+    "quest_bonus": { "friendly": 5, "trusted": 10, "allied": 15 }
+  },
+  "ash_covenant": {
+    "name": "The Ash Covenant",
+    "description": "A scattered cult that feeds the ember beneath the mill and calls its hunger holy.",
+    "shop_discount": {},
+    "quest_bonus": {}
+  }
+}

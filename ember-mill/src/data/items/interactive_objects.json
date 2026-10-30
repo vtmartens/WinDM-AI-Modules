@@ -1,0 +1,74 @@
+[
+  {
+    "name": "mill hearth",
+    "type": "interactive_object",
+    "description": "A soot-black hearth built into the mill wall. The fire inside has not needed fuel in seven nights.",
+    "state": "lit",
+    "token": "H",
+    "provides_cover": true,
+    "state_descriptions": {
+      "lit": "A soot-black hearth. The fire inside burns without fuel.",
+      "doused": "The hearth is cold, but the stones are still warm to the touch."
+    },
+    "possible_states": { "lit": [ "doused" ], "doused": [ "lit" ] }
+  },
+  {
+    "name": "millstone",
+    "type": "interactive_object",
+    "description": "A cracked millstone half-turned in its bed. Ash fills the grooves like grey flour.",
+    "state": "idle",
+    "token": "M",
+    "provides_cover": true
+  },
+  {
+    "name": "grain bin",
+    "type": "interactive_object",
+    "description": "A timber bin of blackened grain. Something has been nesting in it.",
+    "state": "closed",
+    "token": "G"
+  },
+  {
+    "name": "notice board",
+    "type": "interactive_object",
+    "description": "A board of scorched notices: missing carts, a reward for the miller, and a warning about the ash path.",
+    "state": "posted",
+    "token": "N"
+  },
+  {
+    "name": "ash shrine",
+    "type": "interactive_object",
+    "description": "A roadside shrine of stacked bricks and cold cinders, its painted face worn away.",
+    "state": "cold",
+    "token": "S",
+    "magical": true
+  },
+  {
+    "name": "ember altar",
+    "type": "interactive_object",
+    "description": "A block of fire-blackened brick beneath a furnace mouth. The air above it shimmers.",
+    "state": "dormant",
+    "token": "A",
+    "magical": true,
+    "provides_cover": true,
+    "state_descriptions": {
+      "dormant": "The altar is quiet, but the brick is hot enough to sting.",
+      "awake": "The altar glows from within, and the furnace mouth breathes."
+    },
+    "possible_states": { "dormant": [ "awake" ], "awake": [ "dormant" ] }
+  },
+  {
+    "name": "charred chest",
+    "type": "chest",
+    "description": "An iron-bound chest, scorched but intact, half-buried in ash.",
+    "state": "closed",
+    "requires_key": false,
+    "provides_cover": true,
+    "token": "C",
+    "content": [
+      { "name": "Mill Ledger", "type": "document", "value": 40, "description": "A soot-stained ledger naming the mill's debts and the Covenant's friends" },
+      { "name": "Ember Seal", "type": "key", "effect": { "opens": [ "ember_vault" ] }, "value": 25, "description": "A heavy iron seal warm to the touch, stamped with a furnace sigil" },
+      { "name": "Ashglass Tonic", "type": "heal", "effect": { "heal": 12 }, "value": 30, "description": "A smoky tonic that clears the lungs and restores health" },
+      { "name": "Light Healing Potion", "type": "light_heal", "effect": { "light_heal": 5 }, "value": 10, "description": "A small healing potion" }
+    ]
+  }
+]

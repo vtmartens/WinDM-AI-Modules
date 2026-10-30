@@ -1,0 +1,15 @@
+{
+  "cinder_mill": [
+    { "name": "mill hearth", "position": [3, 3] },
+    { "name": "millstone", "position": [7, 4] },
+    { "name": "grain bin", "position": [12, 2] },
+    { "name": "notice board", "position": [15, 3] }
+  ],
+  "ash_path": [
+    { "name": "ash shrine", "position": [17, 4] }
+  ],
+  "ember_vault": [
+    { "name": "ember altar", "position": [8, 4] },
+    { "name": "charred chest", "position": [12, 8] }
+  ]
+}

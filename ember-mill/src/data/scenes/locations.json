@@ -1,0 +1,14 @@
+{
+  "cinder_mill": {
+    "title": "The Cinder Mill",
+    "description": "The mill has burned for seven nights without consuming itself. Soot falls like grey snow, and the millstone turns whenever nobody is looking."
+  },
+  "ash_path": {
+    "title": "The Ash Path",
+    "description": "A cart track climbs through blackened fields toward the mill. Ash drifts over the ruts, and something four-legged keeps pace beyond the hedgerow."
+  },
+  "ember_vault": {
+    "title": "The Ember Vault",
+    "description": "Beneath the mill, a brick vault glows from a furnace that has no fuel. The air tastes of hot iron, and a figure of cinders waits beside the old altar."
+  }
+}

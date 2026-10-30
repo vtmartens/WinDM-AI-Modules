@@ -1,0 +1,22 @@
+{
+  "ash_merchant": {
+    "id": "ash_merchant",
+    "type": "merchant",
+    "title": "A Cart in the Ash",
+    "description": "A covered cart waits where the hedgerow thins. The carter lifts a lantern and spreads a few goods across the tailgate.",
+    "weight": 2,
+    "once": false,
+    "stock": [ "Light Healing Potion", "Healing Potion", "Ashglass Tonic", "Smoke Bomb" ]
+  },
+  "ember_shrine": {
+    "id": "ember_shrine",
+    "type": "shrine",
+    "title": "A Warm Shrine",
+    "description": "A small brick shrine stands beside the path, its bowl still holding clean water. Someone has left a handful of wildflowers in the ash.",
+    "weight": 1,
+    "once": true,
+    "reward_flag": "ember_shrine",
+    "heal": 10,
+    "clear_conditions": true
+  }
+}

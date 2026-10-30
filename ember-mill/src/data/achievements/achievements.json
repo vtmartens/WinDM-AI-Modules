@@ -1,0 +1,7 @@
+[
+  { "id": "first_step", "name": "First Step", "description": "Move for the first time", "icon": "achievement_movement.png", "difficulty": "easy", "score": 5, "condition": { "type": "movement", "value": 1 } },
+  { "id": "first_blood", "name": "First Blood", "description": "Win your first fight", "icon": "achievement_combat.png", "difficulty": "easy", "score": 10, "condition": { "type": "combat_victory", "value": 1 } },
+  { "id": "ember_mill_cleared", "name": "The Mill Stands", "description": "End the Ash Warden", "icon": "achievement_quest.png", "difficulty": "hard", "score": 25, "condition": { "type": "quest_completed", "value": "ember_mill" } },
+  { "id": "ledger_read", "name": "Names in the Ash", "description": "Recover the Mill Ledger", "icon": "achievement_quest.png", "difficulty": "medium", "score": 15, "condition": { "type": "quest_completed", "value": "mill_ledger" } },
+  { "id": "seal_kept", "name": "A Promise Kept", "description": "Recover the Ember Seal", "icon": "achievement_quest.png", "difficulty": "medium", "score": 15, "condition": { "type": "quest_completed", "value": "ash_bargain" } }
+]

@@ -1,0 +1,32 @@
+{
+  "ember_mill": {
+    "title": "The Ember Mill",
+    "description": "Elsa Rook's mill has burned for seven nights without being consumed. She believes the Ash Warden beneath it is keeping the fire alive and wants the creature ended.",
+    "objective": "Defeat the Ash Warden in the Ember Vault beneath the mill.",
+    "target": "Ash Warden",
+    "turn_in": "Elsa Rook",
+    "faction": "mill_folk",
+    "reputation": 6,
+    "reward": { "gold": 120, "experience": 350, "items": [ "Ashen Signet" ] }
+  },
+  "mill_ledger": {
+    "title": "The Miller's Ledger",
+    "description": "Brother Cael needs the mill's ledger to learn which families paid the Ash Covenant, and which were marked for the fire.",
+    "objective": "Recover the Mill Ledger from the Ember Vault and return it to Brother Cael.",
+    "target_item": "Mill Ledger",
+    "turn_in": "Brother Cael",
+    "faction": "mill_folk",
+    "reputation": 3,
+    "reward": { "gold": 60, "experience": 120, "items": [ "Ashglass Tonic" ] }
+  },
+  "ash_bargain": {
+    "title": "The Ash Bargain",
+    "description": "The Ember Seal was the miller's promise to the thing under the floor. Elsa wants it back before the Covenant can use it to wake the furnace again.",
+    "objective": "Recover the Ember Seal from the Ember Vault and return it to Elsa Rook.",
+    "target_item": "Ember Seal",
+    "turn_in": "Elsa Rook",
+    "faction": "mill_folk",
+    "reputation": 5,
+    "reward": { "gold": 100, "experience": 200, "items": [ "Cinder Charm" ] }
+  }
+}

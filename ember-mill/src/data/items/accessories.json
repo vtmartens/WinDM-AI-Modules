@@ -1,0 +1,276 @@
+[
+  {
+    "name": "Ring of Strength",
+    "type": "accessory",
+    "effect": {
+      "strength": 1
+    },
+    "value": 50,
+    "description": "A ring that increases the strength of its wearer"
+  },
+  {
+    "name": "Amulet of Protection",
+    "type": "accessory",
+    "effect": {
+      "defense": 2
+    },
+    "value": 60,
+    "description": "A magic amulet that protects its wearer"
+  },
+  {
+    "name": "Thief\u0027s Gloves",
+    "type": "accessory",
+    "effect": {
+      "dexterity": 2
+    },
+    "value": 45,
+    "description": "Light gloves that increase the agility of the hands"
+  },
+  {
+    "name": "Crown of the Mind",
+    "type": "accessory",
+    "effect": {
+      "intelligence": 2,
+      "wisdom": 1
+    },
+    "value": 75,
+    "description": "A crown that improves mental faculties"
+  },
+  {
+    "name": "Boots of Speed",
+    "type": "accessory",
+    "effect": {
+      "dexterity": 1,
+      "initiative": 2
+    },
+    "value": 55,
+    "description": "Boots that let you move more quickly"
+  },
+  {
+    "name": "Belt of the Giant",
+    "type": "accessory",
+    "effect": {
+      "strength": 3,
+      "constitution": 1
+    },
+    "value": 85,
+    "description": "A magic belt that grants superhuman strength"
+  },
+  {
+    "name": "Earrings of Charisma",
+    "type": "accessory",
+    "effect": {
+      "charisma": 2
+    },
+    "value": 40,
+    "description": "Earrings that increase presence and social influence"
+  },
+  {
+    "name": "Vault Warden\u0027s Signet",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "wisdom": 1
+    },
+    "value": 150,
+    "description": "A heavy silver signet worn by the vault\u0027s wardens"
+  },
+  {
+    "name": "Wayfarer\u0027s Cloak",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "initiative": 1
+    },
+    "value": 120,
+    "rarity": "rare",
+    "description": "A travel-worn cloak lined with road dust and old protective runes"
+  },
+  {
+    "name": "Rune-Ward Amulet",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "intelligence": 1
+    },
+    "value": 140,
+    "rarity": "rare",
+    "description": "A black-stone amulet whose ward-runes warm when danger is near"
+  },
+  {
+    "name": "Underroad Signet",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "dexterity": 1
+    },
+    "value": 180,
+    "rarity": "rare",
+    "description": "A discreet signet used by the Underroad\u0027s most trusted couriers"
+  },
+  {
+    "name": "Runeheart Amulet",
+    "type": "accessory",
+    "effect": {
+      "defense": 2,
+      "intelligence": 1,
+      "wisdom": 1
+    },
+    "value": 400,
+    "rarity": "legendary",
+    "description": "A heart-shaped rune of living stone, still warm with the sanctum\u0027s power"
+  },
+  {
+    "name": "Runner\u0027s Satchel",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "dexterity": 1
+    },
+    "value": 160,
+    "rarity": "rare",
+    "description": "A flat courier\u0027s satchel with hidden pockets and a reinforced strap"
+  },
+  {
+    "name": "Smuggler\u0027s Nightglass",
+    "type": "accessory",
+    "effect": {
+      "dexterity": 2,
+      "initiative": 2
+    },
+    "value": 240,
+    "rarity": "rare",
+    "description": "A dark monocle that shows the quickest way out of a room"
+  },
+  {
+    "name": "Heartseal",
+    "type": "accessory",
+    "effect": {
+      "defense": 2,
+      "wisdom": 2,
+      "charisma": 1
+    },
+    "value": 520,
+    "rarity": "legendary",
+    "description": "A seal of white rune-stone cut in the shape of a heart, warm even in the dark"
+  },
+  {
+    "name": "Wooden Shield",
+    "type": "accessory",
+    "effect": {
+      "defense": 1
+    },
+    "value": 15,
+    "description": "A shield of banded wood"
+  },
+  {
+    "name": "shield",
+    "type": "accessory",
+    "effect": {
+      "defense": 1
+    },
+    "value": 15,
+    "description": "A plain round shield"
+  },
+  {
+    "name": "Holy Symbol",
+    "type": "accessory",
+    "effect": {},
+    "value": 10,
+    "description": "A consecrated emblem of the cleric\u0027s faith"
+  },
+  {
+    "name": "Lockpicks",
+    "type": "common",
+    "effect": {},
+    "value": 15,
+    "description": "A set of picks and tension tools"
+  },
+  {
+    "name": "Traveller\u0027s Charm",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "constitution": 1
+    },
+    "value": 110,
+    "rarity": "rare",
+    "description": "A small road-charm of braided leather and tin, worn smooth by a caravan master"
+  },
+  {
+    "name": "Warden\u0027s Sigil",
+    "type": "accessory",
+    "effect": {
+      "defense": 2,
+      "wisdom": 1
+    },
+    "value": 220,
+    "rarity": "rare",
+    "description": "A black-iron sigil cut with the Rune Warden\u0027s watchful eye"
+  },
+  {
+    "name": "Tide Charm",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "wisdom": 1
+    },
+    "value": 120,
+    "rarity": "rare",
+    "description": "A smooth green stone that stays cool even in the hottest room"
+  },
+  {
+    "name": "Tidebound Ring",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "constitution": 1
+    },
+    "value": 90,
+    "description": "A ring of braided copper and coral, worn by reef salvagers"
+  },
+  {
+    "name": "Bell Warden\u0027s Seal",
+    "type": "accessory",
+    "effect": {
+      "defense": 2,
+      "wisdom": 1
+    },
+    "value": 220,
+    "rarity": "rare",
+    "description": "A black-iron seal stamped with a bell and a closed eye"
+  },
+  {
+    "name": "Tideglass Lens",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "intelligence": 1
+    },
+    "value": 110,
+    "rarity": "rare",
+    "description": "A lens of green sea-glass that sharpens old writing and older memories"
+  },
+  {
+    "name": "Ashen Signet",
+    "type": "accessory",
+    "effect": {
+      "defense": 2,
+      "charisma": 1
+    },
+    "value": 90,
+    "description": "A warm iron signet stamped with the miller\u0027s mark.",
+    "rarity": "rare"
+  },
+  {
+    "name": "Cinder Charm",
+    "type": "accessory",
+    "effect": {
+      "defense": 1,
+      "strength": 1
+    },
+    "value": 75,
+    "description": "A charm of black glass that never cools completely.",
+    "rarity": "uncommon"
+  }
+]

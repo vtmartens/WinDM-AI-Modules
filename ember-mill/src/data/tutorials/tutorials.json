@@ -1,0 +1,25 @@
+{
+  "general": {
+    "title": "The Cinder Mill",
+    "steps": [
+      { "id": 1, "title": "The mill yard", "content": "Talk to Elsa Rook. She knows why the mill has been burning." },
+      { "id": 2, "title": "The ash path", "content": "The door east of the mill yard leads to the ash path and the Ember Vault." },
+      { "id": 3, "title": "Encounters", "content": "Maps with a curated encounter list show the fight panel in the context pane." }
+    ]
+  },
+  "combat": {
+    "title": "Combat Guide",
+    "steps": [
+      { "id": 1, "title": "Turns", "content": "Combat unfolds in turns. Attack, defend, take cover or use a potion." },
+      { "id": 2, "title": "Conditions", "content": "Some enemies inflict conditions. Use the escape action or stand up when offered." },
+      { "id": 3, "title": "Abilities", "content": "Class abilities consume mana and are listed in the context pane." }
+    ]
+  },
+  "quests": {
+    "title": "Quests",
+    "steps": [
+      { "id": 1, "title": "Talking", "content": "Talk to NPCs and choose the quest option. Quests appear in the quest log." },
+      { "id": 2, "title": "Turn in", "content": "Return to the NPC named in the quest when the objective is complete." }
+    ]
+  }
+}

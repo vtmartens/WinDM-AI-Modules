@@ -1,0 +1,111 @@
+{
+  "Elsa Rook": {
+    "start": {
+      "text": "Elsa wipes soot from her hands. 'Seven nights the mill has burned, and not one beam has fallen. The Ash Warden is down in the vault, keeping the fire alive. I need it put out.'",
+      "options": [
+        [ "Tell me about the Ash Warden.", "ember_offer", { "quest": "ember_mill", "status": "not_started" } ],
+        [ "About the Ash Warden...", "ember_reminder", { "quest": "ember_mill", "status": "active" } ],
+        [ "The Ash Warden is finished.", "ember_turnin", { "quest": "ember_mill", "status": "ready" } ],
+        [ "The mill is quiet.", "ember_done", { "quest": "ember_mill", "status": "completed" } ],
+        [ "Have you found the Ember Seal?", "seal_offer", { "quest": "ash_bargain", "status": "not_started" } ],
+        [ "The Ember Seal...", "seal_reminder", { "quest": "ash_bargain", "status": "active" } ],
+        [ "I recovered the Ember Seal.", "seal_turnin", { "quest": "ash_bargain", "status": "ready" } ],
+        [ "Tell me about the mill.", "elsa_info" ],
+        [ "Farewell.", null ]
+      ]
+    },
+    "elsa_info": {
+      "text": "My family has ground flour here for four generations. The Covenant came with money and promises, and my father signed the ledger. Now the stones turn by themselves and the floor is warm as a hearth.",
+      "options": [ [ "I will deal with it.", "ember_offer", { "quest": "ember_mill", "status": "not_started" } ], [ "Farewell.", null ] ]
+    },
+    "ember_offer": {
+      "text": "The vault is through the ash path and down beneath the old drying floor. The Warden is a thing of cinders and iron. Break it, and the fire should die.",
+      "options": [ [ "I will end it.", "ember_accept" ], [ "Not yet.", null ] ]
+    },
+    "ember_accept": {
+      "text": "Take the ash path east. Sela still keeps a stall in the mill yard if you need supplies. Cael will want the ledger, if you find it.",
+      "effect": { "type": "start_quest", "quest": "ember_mill" },
+      "options": [ [ "I will return.", null ] ]
+    },
+    "ember_reminder": {
+      "text": "East along the ash path, then down into the vault. The Warden must be put out.",
+      "options": [ [ "I am going.", null ] ]
+    },
+    "ember_turnin": {
+      "text": "Elsa listens to the silence, then lets out a breath she has held for a week. She presses a warm iron signet into your palm.",
+      "effect": { "type": "complete_quest", "quest": "ember_mill" },
+      "options": [ [ "Keep the mill standing.", null ] ]
+    },
+    "ember_done": {
+      "text": "The yard is loud with carts again. Elsa has hung the burnt sign over the door, and the millstone turns only when someone pushes it.",
+      "options": [ [ "Good.", null ] ]
+    },
+    "seal_offer": {
+      "text": "The Ember Seal was my father's promise to the thing below. The Covenant wants it to call the furnace back. Bring it to me before they do.",
+      "options": [ [ "I will recover it.", "seal_accept" ], [ "Not now.", null ] ]
+    },
+    "seal_accept": {
+      "text": "The seal is somewhere in the vault. Look for an iron chest near the altar.",
+      "effect": { "type": "start_quest", "quest": "ash_bargain" },
+      "options": [ [ "I will find it.", null ] ]
+    },
+    "seal_reminder": {
+      "text": "The Ember Seal is still down there. Bring it to me before the Covenant does.",
+      "options": [ [ "I will.", null ] ]
+    },
+    "seal_turnin": {
+      "text": "Elsa turns the seal over in her hands. 'This ends the bargain.' She locks it in the strongbox and pays you from the mill's last honest purse.",
+      "effect": { "type": "complete_quest", "quest": "ash_bargain" },
+      "options": [ [ "See that it stays locked.", null ] ]
+    }
+  },
+  "Brother Cael": {
+    "start": {
+      "text": "Cael grinds something bitter in a mortar. 'The mill ledger would tell us who fed the Ash Covenant. If you find it in the vault, bring it to me.'",
+      "options": [
+        [ "I will look for the ledger.", "ledger_offer", { "quest": "mill_ledger", "status": "not_started" } ],
+        [ "About the ledger...", "ledger_reminder", { "quest": "mill_ledger", "status": "active" } ],
+        [ "I found the Mill Ledger.", "ledger_turnin", { "quest": "mill_ledger", "status": "ready" } ],
+        [ "The ledger is safe.", "ledger_done", { "quest": "mill_ledger", "status": "completed" } ],
+        [ "What do you know about the Ash Covenant?", "cael_info" ],
+        [ "Farewell.", null ]
+      ]
+    },
+    "cael_info": {
+      "text": "They called it a blessing of the hearth. A little ash in the flour, a little fire in the blood. The miller's family paid for it, and the village ate it.",
+      "options": [ [ "I will find the ledger.", "ledger_offer", { "quest": "mill_ledger", "status": "not_started" } ], [ "Farewell.", null ] ]
+    },
+    "ledger_offer": {
+      "text": "The ledger is in the vault, likely with the old strongbox. Bring it back and I can name the Covenant's friends in this village.",
+      "options": [ [ "I will bring it.", "ledger_accept" ], [ "Later.", null ] ]
+    },
+    "ledger_accept": {
+      "text": "Take the ash path east. The vault is beneath the drying floor.",
+      "effect": { "type": "start_quest", "quest": "mill_ledger" },
+      "options": [ [ "I will return.", null ] ]
+    },
+    "ledger_reminder": {
+      "text": "The ledger is still in the vault. I need the names.",
+      "options": [ [ "I will find it.", null ] ]
+    },
+    "ledger_turnin": {
+      "text": "Cael reads by the fire, his mouth tightening. 'These are our neighbors,' he says. 'All of them.' He pays you and asks no more questions.",
+      "effect": { "type": "complete_quest", "quest": "mill_ledger" },
+      "options": [ [ "What will you do?", null ] ]
+    },
+    "ledger_done": {
+      "text": "Cael has copied the names into his own book. The original he keeps locked under the herb shelf.",
+      "options": [ [ "Farewell.", null ] ]
+    }
+  },
+  "Sela Vane": {
+    "start": {
+      "text": "Sela leans on a cart with one wheel in the ash. 'You look like you're heading to the vault. I have a few things that might keep you alive.'",
+      "options": [ [ "What do you know about the mill?", "sela_info" ], [ "Farewell.", null ] ]
+    },
+    "sela_info": {
+      "text": "The miller's father made a bargain with something under the floor. The Covenant sold him the words. Now the fire has a memory and the village has a problem.",
+      "options": [ [ "Farewell.", null ] ]
+    }
+  }
+}

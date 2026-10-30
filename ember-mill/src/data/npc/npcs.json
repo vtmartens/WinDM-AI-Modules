@@ -1,0 +1,62 @@
+{
+  "Elsa Rook": {
+    "name": "Elsa Rook",
+    "description": "A soot-stained miller with roped arms and a stubborn jaw, carrying a ledger she no longer trusts.",
+    "profession": "Miller",
+    "level": 5,
+    "hp": 32,
+    "hp_max": 32,
+    "strength_base": 15,
+    "dexterity_base": 11,
+    "constitution_base": 14,
+    "intelligence_base": 13,
+    "wisdom_base": 14,
+    "charisma_base": 15,
+    "token": "E",
+    "gold": 80,
+    "friendly": true,
+    "inventory": [
+      { "name": "dagger", "type": "weapon", "effect": { "strength": 2 }, "value": 10, "description": "A small mill knife" }
+    ]
+  },
+  "Brother Cael": {
+    "name": "Brother Cael",
+    "description": "A thin herbalist in a scorched brown robe, his sleeves stained with ash and tinctures.",
+    "profession": "Herbalist",
+    "level": 4,
+    "hp": 22,
+    "hp_max": 22,
+    "strength_base": 9,
+    "dexterity_base": 12,
+    "constitution_base": 11,
+    "intelligence_base": 15,
+    "wisdom_base": 16,
+    "charisma_base": 13,
+    "token": "C",
+    "gold": 60,
+    "friendly": true,
+    "inventory": [
+      { "name": "Light Healing Potion", "type": "light_heal", "effect": { "light_heal": 5 }, "value": 10, "description": "A small healing potion" }
+    ]
+  },
+  "Sela Vane": {
+    "name": "Sela Vane",
+    "description": "A sharp-eyed carter who moved goods for the mill before the road turned to ash.",
+    "profession": "Merchant",
+    "level": 3,
+    "hp": 18,
+    "hp_max": 18,
+    "strength_base": 11,
+    "dexterity_base": 14,
+    "constitution_base": 12,
+    "intelligence_base": 13,
+    "wisdom_base": 11,
+    "charisma_base": 16,
+    "token": "S",
+    "gold": 150,
+    "friendly": true,
+    "inventory": [
+      { "name": "dagger", "type": "weapon", "effect": { "strength": 2 }, "value": 10, "description": "A belt knife" }
+    ]
+  }
+}

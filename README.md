@@ -8,6 +8,7 @@ format it loads.
 |---|---|---|---|
 | The Yawning Portal Demo 1.1.3 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 | The Sunken Bell 1.0.3 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.0 | `ember_mill` | 1.3.23 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
 
 ## Install
 
@@ -18,6 +19,9 @@ is not already bundled; **Load Demo Module** remains available as a shortcut.
 The Sunken Bell is a separate module. Select `sunken-bell/demo.zip` from the module
 library, or copy it into the module folder and refresh the library.
 
+The Ember Mill is the third module. Select `ember-mill/demo.zip` from the module library,
+or copy it into the module folder and refresh.
+
 ## Building a module
 
 Each module's source lives in its `src/` directory (manifest plus the `data/` tree).
@@ -26,6 +30,7 @@ Rebuild an archive with its build script:
 ```powershell
 .\yawning-portal\build.ps1
 .\sunken-bell\build.ps1
+.\ember-mill\build.ps1
 ```
 
 The scripts write `demo.zip` beside each source tree with forward-slash archive paths, so
@@ -48,6 +53,15 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 README.
 
 ## Changes
+
+### The Ember Mill 1.0.0
+
+- New three-map module: the Cinder Mill, the Ash Path and the Ember Vault.
+- Three quests: Elsa's **The Ember Mill**, Cael's **The Miller's Ledger** and Elsa's
+  **The Ash Bargain**.
+- New monsters via existing stat blocks, the quest-gated Ash Warden encounter, a Cinder
+  Wind hazard, Ember Mill items and a restockable village shop.
+- Campaign chapters, achievements, road events, tutorials and source tree.
 
 ### The Sunken Bell 1.0.3
 

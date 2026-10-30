@@ -1,0 +1,9 @@
+{
+  "cinder_mill": [
+    { "name": "Elsa Rook", "position": [5, 5] },
+    { "name": "Brother Cael", "position": [10, 5] },
+    { "name": "Sela Vane", "position": [13, 7] }
+  ],
+  "ash_path": [],
+  "ember_vault": []
+}
