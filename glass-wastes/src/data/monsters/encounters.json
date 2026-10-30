@@ -79,8 +79,8 @@
     ],
     "enemies": [
       { "monster_type": "rune_warden", "name": "Mirror Warden" },
-      { "monster_type": "bell_wight", "name": "Glass Echo A" },
-      { "monster_type": "bell_wight", "name": "Glass Echo B" }
+      { "monster_type": "bell_wight", "name": "Glass Echo A", "ranged": true },
+      { "monster_type": "bell_wight", "name": "Glass Echo B", "ranged": true }
     ]
   },
   "collapsing_vault": {
@@ -100,8 +100,8 @@
       { "name": "Falling Glass", "description": "The mirrors come down in sheets.", "damage": 4, "ability": "dexterity", "dc": 13, "target": "player", "start_round": 1, "every_rounds": 2 }
     ],
     "enemies": [
-      { "monster_type": "bell_wight", "name": "Glass Echo A" },
-      { "monster_type": "bell_wight", "name": "Glass Echo B" }
+      { "monster_type": "bell_wight", "name": "Glass Echo A", "ranged": true },
+      { "monster_type": "bell_wight", "name": "Glass Echo B", "ranged": true }
     ]
   }
 }

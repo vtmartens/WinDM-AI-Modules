@@ -9,7 +9,7 @@ format it loads.
 | The Yawning Portal Demo 1.1.5 | `yawning_portal_demo` | 1.3.30 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 | The Sunken Bell 1.0.5 | `sunken_bell_demo` | 1.3.30 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
 | The Ember Mill 1.0.3 | `ember_mill` | 1.3.30 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.2 | `glass_wastes` | 1.3.33 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Glass Wastes 1.0.3 | `glass_wastes` | 1.3.34 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -54,11 +54,17 @@ the profession/reputation rules are implemented in the engine.
 
 Optional keys the engine understands — `respawn_map`, `default_class`,
 `default_background`, `default_difficulty` in the manifest, `rest`, `road_events` and
-`bounty_board` on a map, `faction` on the black market, and `accept_flag`, `complete_flag`,
-`requires_flag`, `completion_flag` and dialogue `flag`/`not_flag` conditions — are
-documented in the engine README.
+`bounty_board` on a map, `faction` on the black market, `accept_flag`, `complete_flag`,
+`requires_flag`, `completion_flag`, dialogue `flag`/`not_flag` conditions, and `ranged`
+on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Glass Wastes 1.0.3
+
+- The Glass Echoes are ranged enemies that keep their distance in the Mirror Warden and
+  falling-dome encounters.
+- Compatibility metadata for WinDM-AI 1.3.34 combat range bands.
 
 ### The Glass Wastes 1.0.2
 
@@ -203,5 +209,5 @@ documented in the engine README.
 
 Module versions follow `manifest.json`. Tags in this repository match: `v1.1.5` is the
 Yawning Portal demo 1.1.5, `sunken-bell-v1.0.5` is The Sunken Bell 1.0.5,
-`ember-mill-v1.0.3` is The Ember Mill 1.0.3, and `glass-wastes-v1.0.2` is The Glass
-Wastes 1.0.2.
+`ember-mill-v1.0.3` is The Ember Mill 1.0.3, and `glass-wastes-v1.0.3` is The Glass
+Wastes 1.0.3.
