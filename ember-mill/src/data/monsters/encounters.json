@@ -9,6 +9,25 @@
       { "monster_type": "wolf", "name": "Ash Hound B" }
     ]
   },
+  "ash_surge": {
+    "title": "The Ash Squall",
+    "description": "A shrieking wall of cinders rolls down the path. There is no shelter ahead, only the long run to the mill.",
+    "difficulty": "easy",
+    "reward": { "gold": 25, "experience": 80 },
+    "objective": {
+      "type": "survive",
+      "rounds": 2,
+      "description": "Hold the Ash Path until the squall passes.",
+      "success": "The squall passes. The Ash Path is clear.",
+      "failure": "The ash storm drives you back."
+    },
+    "hazards": [
+      { "name": "Cinder Gust", "description": "Hot ash scours every exposed inch of skin.", "damage": 3, "ability": "constitution", "dc": 12, "target": "player", "start_round": 1, "every_rounds": 2 }
+    ],
+    "enemies": [
+      { "monster_type": "wolf", "name": "Ash Hound" }
+    ]
+  },
   "cinder_raiders": {
     "title": "Cinder Raiders",
     "description": "A bandit chief and two ash-smeared raiders block the cart track, axes already drawn.",
@@ -29,6 +48,13 @@
     "location": "ember_vault",
     "clears_area": "ember_vault",
     "reward": { "gold": 120, "experience": 400 },
+    "objective": {
+      "type": "defeat_target",
+      "target": "Ash Warden",
+      "description": "Break the Ash Warden before its wights drag you down.",
+      "success": "The Ash Warden crumbles; the wights lose their purpose.",
+      "failure": "The Ash Warden's bargain is sealed."
+    },
     "hazards": [
       { "name": "Cinder Wind", "description": "The furnace breathes a wave of hot ash across the vault.", "damage": 5, "ability": "constitution", "dc": 13, "target": "all", "start_round": 2, "every_rounds": 2 }
     ],

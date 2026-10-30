@@ -8,7 +8,7 @@ format it loads.
 |---|---|---|---|
 | The Yawning Portal Demo 1.1.3 | `yawning_portal_demo` | 1.0.0 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
 | The Sunken Bell 1.0.3 | `sunken_bell_demo` | 1.3.2 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.0 | `ember_mill` | 1.3.23 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Ember Mill 1.0.1 | `ember_mill` | 1.3.25 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
 
 ## Install
 
@@ -53,6 +53,14 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 README.
 
 ## Changes
+
+### The Ember Mill 1.0.1
+
+- The Ash Path offers **The Ash Squall**, a survive-the-storm encounter with a Cinder
+  Gust hazard and an Ash Hound.
+- The Ash Warden fight is now a defeat-target objective: break the Warden and the
+  remaining wights lose their purpose, even if they are still standing.
+- Compatibility metadata for WinDM-AI 1.3.25 encounter objectives.
 
 ### The Ember Mill 1.0.0
 
@@ -141,4 +149,5 @@ README.
 ## Versioning
 
 Module versions follow `manifest.json`. Tags in this repository match: `v1.1.3` is the
-Yawning Portal demo 1.1.3, and `sunken-bell-v1.0.3` is The Sunken Bell 1.0.3.
+Yawning Portal demo 1.1.3, `sunken-bell-v1.0.3` is The Sunken Bell 1.0.3, and
+`ember-mill-v1.0.1` is The Ember Mill 1.0.1.
