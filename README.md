@@ -6,10 +6,10 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.14 | `yawning_portal_demo` | 1.3.43 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.14 | `sunken_bell_demo` | 1.3.43 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.12 | `ember_mill` | 1.3.43 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.11 | `glass_wastes` | 1.3.43 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Yawning Portal Demo 1.1.15 | `yawning_portal_demo` | 1.3.44 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.15 | `sunken_bell_demo` | 1.3.44 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.13 | `ember_mill` | 1.3.44 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.12 | `glass_wastes` | 1.3.44 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -59,6 +59,23 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.15
+
+- Marks Hex, Hunter's Mark, Entangle, Moonbeam, Call Lightning, Blessing, Bless, Aura of
+  Vitality and Swift Quiver as concentration spells with held effects and save breaks.
+
+### The Sunken Bell 1.0.15
+
+- Marks the shared concentration spells for the held-effect rules.
+
+### The Ember Mill 1.0.13
+
+- Marks the shared concentration spells for the held-effect rules.
+
+### The Glass Wastes 1.0.12
+
+- Marks the shared concentration spells for the held-effect rules.
 
 ### The Yawning Portal Demo 1.1.14
 
@@ -360,7 +377,7 @@ on monsters or encounter enemies — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.14` is the
-Yawning Portal demo 1.1.14, `sunken-bell-v1.0.14` is The Sunken Bell 1.0.14,
-`ember-mill-v1.0.12` is The Ember Mill 1.0.12, and `glass-wastes-v1.0.11` is The Glass
-Wastes 1.0.11.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.15` is the
+Yawning Portal demo 1.1.15, `sunken-bell-v1.0.15` is The Sunken Bell 1.0.15,
+`ember-mill-v1.0.13` is The Ember Mill 1.0.13, and `glass-wastes-v1.0.12` is The Glass
+Wastes 1.0.12.

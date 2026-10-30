@@ -82,6 +82,7 @@
     "description": "A brief blessing adds 2 to your next damage and wards off 2 damage from the next attack.",
     "mana_cost": 3,
     "combat_only": true,
+    "concentration": true,
     "effect": {
       "type": "bless",
       "attack": 2,
@@ -552,6 +553,7 @@
     "description": "Curse a target, granting advantage on attacks against it for 3 turns.",
     "mana_cost": 3,
     "combat_only": true,
+    "concentration": true,
     "effect": {
       "type": "curse",
       "condition": "hexed",
@@ -653,6 +655,7 @@
     "description": "Roots restrain a target for 2 turns.",
     "mana_cost": 3,
     "combat_only": true,
+    "concentration": true,
     "effect": {
       "type": "curse",
       "condition": "restrained",
@@ -676,6 +679,7 @@
     "description": "A column of moonlight deals a flat 12 damage.",
     "mana_cost": 5,
     "combat_only": true,
+    "concentration": true,
     "effect": {
       "type": "damage",
       "flat": 12
@@ -687,6 +691,7 @@
     "description": "A bolt of storm-light deals a flat 14 damage.",
     "mana_cost": 6,
     "combat_only": true,
+    "concentration": true,
     "effect": {
       "type": "damage",
       "flat": 14
@@ -775,6 +780,7 @@
     "description": "Your next strike gains +2 attack and your next ward +2 defense.",
     "mana_cost": 3,
     "combat_only": true,
+    "concentration": true,
     "effect": {
       "type": "bless",
       "attack": 2,
@@ -786,6 +792,7 @@
     "class": "paladin",
     "description": "A field of golden light restores 14 HP.",
     "mana_cost": 6,
+    "concentration": true,
     "effect": {
       "type": "heal",
       "amount": 14
@@ -842,6 +849,7 @@
     "description": "You mark a target; its openings are easy to find for 3 turns.",
     "mana_cost": 3,
     "combat_only": true,
+    "concentration": true,
     "effect": {
       "type": "curse",
       "condition": "hexed",
@@ -898,6 +906,7 @@
     "description": "Your next strike gains +3 attack and your next ward +1 defense.",
     "mana_cost": 5,
     "combat_only": true,
+    "concentration": true,
     "effect": {
       "type": "bless",
       "attack": 3,
