@@ -272,5 +272,40 @@
                                                                   "10":  "Storm of Vengeance"
                                                               }
                                   }
-              }
+              },
+    "paladin":  {
+                     "description":  "A sworn warrior who channels divine power through oath, steel and healing hands",
+                     "base_stats":  {
+                                        "strength":  15,
+                                        "dexterity":  8,
+                                        "constitution":  14,
+                                        "intelligence":  8,
+                                        "wisdom":  10,
+                                        "charisma":  16
+                                    },
+                     "special_abilities":  [
+                                                "Divine Smite",
+                                                "Divine Healing",
+                                                "Shield of Faith"
+                                            ],
+                     "starting_equipment":  [
+                                                "Long Sword",
+                                                "Chainmail",
+                                                "Wooden Shield"
+                                            ],
+                     "hp_base":  10,
+                     "mana_base":  8,
+                     "prepared_caster":  true,
+                     "lay_on_hands":  true,
+                     "progression":  {
+                                         "hp_per_level":  8,
+                                         "mana_per_level":  6,
+                                         "abilities_per_level":  {
+                                                                     "3":  "Bless",
+                                                                     "5":  "Aura of Vitality",
+                                                                     "7":  "Holy Avenger",
+                                                                     "10":  "Radiant Restoration"
+                                                                 }
+                                     }
+                 }
 }

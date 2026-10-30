@@ -6,10 +6,10 @@ format it loads.
 
 | Module | Id | Engine | File |
 |---|---|---|---|
-| The Yawning Portal Demo 1.1.11 | `yawning_portal_demo` | 1.3.40 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
-| The Sunken Bell 1.0.11 | `sunken_bell_demo` | 1.3.40 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
-| The Ember Mill 1.0.9 | `ember_mill` | 1.3.40 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
-| The Glass Wastes 1.0.8 | `glass_wastes` | 1.3.40 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
+| The Yawning Portal Demo 1.1.12 | `yawning_portal_demo` | 1.3.41 | [`yawning-portal/demo.zip`](yawning-portal/demo.zip) |
+| The Sunken Bell 1.0.12 | `sunken_bell_demo` | 1.3.41 | [`sunken-bell/demo.zip`](sunken-bell/demo.zip) |
+| The Ember Mill 1.0.10 | `ember_mill` | 1.3.41 | [`ember-mill/demo.zip`](ember-mill/demo.zip) |
+| The Glass Wastes 1.0.9 | `glass_wastes` | 1.3.41 | [`glass-wastes/demo.zip`](glass-wastes/demo.zip) |
 
 ## Install
 
@@ -59,6 +59,23 @@ Optional keys the engine understands — `respawn_map`, `default_class`,
 on monsters or encounter enemies — are documented in the engine README.
 
 ## Changes
+
+### The Yawning Portal Demo 1.1.12
+
+- Adds the **Paladin** class with prepared Charisma magic, Divine Smite, Lay on Hands and
+  the Oath of Devotion and Oath of the Ancients subclasses.
+
+### The Sunken Bell 1.0.12
+
+- Adds the shared Paladin class, oath subclasses and Lay on Hands.
+
+### The Ember Mill 1.0.10
+
+- Adds the shared Paladin class, oath subclasses and Lay on Hands.
+
+### The Glass Wastes 1.0.9
+
+- Adds the shared Paladin class, oath subclasses and Lay on Hands.
 
 ### The Yawning Portal Demo 1.1.11
 
@@ -308,7 +325,7 @@ on monsters or encounter enemies — are documented in the engine README.
 
 ## Versioning
 
-Module versions follow `manifest.json`. Tags in this repository match: `v1.1.11` is the
-Yawning Portal demo 1.1.11, `sunken-bell-v1.0.11` is The Sunken Bell 1.0.11,
-`ember-mill-v1.0.9` is The Ember Mill 1.0.9, and `glass-wastes-v1.0.8` is The Glass
-Wastes 1.0.8.
+Module versions follow `manifest.json`. Tags in this repository match: `v1.1.12` is the
+Yawning Portal demo 1.1.12, `sunken-bell-v1.0.12` is The Sunken Bell 1.0.12,
+`ember-mill-v1.0.10` is The Ember Mill 1.0.10, and `glass-wastes-v1.0.9` is The Glass
+Wastes 1.0.9.

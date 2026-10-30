@@ -124,5 +124,21 @@
     "stats": { "wisdom": 2 },
     "max_mana": 5,
     "granted_abilities": [ "Nature's Ward" ]
+  },
+  "paladin_devotion": {
+    "name": "Oath of Devotion",
+    "description": "A knight of honor whose blade and banner hold the line.",
+    "class": "paladin",
+    "stats": { "strength": 2 },
+    "max_hp": 10,
+    "granted_abilities": [ "Sacred Weapon" ]
+  },
+  "paladin_ancients": {
+    "name": "Oath of the Ancients",
+    "description": "A sworn guardian of light and living things, slow to anger and hard to kill.",
+    "class": "paladin",
+    "stats": { "charisma": 2 },
+    "max_mana": 5,
+    "granted_abilities": [ "Nature's Wrath" ]
   }
 }

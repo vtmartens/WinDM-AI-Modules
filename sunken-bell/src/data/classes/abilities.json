@@ -736,5 +736,104 @@
       "type": "shield",
       "amount": 8
     }
+  },
+  "Divine Smite": {
+    "id": "divine_smite",
+    "class": "paladin",
+    "description": "Holy light breaks from your weapon for a flat 12 damage.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 12
+    }
+  },
+  "Divine Healing": {
+    "id": "divine_healing",
+    "class": "paladin",
+    "description": "A pulse of holy light closes wounds for 8 HP.",
+    "mana_cost": 4,
+    "effect": {
+      "type": "heal",
+      "amount": 8
+    }
+  },
+  "Shield of Faith": {
+    "id": "shield_of_faith",
+    "class": "paladin",
+    "description": "A shimmering ward absorbs up to 6 damage.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "shield",
+      "amount": 6
+    }
+  },
+  "Bless": {
+    "id": "bless",
+    "class": "paladin",
+    "description": "Your next strike gains +2 attack and your next ward +2 defense.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 2,
+      "defense": 2
+    }
+  },
+  "Aura of Vitality": {
+    "id": "aura_of_vitality",
+    "class": "paladin",
+    "description": "A field of golden light restores 14 HP.",
+    "mana_cost": 6,
+    "effect": {
+      "type": "heal",
+      "amount": 14
+    }
+  },
+  "Holy Avenger": {
+    "id": "holy_avenger",
+    "class": "paladin",
+    "description": "A vengeful strike deals a flat 22 damage.",
+    "mana_cost": 8,
+    "combat_only": true,
+    "effect": {
+      "type": "damage",
+      "flat": 22
+    }
+  },
+  "Radiant Restoration": {
+    "id": "radiant_restoration",
+    "class": "paladin",
+    "description": "Your god answers, restoring 30 HP.",
+    "mana_cost": 10,
+    "effect": {
+      "type": "heal",
+      "amount": 30
+    }
+  },
+  "Sacred Weapon": {
+    "id": "sacred_weapon",
+    "class": "paladin",
+    "description": "Your blade glows with devotion: +4 attack and +2 defense.",
+    "mana_cost": 3,
+    "combat_only": true,
+    "effect": {
+      "type": "bless",
+      "attack": 4,
+      "defense": 2
+    }
+  },
+  "Nature's Wrath": {
+    "id": "natures_wrath",
+    "class": "paladin",
+    "description": "Vines and spectral roots restrain a target for 2 turns.",
+    "mana_cost": 4,
+    "combat_only": true,
+    "effect": {
+      "type": "curse",
+      "condition": "restrained",
+      "turns": 2
+    }
   }
 }
